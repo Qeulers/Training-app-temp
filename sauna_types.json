@@ -1,0 +1,54 @@
+[
+  {
+    "slug": "recov",
+    "name": "Recovery sauna",
+    "duration_label": "15–20 min",
+    "temp_label": "70–80 °C",
+    "rationale": "Circulation, stiffness, sleep and the simple fact that you enjoy it. No performance claim attached — this one is for feeling human.",
+    "how_to": [
+      "Go in warm, after training rather than before",
+      "15–20 min is plenty; this is not the adaptation session",
+      "Cool down gradually, then drink to your post-weight"
+    ],
+    "sort_order": 1
+  },
+  {
+    "slug": "ha",
+    "name": "Heat-acclimation session",
+    "duration_label": "25–30 min",
+    "temp_label": "80–100 °C",
+    "rationale": "The dose that actually expands plasma volume. Straight after a run, while core temperature is already up — that is the protocol the research used, and it is far more time-efficient than heating from cold.",
+    "how_to": [
+      "Within ~10 min of finishing the run, before you cool off",
+      "Build to 25–30 min across the first week — do not open at full dose",
+      "Sit low for the first sessions if the top bench is too much",
+      "Weigh in and out. Every session."
+    ],
+    "sort_order": 2
+  },
+  {
+    "slug": "post",
+    "name": "Post-run top-up",
+    "duration_label": "12–15 min",
+    "temp_label": "70–80 °C",
+    "rationale": "Short exposure that keeps some heat stimulus ticking over between blocks without adding meaningful fatigue.",
+    "how_to": [
+      "Straight off the run",
+      "Short and easy — leave before it becomes work",
+      "Skip it entirely on a heavy training week"
+    ],
+    "sort_order": 3
+  },
+  {
+    "slug": "strength",
+    "name": "Post-lift sauna",
+    "duration_label": "15 min",
+    "temp_label": "70–80 °C",
+    "rationale": "Optional and low-stakes. Heat after lifting does not blunt strength adaptation the way cold-water immersion does, so if you like it, have it.",
+    "how_to": [
+      "After the session, never between sets",
+      "Keep it short on heavy lower days — you still have to run tomorrow"
+    ],
+    "sort_order": 4
+  }
+]

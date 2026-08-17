@@ -1,0 +1,98 @@
+[
+  {
+    "ingredient_name": "porridge oats",
+    "quantity_text": "1 kg bag",
+    "quantity_value": 1,
+    "quantity_unit": "kg bag",
+    "category_code": "N",
+    "sort_order": 1
+  },
+  {
+    "ingredient_name": "skyr or Greek yogurt",
+    "quantity_text": "2 large tubs",
+    "quantity_value": 2,
+    "quantity_unit": "large tubs",
+    "category_code": "D",
+    "sort_order": 2
+  },
+  {
+    "ingredient_name": "frozen cherries",
+    "quantity_text": "1 bag",
+    "quantity_value": 1,
+    "quantity_unit": "bag",
+    "category_code": "V",
+    "sort_order": 3
+  },
+  {
+    "ingredient_name": "frozen mixed berries",
+    "quantity_text": "1 bag",
+    "quantity_value": 1,
+    "quantity_unit": "bag",
+    "category_code": "V",
+    "sort_order": 4
+  },
+  {
+    "ingredient_name": "eggs",
+    "quantity_text": "12",
+    "quantity_value": 12,
+    "quantity_unit": null,
+    "category_code": "D",
+    "sort_order": 5
+  },
+  {
+    "ingredient_name": "semi-skimmed or skimmed milk",
+    "quantity_text": "2 L",
+    "quantity_value": 2,
+    "quantity_unit": "L",
+    "category_code": "D",
+    "sort_order": 6
+  },
+  {
+    "ingredient_name": "bananas",
+    "quantity_text": "1 bunch",
+    "quantity_value": 1,
+    "quantity_unit": "bunch",
+    "category_code": "V",
+    "sort_order": 7
+  },
+  {
+    "ingredient_name": "chia or mixed seeds",
+    "quantity_text": "1 bag",
+    "quantity_value": 1,
+    "quantity_unit": "bag",
+    "category_code": "S",
+    "sort_order": 8
+  },
+  {
+    "ingredient_name": "coffee",
+    "quantity_text": "as needed",
+    "quantity_value": null,
+    "quantity_unit": null,
+    "category_code": "S",
+    "sort_order": 9
+  },
+  {
+    "ingredient_name": "chilli oil (crispy)",
+    "quantity_text": "1 jar",
+    "quantity_value": 1,
+    "quantity_unit": "jar",
+    "category_code": "S",
+    "sort_order": 10
+  },
+  {
+    "ingredient_name": "neutral oil",
+    "quantity_text": "1 bottle",
+    "quantity_value": 1,
+    "quantity_unit": "bottle",
+    "category_code": "S",
+    "sort_order": 11
+  },
+  {
+    "ingredient_name": "jasmine or basmati rice",
+    "quantity_text": "2 kg (works out cheaper)",
+    "quantity_value": 2,
+    "quantity_unit": "kg (works out cheaper)",
+    "category_code": "N",
+    "sort_order": 12
+  }
+]
