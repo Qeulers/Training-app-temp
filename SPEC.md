@@ -1,4 +1,4 @@
-# Training &amp; Meal Planner — Implementation Spec
+# Training & Meal Planner — Implementation Spec
 
 **Target:** port the existing single-file HTML app to a React + Supabase web app.
 **Audience:** Claude Code, working in an IDE against this repo.
@@ -14,17 +14,17 @@ A single user (Frank, 43, ultrarunner) runs 5–6× per week and needs a strengt
 
 ### Decisions already made
 
-| Decision | Choice |
-|---|---|
-| Frontend | React + Tailwind, TypeScript |
-| Backend | Supabase only — Postgres, Auth, RLS. No other backend service |
-| Auth | Google OAuth via Supabase Auth |
-| Platform | Responsive web app, mobile-first. Not a native app |
-| Offline | Offline-first: local cache, background sync on reconnect |
-| Reference data | Read-only seed data, changed via SQL migrations |
-| Users | Solo. `user_id` + RLS on every user table from day one |
-| Theming | Dark and light mode. Tokens TBC |
-| Delivery | GitHub PRs only, green CI required |
+| Decision       | Choice                                                        |
+| -------------- | ------------------------------------------------------------- |
+| Frontend       | React + Tailwind, TypeScript                                  |
+| Backend        | Supabase only — Postgres, Auth, RLS. No other backend service |
+| Auth           | Google OAuth via Supabase Auth                                |
+| Platform       | Responsive web app, mobile-first. Not a native app            |
+| Offline        | Offline-first: local cache, background sync on reconnect      |
+| Reference data | Read-only seed data, changed via SQL migrations               |
+| Users          | Solo. `user_id` + RLS on every user table from day one        |
+| Theming        | Dark and light mode. Tokens TBC                               |
+| Delivery       | GitHub PRs only, green CI required                            |
 
 ---
 
@@ -34,21 +34,21 @@ A single user (Frank, 43, ultrarunner) runs 5–6× per week and needs a strengt
 
 1. **Behaviour parity.** Every feature in §6 works as it does today, verified by the acceptance criteria.
 2. **Multi-device.** Log a session on the phone, see it on the iPad.
-3. **Offline shopping list.** Full read *and* write with no signal, syncing later. This is the sharpest real-world requirement — supermarkets have bad signal and the list is useless if it needs a connection.
+3. **Offline shopping list.** Full read _and_ write with no signal, syncing later. This is the sharpest real-world requirement — supermarkets have bad signal and the list is useless if it needs a connection.
 4. **Reference data in migrations.** Adding a recipe is a PR, not a code edit.
 5. **Test coverage sufficient to refactor confidently**, since the domain logic is subtle and mostly date arithmetic.
 
 ### Non-goals for v1
 
-| Non-goal | Why |
-|---|---|
-| In-app recipe/exercise editing | Decided: seed data via migrations. Adding CRUD now doubles the schema surface for a workflow used a few times a year |
-| Household / multi-user sharing | Solo for now. Mitigated by `user_id` from day one so it is an additive change later |
-| Native app or app-store presence | Web app with a PWA install prompt is enough |
-| Running plan management | Explicitly out of scope for the whole product — strength, food and sauna only |
-| Wearable / Strava / HealthKit integration | No demand yet, large surface |
-| Push notifications | Nothing in the app is time-critical to the minute |
-| AI features | No current use case that a static plan does not serve better |
+| Non-goal                                  | Why                                                                                                                  |
+| ----------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| In-app recipe/exercise editing            | Decided: seed data via migrations. Adding CRUD now doubles the schema surface for a workflow used a few times a year |
+| Household / multi-user sharing            | Solo for now. Mitigated by `user_id` from day one so it is an additive change later                                  |
+| Native app or app-store presence          | Web app with a PWA install prompt is enough                                                                          |
+| Running plan management                   | Explicitly out of scope for the whole product — strength, food and sauna only                                        |
+| Wearable / Strava / HealthKit integration | No demand yet, large surface                                                                                         |
+| Push notifications                        | Nothing in the app is time-critical to the minute                                                                    |
+| AI features                               | No current use case that a static plan does not serve better                                                         |
 
 ---
 
@@ -72,6 +72,7 @@ React (Vite) ──► TanStack Query ──► Supabase JS client ──► Sup
 Use TanStack Query with `persistQueryClient` over IndexedDB for reads, plus an explicit **outbox** for writes. Do not rely on optimistic updates alone — they vanish on refresh, and the shopping-list use case involves closing and reopening the app mid-shop.
 
 **Write path:**
+
 1. Apply the change to the local cache immediately.
 2. Append an intent to the outbox: `{id, table, op, payload, client_ts, attempts}`.
 3. If online, drain the outbox. If not, drain on `navigator.onLine` / `visibilitychange`.
@@ -360,22 +361,22 @@ create policy "read reference" on exercises for select to authenticated using (t
 
 The `seed/` directory holds extracted, validated JSON, one file per table, keys matching column names exactly.
 
-| File | Rows | Notes |
-|---|---:|---|
-| `exercises.json` | 31 | includes `kit_note`, `space_note`, `ramp_note` |
-| `phases.json` | 5 | |
-| `session_templates.json` | 11 | |
-| `session_template_items.json` | 74 | |
-| `sauna_types.json` | 4 | |
-| `sauna_schedule.json` | 15 | |
-| `sauna_rules.json` | — | → `app_content` rows |
-| `ingredient_categories.json` | 6 | |
-| `cuisines.json` | 4 | |
-| `recipes.json` | 77 | |
-| `recipe_ingredients.json` | 617 | 616 quantities parsed; one `to taste` |
-| `recipe_steps.json` | 354 | contiguous `step_no` from 1 |
-| `staples.json` | 12 | |
-| `pluralisation_exceptions.json` | 11 | → `app_content` |
+| File                            | Rows | Notes                                          |
+| ------------------------------- | ---: | ---------------------------------------------- |
+| `exercises.json`                |   31 | includes `kit_note`, `space_note`, `ramp_note` |
+| `phases.json`                   |    5 |                                                |
+| `session_templates.json`        |   11 |                                                |
+| `session_template_items.json`   |   74 |                                                |
+| `sauna_types.json`              |    4 |                                                |
+| `sauna_schedule.json`           |   15 |                                                |
+| `sauna_rules.json`              |    — | → `app_content` rows                           |
+| `ingredient_categories.json`    |    6 |                                                |
+| `cuisines.json`                 |    4 |                                                |
+| `recipes.json`                  |   77 |                                                |
+| `recipe_ingredients.json`       |  617 | 616 quantities parsed; one `to taste`          |
+| `recipe_steps.json`             |  354 | contiguous `step_no` from 1                    |
+| `staples.json`                  |   12 |                                                |
+| `pluralisation_exceptions.json` |   11 | → `app_content`                                |
 
 **Validated on extraction:** unique slugs; every FK resolves; every recipe has ≥1 ingredient and ≥1 step; contiguous step numbering; every exercise has a unique, well-formed YouTube URL; `day_of_week` within 0–6.
 
@@ -392,7 +393,7 @@ Six top-level tabs: **Today · Calendar · Plan · Moves · Food · Stats**.
 Landing view. Shows the current phase, the countdown to the A race, today's scheduled session, today's sauna slot(s), and daily fuel anchors.
 
 - If a session is scheduled today, offer **Start session**. If already logged, show a completed state instead.
-- Sauna slots render one card each, marked *optional* where applicable, with a **Log this sauna** action.
+- Sauna slots render one card each, marked _optional_ where applicable, with a **Log this sauna** action.
 - With no A race set, the countdown reads `—` and the label prompts the user to add a race. **No crashes, no `NaN`, no `undefined`** — this is the cold-start path and it must be clean.
 
 **Workout logger.** Starting a session builds a set-by-set form pre-filled from the most recent log for each exercise (weight and reps), defaulting to 3 sets when there is no history. Sets can be added. On save, only sets that were marked done or have a rep count are persisted.
@@ -405,6 +406,23 @@ Then the form shows 3 sets pre-filled with the previous weights and reps
 Given the user completes 2 of 4 displayed sets
 When they save
 Then only the 2 completed sets are written, and the log appears in Stats
+```
+
+**Countdown timer.** During a session the logger provides a countdown timer for **rest** between sets and for **hold** periods within a set (isometric work — planks, wall sits, single-leg balances). Purely client-side: no server round-trip, works offline, and must keep counting accurately while the tab is backgrounded or the screen sleeps — drive it from a wall-clock target time, not a `setInterval` tick count, and request a `wake lock` while a timer is live.
+
+- **Rest.** Marking a set done starts a rest countdown from a per-session default (90 s), adjustable in ±15 s steps live, with skip and +/− controls. The default is a user preference, not hard-coded.
+- **Hold.** Exercises whose prescription encodes a duration (e.g. `3×30s`, `2×45 sec / side`) expose a hold countdown seeded from the parsed seconds; parsing lives in `src/domain/` and falls back to a manual entry when no duration is present. Per-side prescriptions run one countdown per side.
+- **Cues.** A distinct audible tone and a haptic pulse (`navigator.vibrate` where available) fire at zero, plus a three-second visual warning. Cues respect a mute toggle and the OS reduced-motion / silent settings.
+- Timer state is ephemeral UI — it is **not** persisted to Supabase and never enters the outbox. Only the resulting sets are logged as in the criteria above.
+
+```
+Given the exercise "side plank" has the prescription "3×30s / side"
+When the user opens its hold timer
+Then the countdown is pre-seeded to 30 seconds and runs once per side
+
+Given a rest timer is running with the app backgrounded for 60 seconds
+When the user returns to the app
+Then the remaining time reflects real elapsed wall-clock time, not paused ticks
 ```
 
 ### 6.2 Calendar (P0)
@@ -500,15 +518,15 @@ phase(date):
 
 Known-good vectors for an A race of `2027-07-30`:
 
-| Date | Expected |
-|---|---|
-| 2027-01-01 | `p1` |
-| 2027-06-01 | `p2` |
-| 2027-07-20 | `p3` |
-| 2027-07-30 (race day) | `p3` |
-| 2027-08-05 | `recovery` |
-| 2027-09-15 | `p4` |
-| any date, no race | `p4` |
+| Date                  | Expected   |
+| --------------------- | ---------- |
+| 2027-01-01            | `p1`       |
+| 2027-06-01            | `p2`       |
+| 2027-07-20            | `p3`       |
+| 2027-07-30 (race day) | `p3`       |
+| 2027-08-05            | `recovery` |
+| 2027-09-15            | `p4`       |
+| any date, no race     | `p4`       |
 
 ### 7.2 Heat-acclimation block
 
@@ -538,6 +556,7 @@ The heat block **overrides** the normal schedule; it does not stack with it.
 Given the basket (recipe slugs) plus optionally the week's planned dinners, produce one row per distinct `ingredient_name` + `category_code`, summing quantities where units match.
 
 Rules that already exist and must survive the port:
+
 - Combine like units (`400 g` + `200 g` → `600 g`); keep unlike units listed separately (`2 tbsp` + `1 tsp`).
 - Handle fractional quantities and compound units.
 - Pluralise counted nouns, honouring the exception list in `pluralisation_exceptions.json`.
@@ -550,6 +569,19 @@ Port the existing algorithm and cover it with **table-driven tests** — this lo
 
 Strength sessions come from `session_templates` for the current phase, matched on `day_of_week`. Tuesday (2), Thursday (4), Saturday (6) in the standard phases. Sunday (0) is the long run and must stay clear of eccentric work — an automated check should assert no session containing `stepdown` is ever scheduled on day 0.
 
+### 7.6 Prescription duration parsing
+
+Powers the hold timer in §6.1. Given a free-text prescription, return the hold duration in seconds and whether it is per-side, or `null` when the prescription is rep-based.
+
+```
+parseHold('3×30s')           -> { seconds: 30, perSide: false }
+parseHold('2×45 sec / side') -> { seconds: 45, perSide: true }
+parseHold('3×8 / leg')       -> null    # reps, not a hold
+parseHold('30–45s')          -> { seconds: 30, perSide: false }   # lower bound
+```
+
+Table-driven tests, since prescription formatting is irregular (`s`, `sec`, `min`, ranges, `/ side`, `/ leg`). A parse miss must return `null` and fall back to manual entry — never throw, never seed a wrong duration.
+
 ---
 
 ## 8. Design system
@@ -561,6 +593,7 @@ Suggested semantic set: `bg`, `surface`, `surface-raised`, `border`, `text`, `te
 **Dark and light mode.** Class strategy (`darkMode: 'class'`), defaulting to `system`, with the override stored in `user_settings.theme` and mirrored to `localStorage` so first paint is correct and does not flash.
 
 **Mobile-first.** Base styles target a phone; scale up. Design constraints inherited from the current app, all worth keeping:
+
 - Max content width 760 px, centred, 16 px gutters.
 - Bottom tab bar for the six sections, thumb-reachable.
 - Sticky segmented controls inside Food and Calendar.
@@ -600,13 +633,13 @@ Routing: `/today`, `/calendar`, `/plan`, `/moves`, `/food`, `/stats`, with Food 
 
 Non-negotiable, because the domain logic is date arithmetic and the failure mode is silent.
 
-| Layer | Tool | Covers |
-|---|---|---|
-| Unit | Vitest | All of `src/domain/`. Phase boundaries, heat block, sauna resolution, shopping aggregation, pluralisation, quantity parsing. Use the §7 vectors as fixtures |
-| Component | Vitest + React Testing Library | Rendering, empty states, form validation, calendar grids (42 cells, 7 rows, 12 minis) |
-| Integration | Vitest + local Supabase | RLS policies including the negative cases; migrations apply cleanly from scratch; seed loads and satisfies referential integrity |
-| E2E | Playwright | Sign in, add race, log a session, plan a week, generate a shopping list, tick items **offline**, reconnect and verify sync |
-| Data | Vitest | Re-run the seed validation from §5 on every build |
+| Layer       | Tool                           | Covers                                                                                                                                                      |
+| ----------- | ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Unit        | Vitest                         | All of `src/domain/`. Phase boundaries, heat block, sauna resolution, shopping aggregation, pluralisation, quantity parsing. Use the §7 vectors as fixtures |
+| Component   | Vitest + React Testing Library | Rendering, empty states, form validation, calendar grids (42 cells, 7 rows, 12 minis)                                                                       |
+| Integration | Vitest + local Supabase        | RLS policies including the negative cases; migrations apply cleanly from scratch; seed loads and satisfies referential integrity                            |
+| E2E         | Playwright                     | Sign in, add race, log a session, plan a week, generate a shopping list, tick items **offline**, reconnect and verify sync                                  |
+| Data        | Vitest                         | Re-run the seed validation from §5 on every build                                                                                                           |
 
 **Specific cases that must be tested** because they have already caused bugs:
 
@@ -644,9 +677,19 @@ Current log shape for reference:
 
 ```jsonc
 // fw_logs
-{ "date": "2026-08-15", "sessionId": "lowerA", "sessionName": "Lower A — Heavy Strength",
-  "phase": "p1", "notes": "",
-  "entries": { "backsquat": [ { "w": 70, "r": 5 }, { "w": 70, "r": 5 } ] } }
+{
+  "date": "2026-08-15",
+  "sessionId": "lowerA",
+  "sessionName": "Lower A — Heavy Strength",
+  "phase": "p1",
+  "notes": "",
+  "entries": {
+    "backsquat": [
+      { "w": 70, "r": 5 },
+      { "w": 70, "r": 5 },
+    ],
+  },
+}
 ```
 
 ---
@@ -668,13 +711,13 @@ Current log shape for reference:
 
 ## 14. Phasing
 
-| Phase | Contents |
-|---|---|
-| **1 — Foundation** | Vite + React + TS + Tailwind, Supabase project, Google auth, schema migrations, seed load, RLS with negative tests, generated types |
-| **2 — Domain** | Port `src/domain/` with full unit tests against the §7 vectors. No UI. This is the highest-risk code and should be provably correct before anything renders |
-| **3 — Read-only UI** | Six tabs, all reference data rendering: Moves, Recipes, Fuel, Plan's static sections, Calendar reading from seed |
-| **4 — User data online** | Races, phase override, workout logger, sauna logging, planner, basket, shopping list. Online-only |
-| **5 — Offline** | IndexedDB persistence, outbox, sync engine, conflict handling, offline UI states, e2e offline tests |
-| **6 — Polish** | Theming and dark/light, animation, a11y pass, PWA manifest, localStorage importer |
+| Phase                    | Contents                                                                                                                                                    |
+| ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **1 — Foundation**       | Vite + React + TS + Tailwind, Supabase project, Google auth, schema migrations, seed load, RLS with negative tests, generated types                         |
+| **2 — Domain**           | Port `src/domain/` with full unit tests against the §7 vectors. No UI. This is the highest-risk code and should be provably correct before anything renders |
+| **3 — Read-only UI**     | Six tabs, all reference data rendering: Moves, Recipes, Fuel, Plan's static sections, Calendar reading from seed                                            |
+| **4 — User data online** | Races, phase override, workout logger, sauna logging, planner, basket, shopping list. Online-only                                                           |
+| **5 — Offline**          | IndexedDB persistence, outbox, sync engine, conflict handling, offline UI states, e2e offline tests                                                         |
+| **6 — Polish**           | Theming and dark/light, animation, a11y pass, PWA manifest, localStorage importer                                                                           |
 
 Phase 2 before Phase 3 is deliberate. The domain logic is where correctness actually lives, and it is far easier to test without a UI attached.
