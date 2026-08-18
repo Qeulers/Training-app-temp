@@ -1,0 +1,19 @@
+{
+  "hydration": "Weigh yourself before and after. Replace 150% of what you lost — 1.5 L per kg dropped — with electrolyte, not plain water. This is not general wellness advice; for you it is the difference between a recovery session and a gout trigger.",
+  "myth": "Ignore anything claiming sauna \"sweats out uric acid\". Measured urate in sweat is negligible to undetectable — your kidneys do that job, and sweating makes them worse at it, not better.",
+  "never": [
+    "During an active flare — heat on an inflamed joint makes it worse, and the fluid loss compounds it.",
+    "When you are already behind on fluid, or the morning after alcohol.",
+    "Straight after a long run without drinking first. Rehydrate, then heat.",
+    "Alone in the house if you are pushing a long session."
+  ],
+  "heat_block": {
+    "length_days": 14,
+    "ends_days_before_race": 3,
+    "sessions_per_week": 5,
+    "rest_days_of_week": [
+      3,
+      5
+    ]
+  }
+}

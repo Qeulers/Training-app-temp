@@ -1,0 +1,537 @@
+[
+  {
+    "slug": "backsquat",
+    "name": "Barbell back squat",
+    "category": "Lower",
+    "video_url": "https://www.youtube.com/watch?v=S0H0JxLAOAY",
+    "rationale": "The engine of the whole plan — leg strength that survives mile 80.",
+    "cues": [
+      "Brace before you unrack — big breath into the belt line",
+      "Sit down between your hips, chest proud",
+      "Drive the whole foot through the floor; knees track over toes"
+    ],
+    "kit_note": null,
+    "space_note": null,
+    "ramp_note": null,
+    "swap_note": "Goblet squat if the bar feels off, or box squat to a bench for depth control.",
+    "sort_order": 1
+  },
+  {
+    "slug": "gobletsquat",
+    "name": "Goblet squat",
+    "category": "Lower",
+    "video_url": "https://www.youtube.com/watch?v=JO7D6GJ98wY",
+    "rationale": "Warm-up groove and deload option; keeps the torso honest.",
+    "cues": [
+      "Bell tight to the chest, elbows down",
+      "Ribs down — do not arch",
+      "Full depth, controlled up"
+    ],
+    "kit_note": null,
+    "space_note": null,
+    "ramp_note": null,
+    "swap_note": null,
+    "sort_order": 2
+  },
+  {
+    "slug": "rdl",
+    "name": "Romanian deadlift",
+    "category": "Lower",
+    "video_url": "https://www.youtube.com/watch?v=uhghy9pFIPY",
+    "rationale": "Hamstrings and glutes under stretch — descent control for thousands of feet of downhill.",
+    "cues": [
+      "Push the hips back, soft knees, bar shaved down the thighs",
+      "Stop where the hamstrings scream, not where the floor is",
+      "Flat back is non-negotiable"
+    ],
+    "kit_note": null,
+    "space_note": null,
+    "ramp_note": null,
+    "swap_note": "Dumbbell RDL when barbell setup is a faff.",
+    "sort_order": 3
+  },
+  {
+    "slug": "bss",
+    "name": "Bulgarian split squat",
+    "category": "Lower",
+    "video_url": "https://www.youtube.com/watch?v=VPhhE6bBzZE",
+    "rationale": "Single-leg strength with a big stability demand — the closest a gym gets to a rutted trail.",
+    "cues": [
+      "Rear foot laces-down on the bench or the 16in box",
+      "Long stance, torso slightly forward loads the glute",
+      "Drive through the front heel; wobble is part of the work"
+    ],
+    "kit_note": "16in box gives a better rear-foot height than the bench for most people.",
+    "space_note": null,
+    "ramp_note": null,
+    "swap_note": "Reverse lunge if knees complain; hold the rack for balance while learning.",
+    "sort_order": 4
+  },
+  {
+    "slug": "stepup",
+    "name": "Weighted step-up",
+    "category": "Lower",
+    "video_url": "https://www.youtube.com/watch?v=vOiHvzj5XhA",
+    "rationale": "Concentric single-leg power — every stile, every step cut into a fell.",
+    "cues": [
+      "Whole foot on the box, drive without pushing off the back leg",
+      "Start at 16in; 18in is the working height; 20in is roughly knee height for you and the hardest",
+      "Control the way down — that is half the exercise"
+    ],
+    "kit_note": "Plyo box. 16in to learn and for higher reps, 18in as the default, 20in when you want it to bite.",
+    "space_note": null,
+    "ramp_note": null,
+    "swap_note": "Add the weighted vest before you add box height — height changes the joint angles, load does not.",
+    "sort_order": 5
+  },
+  {
+    "slug": "packstepup",
+    "name": "Pack step-up (race pack)",
+    "category": "Race",
+    "video_url": "https://www.youtube.com/watch?v=qCW8V_rUpgM",
+    "rationale": "THE mountain-race exercise. Your race pack, loaded, on a box — specificity you cannot buy.",
+    "cues": [
+      "Wear the actual pack you will race with, straps dialled",
+      "Start 6 kg, build to race weight +2 kg by end of Phase 2",
+      "Steady rhythm, nose-breathing pace — this is durability, not a leg burner",
+      "18in box for volume, 20in when you want the big-step demand"
+    ],
+    "kit_note": "Race pack + plyo box. Use the pack, not the vest, for this one — the point is rehearsing the exact load carriage you will race under, sway and hip belt included.",
+    "space_note": null,
+    "ramp_note": null,
+    "swap_note": "Vest version if the pack is packed for a race, or stair repeats with the pack on.",
+    "sort_order": 6
+  },
+  {
+    "slug": "slrdl",
+    "name": "Single-leg RDL",
+    "category": "Race",
+    "video_url": "https://www.youtube.com/watch?v=CohgHMsoS2s",
+    "rationale": "Balance + posterior chain + ankle proprioception in one move. Bog insurance.",
+    "cues": [
+      "Kettlebell in the hand opposite the standing leg",
+      "Hips square, back leg reaches long",
+      "Grip the floor with your toes"
+    ],
+    "kit_note": null,
+    "space_note": null,
+    "ramp_note": null,
+    "swap_note": "Hold the rack with the free hand, or B-stance RDL.",
+    "sort_order": 7
+  },
+  {
+    "slug": "latlunge",
+    "name": "Lateral lunge",
+    "category": "Race",
+    "video_url": "https://www.youtube.com/watch?v=qCA8E-dF8cI",
+    "rationale": "Frontal-plane strength — the plane running never trains and camber, tussocks and sidesteps punish.",
+    "cues": [
+      "Big sideways step, sit into that hip",
+      "Trailing leg straight, both heels down",
+      "Push back to standing through the bent leg"
+    ],
+    "kit_note": null,
+    "space_note": null,
+    "ramp_note": null,
+    "swap_note": null,
+    "sort_order": 8
+  },
+  {
+    "slug": "kbswing",
+    "name": "Kettlebell swing",
+    "category": "Lower",
+    "video_url": "https://www.youtube.com/watch?v=h-A7HiTNZ5c",
+    "rationale": "Explosive hip power and posterior-chain conditioning in minutes.",
+    "cues": [
+      "It is a hinge, not a squat",
+      "Hips throw the bell — arms are just rope",
+      "Snap tall at the top, glutes hard"
+    ],
+    "kit_note": null,
+    "space_note": null,
+    "ramp_note": null,
+    "swap_note": null,
+    "sort_order": 9
+  },
+  {
+    "slug": "calfraise",
+    "name": "Calf raise (slant board)",
+    "category": "Ankle",
+    "video_url": "https://www.youtube.com/watch?v=zGVzmZ9xOmE",
+    "rationale": "Calf capacity is ankle armour and downhill braking. On the slant board the heel drops below the toes, so you get loaded range the floor cannot give you.",
+    "cues": [
+      "3 s down into the stretch, pause, drive tall",
+      "Progress single-leg, then add a dumbbell, then the vest",
+      "Full range beats heavy half-reps"
+    ],
+    "kit_note": "Slant board. Straight leg targets the gastrocnemius; the bent-knee version below is a separate exercise, not a variation.",
+    "space_note": null,
+    "ramp_note": null,
+    "swap_note": "Off a stair edge if the board is in use.",
+    "sort_order": 10
+  },
+  {
+    "slug": "soleusraise",
+    "name": "Bent-knee soleus raise",
+    "category": "Ankle",
+    "video_url": "https://www.youtube.com/watch?v=pYs6drHFySs",
+    "rationale": "Bend the knee and the gastrocnemius slackens, so the soleus takes the load. This matters more than most runners realise: the soleus carries the largest single share of force in late-stance running, it is the muscle that quietly fails on long descents, and straight-leg calf raises barely touch it.",
+    "cues": [
+      "Knee bent to about 90°, heel dropped off the board edge",
+      "Slow — 2 s up, 3 s down",
+      "Load heavy; the soleus tolerates far more than you expect",
+      "15–20 reps, and it should burn"
+    ],
+    "kit_note": "Slant board plus a dumbbell resting on the knee, or the vest on.",
+    "space_note": null,
+    "ramp_note": null,
+    "swap_note": "Seated on the bench with a dumbbell on the thigh.",
+    "sort_order": 11
+  },
+  {
+    "slug": "tib",
+    "name": "Tibialis raise",
+    "category": "Ankle",
+    "video_url": "https://www.youtube.com/watch?v=KjaKJmWb_fI",
+    "rationale": "The shin muscle that lifts your toes over 108 miles of tussock — and guards the ankle.",
+    "cues": [
+      "Lean back on a wall, heels ~30 cm out",
+      "Lift both forefeet as high as they go",
+      "Slow lowers; burn is the point"
+    ],
+    "kit_note": "Reverse the slant board (toes low, heels high) to add range once wall reps get easy.",
+    "space_note": null,
+    "ramp_note": null,
+    "swap_note": null,
+    "sort_order": 12
+  },
+  {
+    "slug": "ankleiso",
+    "name": "Banded ankle circuit",
+    "category": "Ankle",
+    "video_url": "https://www.youtube.com/watch?v=xfrncpP5ONQ",
+    "rationale": "Eversion/inversion strength for your ankle history — small muscles, big insurance.",
+    "cues": [
+      "Band around the forefoot: out, in, up — 15 each way",
+      "Slow and controlled, seated",
+      "Finish with 30 s single-leg balance, eyes closed if easy"
+    ],
+    "kit_note": null,
+    "space_note": null,
+    "ramp_note": null,
+    "swap_note": "During toe flare-ups this and isometric holds replace all impact work.",
+    "sort_order": 13
+  },
+  {
+    "slug": "farmer",
+    "name": "Farmer / suitcase carry",
+    "category": "Race",
+    "video_url": "https://www.youtube.com/shorts/PV6Em-k0xYs",
+    "rationale": "Grip, trunk, posture under load — carrying a heavy pack is literally the sport.",
+    "cues": [
+      "Deadlift the bells up properly",
+      "Tall spine, ribs down, brisk short steps",
+      "Suitcase (one side) = brutal anti-lean core work"
+    ],
+    "kit_note": null,
+    "space_note": "Needs ~10 m of clear floor. Kept here for when you train outdoors or have the room.",
+    "ramp_note": null,
+    "swap_note": "No room? Use the suitcase march, front-rack march or shuttle carry below. Marching keeps the stepping rhythm, which matters — see the note on each.",
+    "sort_order": 14
+  },
+  {
+    "slug": "suitcasemarch",
+    "name": "Suitcase march (in place)",
+    "category": "Race",
+    "video_url": "https://www.youtube.com/watch?v=psMQmwlhiSs",
+    "rationale": "The no-space replacement for the suitcase carry. One heavy bell at your side while you march on the spot — the load still tries to fold you sideways, and you still alternate legs, so the anti-lateral-flexion demand arrives in the same rhythm as walking under a pack.",
+    "cues": [
+      "Deadlift the bell up; do not curl it into position",
+      "Nose, sternum and belt buckle stacked in a straight line",
+      "Knee to hip height, pause a beat, place it down softly",
+      "Do not let the free hand grab anything",
+      "Swap sides and match the reps exactly"
+    ],
+    "kit_note": null,
+    "space_note": "One square metre. Nothing moves but you.",
+    "ramp_note": null,
+    "swap_note": "Progress by adding weight before adding time. 45 s a side is plenty; if it gets easy, get a heavier bell.",
+    "sort_order": 15
+  },
+  {
+    "slug": "frontrackmarch",
+    "name": "Front-rack march",
+    "category": "Race",
+    "video_url": "https://www.youtube.com/watch?v=24Uj21nOPNw",
+    "rationale": "Load sits on the front of the ribcage, so the trunk has to resist being pulled into extension while each leg lifts. This is the closest thing in the gym to a heavy chest-mounted pack on a steep climb.",
+    "cues": [
+      "Clean the bells to the shoulders, elbows down and in",
+      "Ribs stacked over hips — no arching back",
+      "Slow march, full hip height, controlled foot placement",
+      "Breathe behind the brace; do not hold your breath"
+    ],
+    "kit_note": null,
+    "space_note": "One square metre.",
+    "ramp_note": null,
+    "swap_note": "Single bell in the rack is harder than two — use it when the double gets easy.",
+    "sort_order": 16
+  },
+  {
+    "slug": "suitcasehold",
+    "name": "Suitcase iso-hold",
+    "category": "Race",
+    "video_url": "https://www.youtube.com/watch?v=7G-m4LuXWu0",
+    "rationale": "Static anti-lean work with a heavier bell than you could march with. Worth knowing that the EMG evidence has holds coming out slightly BELOW the walking versions for trunk activation — so this is the supplement, not the main course. Go heavier and longer to compensate.",
+    "cues": [
+      "Stand tall, shoulders level, load hanging dead straight",
+      "Squeeze the opposite glute to stop the hip hiking",
+      "Grip is usually what fails first — that is fine, it is trainable",
+      "30–45 s a side, heavier than your march weight"
+    ],
+    "kit_note": null,
+    "space_note": "Standing room only.",
+    "ramp_note": null,
+    "swap_note": "Barbell version in the rack lets you go much heavier than dumbbells allow.",
+    "sort_order": 17
+  },
+  {
+    "slug": "shuttlecarry",
+    "name": "Shuttle carry (5 m turnaround)",
+    "category": "Race",
+    "video_url": "https://www.youtube.com/watch?v=V97zH30eO1g",
+    "rationale": "If you can find five metres, this recovers the true walking carry. The turnarounds are a bonus — changing direction under load is exactly what stiles, gates and rocky steps demand.",
+    "cues": [
+      "Short brisk steps, do not stroll",
+      "Slow and deliberate on the turn — that is where posture collapses",
+      "Set the bells down under control, never drop them"
+    ],
+    "kit_note": null,
+    "space_note": "5 m each way. Garage, hallway or driveway.",
+    "ramp_note": null,
+    "swap_note": "Falls back to the suitcase march if five metres is not available.",
+    "sort_order": 18
+  },
+  {
+    "slug": "stepdown",
+    "name": "Eccentric box step-down",
+    "category": "Race",
+    "video_url": "https://www.youtube.com/watch?v=SZXOPRVP1Oc",
+    "rationale": "The single most descent-specific thing you can do indoors. Running downhill is eccentric work — the quad lengthens under load on every footfall, and when it runs out of capacity you get the shaking, braking, quad-trashed feeling in the back half of a race. This trains exactly that contraction, slowly and under control.",
+    "cues": [
+      "Stand on the box on one leg, other leg hanging free",
+      "Lower for a full 4–5 seconds — the slowness IS the exercise",
+      "Tap the heel lightly, do not take weight through it",
+      "Push back up through the standing leg normally",
+      "Knee tracks over the second toe; if it caves inward, drop to a lower box"
+    ],
+    "kit_note": "Plyo box. Start 16in, progress to 18in, add the vest before you add height.",
+    "space_note": null,
+    "ramp_note": "Sits on a Saturday, roughly 24 h before your long run — which is the front edge of when eccentric soreness peaks. That is survivable because the dose starts tiny and the repeated bout effect is strong: the first exposure does most of the damage, and by the third or fourth session the same load barely registers. So earn it. Weeks 1–2: one set of four, bodyweight, 16in box. Only add sets, height or vest once a Sunday has passed with no quad stiffness in the first 20 minutes. If a Sunday run ever feels quad-heavy early, drop back a step rather than pushing through.",
+    "swap_note": "If you would rather not gamble with the long run at all, move it to Tuesday — five days clear, at the cost of stacking quad load on heavy squat day.",
+    "sort_order": 19
+  },
+  {
+    "slug": "pullup",
+    "name": "Pull-up",
+    "category": "Upper",
+    "video_url": "https://www.youtube.com/watch?v=6zyx46Vpato",
+    "rationale": "The king of upper pulls — back width you can see, grip you can use.",
+    "cues": [
+      "Dead hang start, shoulders down before you pull",
+      "Chest to bar direction, not chin-poke",
+      "Band assistance or slow negatives until reps come"
+    ],
+    "kit_note": "The vest is the cleanest way to load these once you are past ~8 clean reps — far better than a dumbbell between the feet.",
+    "space_note": null,
+    "ramp_note": null,
+    "swap_note": "Band-assisted pull-up or slow 5 s negatives.",
+    "sort_order": 20
+  },
+  {
+    "slug": "ohp",
+    "name": "Overhead press (DB or bar)",
+    "category": "Upper",
+    "video_url": "https://www.youtube.com/watch?v=Did01dFR3Lk",
+    "rationale": "Shoulders that fill a t-shirt and press a pack overhead a fence.",
+    "cues": [
+      "Glutes and core tight — no rib flare",
+      "Press to lockout, biceps by ears",
+      "Standing beats seated for trunk work"
+    ],
+    "kit_note": null,
+    "space_note": null,
+    "ramp_note": null,
+    "swap_note": null,
+    "sort_order": 21
+  },
+  {
+    "slug": "dbbench",
+    "name": "Dumbbell bench press",
+    "category": "Upper",
+    "video_url": "https://www.youtube.com/watch?v=pKZMNVbfUzQ",
+    "rationale": "Chest and triceps with honest, even loading.",
+    "cues": [
+      "Shoulder blades pinned to the bench",
+      "Slight arc: down-and-out, up-and-in",
+      "Feet planted, leg drive on"
+    ],
+    "kit_note": null,
+    "space_note": null,
+    "ramp_note": null,
+    "swap_note": "TRX or deficit push-ups when short on time.",
+    "sort_order": 22
+  },
+  {
+    "slug": "sarow",
+    "name": "Single-arm dumbbell row",
+    "category": "Upper",
+    "video_url": "https://www.youtube.com/watch?v=pYcpY20QaE8",
+    "rationale": "Thick mid-back, one side at a time — posture insurance for hours hunched into wind.",
+    "cues": [
+      "Knee and hand on bench, flat back",
+      "Row to the hip, not the armpit",
+      "Squeeze, lower slow, no torso twist"
+    ],
+    "kit_note": null,
+    "space_note": null,
+    "ramp_note": null,
+    "swap_note": null,
+    "sort_order": 23
+  },
+  {
+    "slug": "trxrow",
+    "name": "TRX row",
+    "category": "Upper",
+    "video_url": "https://www.youtube.com/watch?v=fW_jdwZT804",
+    "rationale": "Scales to any level by foot position; plank and pull at once.",
+    "cues": [
+      "Body rigid as a board",
+      "Pull handles to lower ribs",
+      "Feet forward = harder"
+    ],
+    "kit_note": null,
+    "space_note": null,
+    "ramp_note": null,
+    "swap_note": null,
+    "sort_order": 24
+  },
+  {
+    "slug": "pushacc",
+    "name": "TRX push-up / dips off bench",
+    "category": "Upper",
+    "video_url": "https://www.youtube.com/watch?v=OlUqeytSoxE",
+    "rationale": "Pressing volume without more dumbbell juggling.",
+    "cues": [
+      "TRX push-up: handles low, body plank-rigid",
+      "Bench dips: shoulders down away from ears",
+      "Stop 2 reps shy of failure"
+    ],
+    "kit_note": null,
+    "space_note": null,
+    "ramp_note": null,
+    "swap_note": null,
+    "sort_order": 25
+  },
+  {
+    "slug": "armfinisher",
+    "name": "Curls + band pull-aparts",
+    "category": "Upper",
+    "video_url": "https://www.youtube.com/watch?v=zvmNxjcpvF8",
+    "rationale": "Direct arm work (you said you want to see the fruits) plus rear-delt posture reps.",
+    "cues": [
+      "Curl strict — no swing",
+      "Pull-aparts: squeeze shoulder blades, band to chest",
+      "Superset them, 2 rounds, done"
+    ],
+    "kit_note": null,
+    "space_note": null,
+    "ramp_note": null,
+    "swap_note": null,
+    "sort_order": 26
+  },
+  {
+    "slug": "pallof",
+    "name": "Pallof press",
+    "category": "Core",
+    "video_url": "https://www.youtube.com/watch?v=iBDXkpKDRy8",
+    "rationale": "Anti-rotation — the core skill of running with a pack in a crosswind.",
+    "cues": [
+      "Band anchored at the rack, stand side-on",
+      "Press out, resist the twist, pause 2 s",
+      "Half-kneeling version = harder than it looks"
+    ],
+    "kit_note": null,
+    "space_note": null,
+    "ramp_note": null,
+    "swap_note": null,
+    "sort_order": 27
+  },
+  {
+    "slug": "deadbug",
+    "name": "Dead bug",
+    "category": "Core",
+    "video_url": "https://www.youtube.com/watch?v=T1h8n4YMonY",
+    "rationale": "Trunk control with a protected spine — perfect on tired days.",
+    "cues": [
+      "Low back gently pressed to floor throughout",
+      "Opposite arm and leg reach long",
+      "Slow exhale each rep"
+    ],
+    "kit_note": null,
+    "space_note": null,
+    "ramp_note": null,
+    "swap_note": null,
+    "sort_order": 28
+  },
+  {
+    "slug": "birddog",
+    "name": "Bird dog",
+    "category": "Core",
+    "video_url": "https://www.youtube.com/watch?v=2aGunzN5YWA",
+    "rationale": "Part of McGill’s Big 3 — spine stability with zero cost.",
+    "cues": [
+      "Reach long, not high",
+      "Hips stay level — imagine a mug of tea on your back",
+      "Pause 3 s each rep"
+    ],
+    "kit_note": null,
+    "space_note": null,
+    "ramp_note": null,
+    "swap_note": null,
+    "sort_order": 29
+  },
+  {
+    "slug": "sideplank",
+    "name": "Side plank",
+    "category": "Core",
+    "video_url": "https://www.youtube.com/watch?v=iNbH7_edNI8",
+    "rationale": "Lateral trunk endurance — camber and pack-lean resistance.",
+    "cues": [
+      "Elbow under shoulder, body one line",
+      "Hips high",
+      "Progress: top leg raised or feet on bench"
+    ],
+    "kit_note": null,
+    "space_note": null,
+    "ramp_note": null,
+    "swap_note": null,
+    "sort_order": 30
+  },
+  {
+    "slug": "hangknee",
+    "name": "Hanging knee raise",
+    "category": "Core",
+    "video_url": "https://www.youtube.com/watch?v=l7OroezzX9k",
+    "rationale": "Grip endurance + lower abs from your pull-up bar.",
+    "cues": [
+      "Hang tall, no swing",
+      "Knees to chest with a posterior pelvic tilt",
+      "Lower slow"
+    ],
+    "kit_note": null,
+    "space_note": null,
+    "ramp_note": null,
+    "swap_note": null,
+    "sort_order": 31
+  }
+]

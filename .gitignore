@@ -1,0 +1,26 @@
+node_modules
+dist
+dist-ssr
+coverage
+*.local
+.env
+.env.*
+!.env.example
+
+# Editor / OS
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+.idea
+
+# Test artefacts
+/test-results
+/playwright-report
+/playwright/.cache
+.playwright-mcp
+
+# Python venv for icon-font subsetting (scripts/subset-icons.py)
+.venv-fonttools/
+
+# TS build info
+*.tsbuildinfo

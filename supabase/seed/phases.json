@@ -1,0 +1,47 @@
+[
+  {
+    "slug": "p1",
+    "short_label": "Phase 1",
+    "name": "Foundation → Max Strength",
+    "window_label": "Race minus ~21 weeks → minus 11 weeks",
+    "goal": "Re-groove the movements for two weeks, then get properly strong: heavy, low-rep, long rests. This is what improves running economy and late-race durability.",
+    "notes": "Weeks 1–2: moderate loads, 8s, learn the bar again. From week 3: work up to hard sets of 4–6 with 1–2 reps in reserve. Add ~2.5 kg to a lift whenever all sets are clean.",
+    "sort_order": 1
+  },
+  {
+    "slug": "p2",
+    "short_label": "Phase 2",
+    "name": "Race-Specific Strength",
+    "window_label": "Race minus 11 weeks → minus 4 weeks",
+    "goal": "Heavy lifts drop to maintenance volume; the race pack comes out. Loaded step-ups, carries and single-leg stability turn gym strength into hill strength.",
+    "notes": "Pack step-ups mimic gates, stiles and steep hauls under load. Build pack weight 6 → 10 kg across the phase. Everything stays sub-maximal — running volume is peaking.",
+    "sort_order": 2
+  },
+  {
+    "slug": "p3",
+    "short_label": "Phase 3",
+    "name": "Taper & Maintain",
+    "window_label": "Final ~26 days before race day",
+    "goal": "One short, crisp session a week keeps strength without stealing recovery. Nothing new, nothing heavy enough to cause soreness.",
+    "notes": "Last meaningful session ~10 days out. Final week: nothing beyond mobility and a few easy swings if you feel like moving.",
+    "sort_order": 3
+  },
+  {
+    "slug": "recovery",
+    "short_label": "Recovery",
+    "name": "Post-Race Recovery",
+    "window_label": "2 weeks after the race",
+    "goal": "You just raced. Walk, eat, sleep. Optional gentle upper session in week 2 if you are climbing the walls.",
+    "notes": null,
+    "sort_order": 4
+  },
+  {
+    "slug": "p4",
+    "short_label": "Phase 4",
+    "name": "Rebuild & Physique Block",
+    "window_label": "From ~2 weeks post-race",
+    "goal": "Running volume is low, so goal #2 takes the front seat: full-body training at moderate loads and reps (3×8–12), close to failure, where visible change happens. Reverts to the race structure ~14 weeks before your next A-race.",
+    "notes": "Same three days. Tue Lower, Thu Upper push-biased, Sat full-body pull-biased + core. Optional 4th short upper day if recovery is good.",
+    "sort_order": 5
+  }
+]

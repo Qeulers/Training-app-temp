@@ -1,0 +1,22 @@
+[
+  {
+    "code": "Asian",
+    "label": "Asian",
+    "sort_order": 1
+  },
+  {
+    "code": "Mexican",
+    "label": "Mexican & Latin",
+    "sort_order": 2
+  },
+  {
+    "code": "MidEast",
+    "label": "Middle East & N. Africa",
+    "sort_order": 3
+  },
+  {
+    "code": "Simple",
+    "label": "Simple & everyday",
+    "sort_order": 4
+  }
+]
