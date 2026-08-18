@@ -1,0 +1,150 @@
+/*
+ * Design tokens — single source of truth.
+ *
+ * Every value is a CSS custom property so the palette / type scale can be
+ * tweaked here without touching a single component. Tailwind (see
+ * tailwind.config.ts) maps semantic utilities to these vars, so components use
+ * `bg-surface` / `text-muted` / `text-accent` and NEVER a raw hex.
+ *
+ * Extracted verbatim from `specs/Training Planner Design System (standalone).html`.
+ * darkMode: 'class' — light is the default (:root, .light); .dark overrides.
+ */
+
+/* Self-hosted, subset Material Symbols Rounded (variable). See scripts/subset-icons.py. */
+@font-face {
+  font-family: 'Material Symbols Rounded';
+  font-style: normal;
+  font-weight: 100 700;
+  font-display: block;
+  src: url('./fonts/material-symbols-rounded-subset.woff2') format('woff2');
+}
+
+:root,
+.light {
+  /* Surfaces & structure */
+  --color-bg: #f3f5f0;
+  --color-surface: #ffffff;
+  --color-surface-raised: #ffffff;
+  --color-border: #e0e4db;
+  --color-border-strong: #c4cbbe;
+
+  /* Text */
+  --color-text: #141917;
+  --color-text-muted: #556058;
+  --color-text-dim: #6f7a70;
+
+  /* Accents & states */
+  --color-accent: #3f6b2c;
+  --color-accent-ink: #ffffff;
+  --color-success: #3f6b2c;
+  --color-warning: #8a6410;
+  --color-danger: #a63a22;
+  --color-food: #4c6070;
+}
+
+.dark {
+  --color-bg: #0e1211;
+  --color-surface: #161b19;
+  --color-surface-raised: #1e2523;
+  --color-border: #2a322f;
+  --color-border-strong: #3a443f;
+
+  --color-text: #eef0ea;
+  --color-text-muted: #a3ada5;
+  --color-text-dim: #7c867d;
+
+  --color-accent: #7fa86b;
+  --color-accent-ink: #0e1211;
+  --color-success: #7fa86b;
+  --color-warning: #d9a02b;
+  --color-danger: #c9553d;
+  --color-food: #8fa0ae;
+}
+
+:root {
+  /* Type scale (px) */
+  --fs-display-xl: 64px;
+  --fs-display: 40px;
+  --fs-data: 17px;
+  --fs-body: 15px;
+  --fs-body-sm: 13px;
+  --fs-meta: 11.5px;
+  --fs-label: 11px;
+
+  /* Fonts (self-hosted via @fontsource, imported in main.tsx) */
+  --font-display: 'Archivo Narrow', system-ui, sans-serif;
+  --font-body: 'Archivo', system-ui, sans-serif;
+  --font-icon: 'Material Symbols Rounded';
+
+  /* Radii */
+  --r-sm: 4px;
+  --r-md: 6px;
+  --r-lg: 8px;
+  --r-xl: 12px;
+  --r-full: 999px;
+
+  /* Layout */
+  --content-max: 760px;
+  --sidebar-w: 220px;
+  --rail-w: 72px;
+  --tap-min: 44px;
+
+  /* Motion */
+  --dur-fast: 120ms;
+  --dur-base: 200ms;
+  --dur-slow: 320ms;
+  --ease: cubic-bezier(0.2, 0.8, 0.25, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur-fast: 0ms;
+    --dur-base: 0ms;
+    --dur-slow: 0ms;
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+  }
+  body {
+    margin: 0;
+    min-height: 100vh;
+  }
+
+  /*
+   * Material Symbols Rounded — the design system's icon set (see Icon.tsx).
+   * Optical alignment: icons sit on the text baseline and never shrink in a
+   * flex row. FILL/wght/opsz are driven per-instance via inline
+   * font-variation-settings from the Icon component.
+   */
+  .material-symbols-rounded {
+    font-family: 'Material Symbols Rounded';
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24;
+    vertical-align: middle;
+    user-select: none;
+    flex-shrink: 0;
+  }
+}

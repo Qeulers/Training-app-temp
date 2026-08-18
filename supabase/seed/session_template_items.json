@@ -1,0 +1,446 @@
+[
+  {
+    "session_template_slug": "p1__lowerA",
+    "exercise_slug": "gobletsquat",
+    "prescription": "2×8 light (warm-up)",
+    "sort_order": 1
+  },
+  {
+    "session_template_slug": "p1__lowerA",
+    "exercise_slug": "backsquat",
+    "prescription": "W1–2: 3×8 mod · then 4×4–6 heavy",
+    "sort_order": 2
+  },
+  {
+    "session_template_slug": "p1__lowerA",
+    "exercise_slug": "rdl",
+    "prescription": "3×6",
+    "sort_order": 3
+  },
+  {
+    "session_template_slug": "p1__lowerA",
+    "exercise_slug": "bss",
+    "prescription": "3×6 / leg",
+    "sort_order": 4
+  },
+  {
+    "session_template_slug": "p1__lowerA",
+    "exercise_slug": "calfraise",
+    "prescription": "3×10 slow (slant board)",
+    "sort_order": 5
+  },
+  {
+    "session_template_slug": "p1__lowerA",
+    "exercise_slug": "soleusraise",
+    "prescription": "2×15 bent-knee",
+    "sort_order": 6
+  },
+  {
+    "session_template_slug": "p1__lowerA",
+    "exercise_slug": "tib",
+    "prescription": "2×15",
+    "sort_order": 7
+  },
+  {
+    "session_template_slug": "p1__lowerA",
+    "exercise_slug": "pallof",
+    "prescription": "2×10 / side",
+    "sort_order": 8
+  },
+  {
+    "session_template_slug": "p1__upper",
+    "exercise_slug": "pullup",
+    "prescription": "4 × max−2 (band OK)",
+    "sort_order": 1
+  },
+  {
+    "session_template_slug": "p1__upper",
+    "exercise_slug": "ohp",
+    "prescription": "3×8",
+    "sort_order": 2
+  },
+  {
+    "session_template_slug": "p1__upper",
+    "exercise_slug": "dbbench",
+    "prescription": "3×8–10",
+    "sort_order": 3
+  },
+  {
+    "session_template_slug": "p1__upper",
+    "exercise_slug": "sarow",
+    "prescription": "3×10 / side",
+    "sort_order": 4
+  },
+  {
+    "session_template_slug": "p1__upper",
+    "exercise_slug": "trxrow",
+    "prescription": "2×12",
+    "sort_order": 5
+  },
+  {
+    "session_template_slug": "p1__upper",
+    "exercise_slug": "armfinisher",
+    "prescription": "2×12 superset",
+    "sort_order": 6
+  },
+  {
+    "session_template_slug": "p1__upper",
+    "exercise_slug": "hangknee",
+    "prescription": "2×10",
+    "sort_order": 7
+  },
+  {
+    "session_template_slug": "p1__lowerB",
+    "exercise_slug": "kbswing",
+    "prescription": "3×12",
+    "sort_order": 1
+  },
+  {
+    "session_template_slug": "p1__lowerB",
+    "exercise_slug": "stepup",
+    "prescription": "3×8 / leg (16→18in)",
+    "sort_order": 2
+  },
+  {
+    "session_template_slug": "p1__lowerB",
+    "exercise_slug": "stepdown",
+    "prescription": "W1–2: 1×4 / leg bodyweight, 16in · then 2×6, 4 s lowers",
+    "sort_order": 3
+  },
+  {
+    "session_template_slug": "p1__lowerB",
+    "exercise_slug": "slrdl",
+    "prescription": "3×8 / leg",
+    "sort_order": 4
+  },
+  {
+    "session_template_slug": "p1__lowerB",
+    "exercise_slug": "latlunge",
+    "prescription": "2×8 / side",
+    "sort_order": 5
+  },
+  {
+    "session_template_slug": "p1__lowerB",
+    "exercise_slug": "suitcasemarch",
+    "prescription": "3×40 s / side",
+    "sort_order": 6
+  },
+  {
+    "session_template_slug": "p1__lowerB",
+    "exercise_slug": "sideplank",
+    "prescription": "2×30 s / side",
+    "sort_order": 7
+  },
+  {
+    "session_template_slug": "p1__lowerB",
+    "exercise_slug": "ankleiso",
+    "prescription": "1 circuit",
+    "sort_order": 8
+  },
+  {
+    "session_template_slug": "p2__lowerA",
+    "exercise_slug": "gobletsquat",
+    "prescription": "2×8 light (warm-up)",
+    "sort_order": 1
+  },
+  {
+    "session_template_slug": "p2__lowerA",
+    "exercise_slug": "backsquat",
+    "prescription": "3×3–5 heavy, crisp",
+    "sort_order": 2
+  },
+  {
+    "session_template_slug": "p2__lowerA",
+    "exercise_slug": "rdl",
+    "prescription": "2×5",
+    "sort_order": 3
+  },
+  {
+    "session_template_slug": "p2__lowerA",
+    "exercise_slug": "bss",
+    "prescription": "2×6 / leg",
+    "sort_order": 4
+  },
+  {
+    "session_template_slug": "p2__lowerA",
+    "exercise_slug": "calfraise",
+    "prescription": "2×10 single-leg (slant board)",
+    "sort_order": 5
+  },
+  {
+    "session_template_slug": "p2__lowerA",
+    "exercise_slug": "soleusraise",
+    "prescription": "2×15 bent-knee",
+    "sort_order": 6
+  },
+  {
+    "session_template_slug": "p2__lowerA",
+    "exercise_slug": "tib",
+    "prescription": "2×15",
+    "sort_order": 7
+  },
+  {
+    "session_template_slug": "p2__upper",
+    "exercise_slug": "pullup",
+    "prescription": "4 × max−2",
+    "sort_order": 1
+  },
+  {
+    "session_template_slug": "p2__upper",
+    "exercise_slug": "ohp",
+    "prescription": "3×8",
+    "sort_order": 2
+  },
+  {
+    "session_template_slug": "p2__upper",
+    "exercise_slug": "dbbench",
+    "prescription": "3×8",
+    "sort_order": 3
+  },
+  {
+    "session_template_slug": "p2__upper",
+    "exercise_slug": "sarow",
+    "prescription": "3×10 / side",
+    "sort_order": 4
+  },
+  {
+    "session_template_slug": "p2__upper",
+    "exercise_slug": "armfinisher",
+    "prescription": "2×12 superset",
+    "sort_order": 5
+  },
+  {
+    "session_template_slug": "p2__upper",
+    "exercise_slug": "hangknee",
+    "prescription": "2×10",
+    "sort_order": 6
+  },
+  {
+    "session_template_slug": "p2__race",
+    "exercise_slug": "packstepup",
+    "prescription": "4×10 / leg, 18in, pack 6→10 kg",
+    "sort_order": 1
+  },
+  {
+    "session_template_slug": "p2__race",
+    "exercise_slug": "stepdown",
+    "prescription": "3×6 / leg, 4 s lowers, vest (only if Sundays stayed clean)",
+    "sort_order": 2
+  },
+  {
+    "session_template_slug": "p2__race",
+    "exercise_slug": "slrdl",
+    "prescription": "3×8 / leg",
+    "sort_order": 3
+  },
+  {
+    "session_template_slug": "p2__race",
+    "exercise_slug": "frontrackmarch",
+    "prescription": "3×45 s",
+    "sort_order": 4
+  },
+  {
+    "session_template_slug": "p2__race",
+    "exercise_slug": "suitcasehold",
+    "prescription": "2×40 s / side, heavy",
+    "sort_order": 5
+  },
+  {
+    "session_template_slug": "p2__race",
+    "exercise_slug": "latlunge",
+    "prescription": "2×8 / side",
+    "sort_order": 6
+  },
+  {
+    "session_template_slug": "p2__race",
+    "exercise_slug": "pallof",
+    "prescription": "2×10 / side",
+    "sort_order": 7
+  },
+  {
+    "session_template_slug": "p2__race",
+    "exercise_slug": "sideplank",
+    "prescription": "2×40 s / side",
+    "sort_order": 8
+  },
+  {
+    "session_template_slug": "p2__race",
+    "exercise_slug": "ankleiso",
+    "prescription": "1 circuit",
+    "sort_order": 9
+  },
+  {
+    "session_template_slug": "p3__maintain",
+    "exercise_slug": "gobletsquat",
+    "prescription": "2×8 light",
+    "sort_order": 1
+  },
+  {
+    "session_template_slug": "p3__maintain",
+    "exercise_slug": "backsquat",
+    "prescription": "2×3–5 moderate",
+    "sort_order": 2
+  },
+  {
+    "session_template_slug": "p3__maintain",
+    "exercise_slug": "stepup",
+    "prescription": "2×8 / leg light, 16in",
+    "sort_order": 3
+  },
+  {
+    "session_template_slug": "p3__maintain",
+    "exercise_slug": "pullup",
+    "prescription": "2 × easy sets",
+    "sort_order": 4
+  },
+  {
+    "session_template_slug": "p3__maintain",
+    "exercise_slug": "suitcasemarch",
+    "prescription": "2×30 s / side, light",
+    "sort_order": 5
+  },
+  {
+    "session_template_slug": "p3__maintain",
+    "exercise_slug": "birddog",
+    "prescription": "2×8 slow",
+    "sort_order": 6
+  },
+  {
+    "session_template_slug": "recovery__easyupper",
+    "exercise_slug": "trxrow",
+    "prescription": "2×12 easy",
+    "sort_order": 1
+  },
+  {
+    "session_template_slug": "recovery__easyupper",
+    "exercise_slug": "pushacc",
+    "prescription": "2×10 easy",
+    "sort_order": 2
+  },
+  {
+    "session_template_slug": "recovery__easyupper",
+    "exercise_slug": "ohp",
+    "prescription": "2×10 light",
+    "sort_order": 3
+  },
+  {
+    "session_template_slug": "recovery__easyupper",
+    "exercise_slug": "deadbug",
+    "prescription": "2×10",
+    "sort_order": 4
+  },
+  {
+    "session_template_slug": "p4__p4lower",
+    "exercise_slug": "backsquat",
+    "prescription": "4×8",
+    "sort_order": 1
+  },
+  {
+    "session_template_slug": "p4__p4lower",
+    "exercise_slug": "rdl",
+    "prescription": "3×10",
+    "sort_order": 2
+  },
+  {
+    "session_template_slug": "p4__p4lower",
+    "exercise_slug": "bss",
+    "prescription": "3×10 / leg",
+    "sort_order": 3
+  },
+  {
+    "session_template_slug": "p4__p4lower",
+    "exercise_slug": "kbswing",
+    "prescription": "3×15",
+    "sort_order": 4
+  },
+  {
+    "session_template_slug": "p4__p4lower",
+    "exercise_slug": "calfraise",
+    "prescription": "3×12 single-leg (slant board)",
+    "sort_order": 5
+  },
+  {
+    "session_template_slug": "p4__p4lower",
+    "exercise_slug": "soleusraise",
+    "prescription": "3×15 bent-knee, loaded",
+    "sort_order": 6
+  },
+  {
+    "session_template_slug": "p4__p4lower",
+    "exercise_slug": "tib",
+    "prescription": "2×20",
+    "sort_order": 7
+  },
+  {
+    "session_template_slug": "p4__p4push",
+    "exercise_slug": "dbbench",
+    "prescription": "4×8–12",
+    "sort_order": 1
+  },
+  {
+    "session_template_slug": "p4__p4push",
+    "exercise_slug": "ohp",
+    "prescription": "3×8–12",
+    "sort_order": 2
+  },
+  {
+    "session_template_slug": "p4__p4push",
+    "exercise_slug": "pushacc",
+    "prescription": "3×10–15",
+    "sort_order": 3
+  },
+  {
+    "session_template_slug": "p4__p4push",
+    "exercise_slug": "pullup",
+    "prescription": "3 × max−1",
+    "sort_order": 4
+  },
+  {
+    "session_template_slug": "p4__p4push",
+    "exercise_slug": "armfinisher",
+    "prescription": "3×12 superset",
+    "sort_order": 5
+  },
+  {
+    "session_template_slug": "p4__p4push",
+    "exercise_slug": "pallof",
+    "prescription": "2×10 / side",
+    "sort_order": 6
+  },
+  {
+    "session_template_slug": "p4__p4pull",
+    "exercise_slug": "sarow",
+    "prescription": "4×10 / side",
+    "sort_order": 1
+  },
+  {
+    "session_template_slug": "p4__p4pull",
+    "exercise_slug": "trxrow",
+    "prescription": "3×12–15",
+    "sort_order": 2
+  },
+  {
+    "session_template_slug": "p4__p4pull",
+    "exercise_slug": "stepup",
+    "prescription": "3×10 / leg, 18in + vest",
+    "sort_order": 3
+  },
+  {
+    "session_template_slug": "p4__p4pull",
+    "exercise_slug": "frontrackmarch",
+    "prescription": "3×45 s",
+    "sort_order": 4
+  },
+  {
+    "session_template_slug": "p4__p4pull",
+    "exercise_slug": "hangknee",
+    "prescription": "3×10",
+    "sort_order": 5
+  },
+  {
+    "session_template_slug": "p4__p4pull",
+    "exercise_slug": "sideplank",
+    "prescription": "2×45 s / side",
+    "sort_order": 6
+  }
+]

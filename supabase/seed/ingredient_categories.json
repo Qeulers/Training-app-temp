@@ -1,0 +1,32 @@
+[
+  {
+    "code": "P",
+    "label": "Protein",
+    "sort_order": 1
+  },
+  {
+    "code": "V",
+    "label": "Veg & fruit",
+    "sort_order": 2
+  },
+  {
+    "code": "F",
+    "label": "Fresh aromatics & herbs",
+    "sort_order": 3
+  },
+  {
+    "code": "S",
+    "label": "Pantry & sauces",
+    "sort_order": 4
+  },
+  {
+    "code": "D",
+    "label": "Dairy & eggs",
+    "sort_order": 5
+  },
+  {
+    "code": "N",
+    "label": "Noodles, rice & grains",
+    "sort_order": 6
+  }
+]

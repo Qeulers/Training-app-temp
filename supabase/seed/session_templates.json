@@ -1,0 +1,112 @@
+[
+  {
+    "slug": "p1__lowerA",
+    "phase_slug": "p1",
+    "session_key": "lowerA",
+    "name": "Lower A — Heavy Strength",
+    "day_of_week": 2,
+    "duration_label": "~55 min",
+    "brief": "The money session. Warm up properly, lift heavy, leave crisp.",
+    "sort_order": 1
+  },
+  {
+    "slug": "p1__upper",
+    "phase_slug": "p1",
+    "session_key": "upper",
+    "name": "Upper — Build",
+    "day_of_week": 4,
+    "duration_label": "~50 min",
+    "brief": "Push/pull balance, moderate reps, 1–2 in reserve. Zero cost to the legs.",
+    "sort_order": 2
+  },
+  {
+    "slug": "p1__lowerB",
+    "phase_slug": "p1",
+    "session_key": "lowerB",
+    "name": "Lower B + Core — Durability",
+    "day_of_week": 6,
+    "duration_label": "~40 min",
+    "brief": "Sub-maximal by design. Quality movement; protect tomorrow’s long run.",
+    "sort_order": 3
+  },
+  {
+    "slug": "p2__lowerA",
+    "phase_slug": "p2",
+    "session_key": "lowerA",
+    "name": "Lower A — Heavy Maintenance",
+    "day_of_week": 2,
+    "duration_label": "~45 min",
+    "brief": "Strength stays, volume drops — running is peaking.",
+    "sort_order": 1
+  },
+  {
+    "slug": "p2__upper",
+    "phase_slug": "p2",
+    "session_key": "upper",
+    "name": "Upper — Build",
+    "day_of_week": 4,
+    "duration_label": "~45 min",
+    "brief": "Unchanged — this session never interferes.",
+    "sort_order": 2
+  },
+  {
+    "slug": "p2__race",
+    "phase_slug": "p2",
+    "session_key": "race",
+    "name": "Race Builder — Pack & Carry",
+    "day_of_week": 6,
+    "duration_label": "~45 min",
+    "brief": "The race in miniature: load, climb, descend, carry, stabilise.",
+    "sort_order": 3
+  },
+  {
+    "slug": "p3__maintain",
+    "phase_slug": "p3",
+    "session_key": "maintain",
+    "name": "Taper — Maintain",
+    "day_of_week": 2,
+    "duration_label": "~30 min",
+    "brief": "One crisp session a week. Nothing that causes soreness. Last real session ~10 days out.",
+    "sort_order": 1
+  },
+  {
+    "slug": "recovery__easyupper",
+    "phase_slug": "recovery",
+    "session_key": "easyupper",
+    "name": "Optional — Easy Upper",
+    "day_of_week": 4,
+    "duration_label": "~30 min",
+    "brief": "Week 2 post-race only, and only if you genuinely want to move.",
+    "sort_order": 1
+  },
+  {
+    "slug": "p4__p4lower",
+    "phase_slug": "p4",
+    "session_key": "p4lower",
+    "name": "Lower — Strength & Shape",
+    "day_of_week": 2,
+    "duration_label": "~55 min",
+    "brief": "Hypertrophy dial up: 8–12 reps, close to failure, full range.",
+    "sort_order": 1
+  },
+  {
+    "slug": "p4__p4push",
+    "phase_slug": "p4",
+    "session_key": "p4push",
+    "name": "Upper — Push Bias",
+    "day_of_week": 4,
+    "duration_label": "~55 min",
+    "brief": "Press-heavy day. Chase clean reps, add small weight often.",
+    "sort_order": 2
+  },
+  {
+    "slug": "p4__p4pull",
+    "phase_slug": "p4",
+    "session_key": "p4pull",
+    "name": "Full Body — Pull Bias + Core",
+    "day_of_week": 6,
+    "duration_label": "~55 min",
+    "brief": "Back, hinge and trunk. Optional 4th short upper day mid-week if recovery is good.",
+    "sort_order": 3
+  }
+]

@@ -1,0 +1,137 @@
+[
+  {
+    "phase_slug": "p1",
+    "slot_key": "sa_tue",
+    "day_of_week": 2,
+    "sauna_type_slug": "strength",
+    "is_optional": true,
+    "note": "After Lower A. Skip if the session was brutal.",
+    "sort_order": 1
+  },
+  {
+    "phase_slug": "p1",
+    "slot_key": "sa_thu",
+    "day_of_week": 4,
+    "sauna_type_slug": "recov",
+    "is_optional": true,
+    "note": "Easy day, easy heat.",
+    "sort_order": 2
+  },
+  {
+    "phase_slug": "p1",
+    "slot_key": "sa_sun",
+    "day_of_week": 0,
+    "sauna_type_slug": "post",
+    "is_optional": false,
+    "note": "After the long run — rehydrate first, then heat.",
+    "sort_order": 3
+  },
+  {
+    "phase_slug": "p2",
+    "slot_key": "sa_tue",
+    "day_of_week": 2,
+    "sauna_type_slug": "post",
+    "is_optional": true,
+    "note": "Short only. Running volume is peaking.",
+    "sort_order": 1
+  },
+  {
+    "phase_slug": "p2",
+    "slot_key": "sa_thu",
+    "day_of_week": 4,
+    "sauna_type_slug": "recov",
+    "is_optional": true,
+    "note": null,
+    "sort_order": 2
+  },
+  {
+    "phase_slug": "p2",
+    "slot_key": "sa_sat",
+    "day_of_week": 6,
+    "sauna_type_slug": "strength",
+    "is_optional": true,
+    "note": "After the Race Builder session.",
+    "sort_order": 3
+  },
+  {
+    "phase_slug": "p2",
+    "slot_key": "sa_sun",
+    "day_of_week": 0,
+    "sauna_type_slug": "post",
+    "is_optional": false,
+    "note": "Long-run recovery slot.",
+    "sort_order": 4
+  },
+  {
+    "phase_slug": "p3",
+    "slot_key": "sa_recov",
+    "day_of_week": 4,
+    "sauna_type_slug": "recov",
+    "is_optional": true,
+    "note": "Taper: comfort only. The heat block below is what matters now.",
+    "sort_order": 1
+  },
+  {
+    "phase_slug": "p3",
+    "slot_key": "sa_sun",
+    "day_of_week": 0,
+    "sauna_type_slug": "recov",
+    "is_optional": true,
+    "note": "Keep it short and pleasant.",
+    "sort_order": 2
+  },
+  {
+    "phase_slug": "recovery",
+    "slot_key": "sa_r1",
+    "day_of_week": 3,
+    "sauna_type_slug": "recov",
+    "is_optional": true,
+    "note": "Purely for feeling better. No dose target.",
+    "sort_order": 1
+  },
+  {
+    "phase_slug": "recovery",
+    "slot_key": "sa_r2",
+    "day_of_week": 0,
+    "sauna_type_slug": "recov",
+    "is_optional": true,
+    "note": null,
+    "sort_order": 2
+  },
+  {
+    "phase_slug": "p4",
+    "slot_key": "sa_tue",
+    "day_of_week": 2,
+    "sauna_type_slug": "strength",
+    "is_optional": true,
+    "note": "After the lower session.",
+    "sort_order": 1
+  },
+  {
+    "phase_slug": "p4",
+    "slot_key": "sa_thu",
+    "day_of_week": 4,
+    "sauna_type_slug": "recov",
+    "is_optional": true,
+    "note": null,
+    "sort_order": 2
+  },
+  {
+    "phase_slug": "p4",
+    "slot_key": "sa_sat",
+    "day_of_week": 6,
+    "sauna_type_slug": "strength",
+    "is_optional": true,
+    "note": null,
+    "sort_order": 3
+  },
+  {
+    "phase_slug": "p4",
+    "slot_key": "sa_sun",
+    "day_of_week": 0,
+    "sauna_type_slug": "post",
+    "is_optional": false,
+    "note": "The one to keep if you only keep one.",
+    "sort_order": 4
+  }
+]

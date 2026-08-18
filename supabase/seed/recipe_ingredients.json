@@ -1,0 +1,5555 @@
+[
+  {
+    "recipe_slug": "gochu_tofu",
+    "ingredient_name": "firm tofu",
+    "quantity_text": "400 g",
+    "quantity_value": 400,
+    "quantity_unit": "g",
+    "category_code": "P",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "gochu_tofu",
+    "ingredient_name": "gochujang",
+    "quantity_text": "2 tbsp",
+    "quantity_value": 2,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "gochu_tofu",
+    "ingredient_name": "soy sauce",
+    "quantity_text": "2 tbsp",
+    "quantity_value": 2,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "gochu_tofu",
+    "ingredient_name": "rice vinegar",
+    "quantity_text": "1 tbsp",
+    "quantity_value": 1,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "gochu_tofu",
+    "ingredient_name": "cornflour",
+    "quantity_text": "3 tbsp",
+    "quantity_value": 3,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "gochu_tofu",
+    "ingredient_name": "broccoli",
+    "quantity_text": "1 head",
+    "quantity_value": 1,
+    "quantity_unit": "head",
+    "category_code": "V",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "gochu_tofu",
+    "ingredient_name": "spring onions",
+    "quantity_text": "3",
+    "quantity_value": 3,
+    "quantity_unit": null,
+    "category_code": "F",
+    "sort_order": 7
+  },
+  {
+    "recipe_slug": "gochu_tofu",
+    "ingredient_name": "garlic",
+    "quantity_text": "3 cloves",
+    "quantity_value": 3,
+    "quantity_unit": "cloves",
+    "category_code": "F",
+    "sort_order": 8
+  },
+  {
+    "recipe_slug": "gochu_tofu",
+    "ingredient_name": "sesame seeds",
+    "quantity_text": "1 tbsp",
+    "quantity_value": 1,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 9
+  },
+  {
+    "recipe_slug": "gochu_tofu",
+    "ingredient_name": "jasmine rice",
+    "quantity_text": "160 g",
+    "quantity_value": 160,
+    "quantity_unit": "g",
+    "category_code": "N",
+    "sort_order": 10
+  },
+  {
+    "recipe_slug": "miso_salmon",
+    "ingredient_name": "salmon fillets",
+    "quantity_text": "2",
+    "quantity_value": 2,
+    "quantity_unit": null,
+    "category_code": "P",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "miso_salmon",
+    "ingredient_name": "white miso",
+    "quantity_text": "1.5 tbsp",
+    "quantity_value": 1.5,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "miso_salmon",
+    "ingredient_name": "fresh ginger",
+    "quantity_text": "30 g",
+    "quantity_value": 30,
+    "quantity_unit": "g",
+    "category_code": "F",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "miso_salmon",
+    "ingredient_name": "maple syrup",
+    "quantity_text": "1 tbsp",
+    "quantity_value": 1,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "miso_salmon",
+    "ingredient_name": "pak choi",
+    "quantity_text": "2 heads",
+    "quantity_value": 2,
+    "quantity_unit": "heads",
+    "category_code": "V",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "miso_salmon",
+    "ingredient_name": "sweet potatoes",
+    "quantity_text": "2 large",
+    "quantity_value": 2,
+    "quantity_unit": "large",
+    "category_code": "V",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "miso_salmon",
+    "ingredient_name": "soy sauce",
+    "quantity_text": "1 tbsp",
+    "quantity_value": 1,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 7
+  },
+  {
+    "recipe_slug": "miso_salmon",
+    "ingredient_name": "lime",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 8
+  },
+  {
+    "recipe_slug": "green_curry",
+    "ingredient_name": "firm tofu",
+    "quantity_text": "400 g",
+    "quantity_value": 400,
+    "quantity_unit": "g",
+    "category_code": "P",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "green_curry",
+    "ingredient_name": "vegetarian Thai green curry paste",
+    "quantity_text": "3 tbsp",
+    "quantity_value": 3,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "green_curry",
+    "ingredient_name": "coconut milk",
+    "quantity_text": "1 tin",
+    "quantity_value": 1,
+    "quantity_unit": "tin",
+    "category_code": "S",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "green_curry",
+    "ingredient_name": "green beans",
+    "quantity_text": "200 g",
+    "quantity_value": 200,
+    "quantity_unit": "g",
+    "category_code": "V",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "green_curry",
+    "ingredient_name": "bamboo shoots",
+    "quantity_text": "1 small tin",
+    "quantity_value": 1,
+    "quantity_unit": "small tin",
+    "category_code": "S",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "green_curry",
+    "ingredient_name": "Thai basil (or basil)",
+    "quantity_text": "1 bunch",
+    "quantity_value": 1,
+    "quantity_unit": "bunch",
+    "category_code": "F",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "green_curry",
+    "ingredient_name": "lime",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 7
+  },
+  {
+    "recipe_slug": "green_curry",
+    "ingredient_name": "jasmine rice",
+    "quantity_text": "160 g",
+    "quantity_value": 160,
+    "quantity_unit": "g",
+    "category_code": "N",
+    "sort_order": 8
+  },
+  {
+    "recipe_slug": "yakitori",
+    "ingredient_name": "chicken thighs",
+    "quantity_text": "400 g",
+    "quantity_value": 400,
+    "quantity_unit": "g",
+    "category_code": "P",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "yakitori",
+    "ingredient_name": "soy sauce",
+    "quantity_text": "3 tbsp",
+    "quantity_value": 3,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "yakitori",
+    "ingredient_name": "mirin",
+    "quantity_text": "2 tbsp",
+    "quantity_value": 2,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "yakitori",
+    "ingredient_name": "fresh ginger",
+    "quantity_text": "20 g",
+    "quantity_value": 20,
+    "quantity_unit": "g",
+    "category_code": "F",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "yakitori",
+    "ingredient_name": "spring onions",
+    "quantity_text": "4",
+    "quantity_value": 4,
+    "quantity_unit": null,
+    "category_code": "F",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "yakitori",
+    "ingredient_name": "radishes",
+    "quantity_text": "6",
+    "quantity_value": 6,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "yakitori",
+    "ingredient_name": "rice vinegar",
+    "quantity_text": "1 tbsp",
+    "quantity_value": 1,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 7
+  },
+  {
+    "recipe_slug": "yakitori",
+    "ingredient_name": "jasmine rice",
+    "quantity_text": "160 g",
+    "quantity_value": 160,
+    "quantity_unit": "g",
+    "category_code": "N",
+    "sort_order": 8
+  },
+  {
+    "recipe_slug": "dandan",
+    "ingredient_name": "soy/pea mince",
+    "quantity_text": "300 g",
+    "quantity_value": 300,
+    "quantity_unit": "g",
+    "category_code": "P",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "dandan",
+    "ingredient_name": "tahini or peanut butter",
+    "quantity_text": "2 tbsp",
+    "quantity_value": 2,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "dandan",
+    "ingredient_name": "chilli oil (crispy)",
+    "quantity_text": "2 tbsp",
+    "quantity_value": 2,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "dandan",
+    "ingredient_name": "soy sauce",
+    "quantity_text": "2 tbsp",
+    "quantity_value": 2,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "dandan",
+    "ingredient_name": "Sichuan pepper (optional)",
+    "quantity_text": "1 tsp",
+    "quantity_value": 1,
+    "quantity_unit": "tsp",
+    "category_code": "S",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "dandan",
+    "ingredient_name": "wheat noodles",
+    "quantity_text": "200 g",
+    "quantity_value": 200,
+    "quantity_unit": "g",
+    "category_code": "N",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "dandan",
+    "ingredient_name": "spring greens or spinach",
+    "quantity_text": "200 g",
+    "quantity_value": 200,
+    "quantity_unit": "g",
+    "category_code": "V",
+    "sort_order": 7
+  },
+  {
+    "recipe_slug": "dandan",
+    "ingredient_name": "garlic",
+    "quantity_text": "3 cloves",
+    "quantity_value": 3,
+    "quantity_unit": "cloves",
+    "category_code": "F",
+    "sort_order": 8
+  },
+  {
+    "recipe_slug": "dandan",
+    "ingredient_name": "peanuts",
+    "quantity_text": "40 g",
+    "quantity_value": 40,
+    "quantity_unit": "g",
+    "category_code": "S",
+    "sort_order": 9
+  },
+  {
+    "recipe_slug": "lemongrass_chicken",
+    "ingredient_name": "chicken thighs",
+    "quantity_text": "400 g",
+    "quantity_value": 400,
+    "quantity_unit": "g",
+    "category_code": "P",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "lemongrass_chicken",
+    "ingredient_name": "lemongrass",
+    "quantity_text": "2 stalks",
+    "quantity_value": 2,
+    "quantity_unit": "stalks",
+    "category_code": "F",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "lemongrass_chicken",
+    "ingredient_name": "red chilli",
+    "quantity_text": "2",
+    "quantity_value": 2,
+    "quantity_unit": null,
+    "category_code": "F",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "lemongrass_chicken",
+    "ingredient_name": "fish sauce",
+    "quantity_text": "2 tsp",
+    "quantity_value": 2,
+    "quantity_unit": "tsp",
+    "category_code": "S",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "lemongrass_chicken",
+    "ingredient_name": "lime",
+    "quantity_text": "2",
+    "quantity_value": 2,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "lemongrass_chicken",
+    "ingredient_name": "carrots",
+    "quantity_text": "2",
+    "quantity_value": 2,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "lemongrass_chicken",
+    "ingredient_name": "fresh mint & coriander",
+    "quantity_text": "1 bunch each",
+    "quantity_value": 1,
+    "quantity_unit": "bunch each",
+    "category_code": "F",
+    "sort_order": 7
+  },
+  {
+    "recipe_slug": "lemongrass_chicken",
+    "ingredient_name": "jasmine rice",
+    "quantity_text": "160 g",
+    "quantity_value": 160,
+    "quantity_unit": "g",
+    "category_code": "N",
+    "sort_order": 8
+  },
+  {
+    "recipe_slug": "lemongrass_chicken",
+    "ingredient_name": "brown sugar",
+    "quantity_text": "1 tbsp",
+    "quantity_value": 1,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 9
+  },
+  {
+    "recipe_slug": "kimchi_rice",
+    "ingredient_name": "kimchi",
+    "quantity_text": "200 g",
+    "quantity_value": 200,
+    "quantity_unit": "g",
+    "category_code": "S",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "kimchi_rice",
+    "ingredient_name": "eggs",
+    "quantity_text": "2",
+    "quantity_value": 2,
+    "quantity_unit": null,
+    "category_code": "D",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "kimchi_rice",
+    "ingredient_name": "cooked/day-old rice",
+    "quantity_text": "400 g",
+    "quantity_value": 400,
+    "quantity_unit": "g",
+    "category_code": "N",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "kimchi_rice",
+    "ingredient_name": "spring onions",
+    "quantity_text": "3",
+    "quantity_value": 3,
+    "quantity_unit": null,
+    "category_code": "F",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "kimchi_rice",
+    "ingredient_name": "sesame oil",
+    "quantity_text": "1 tbsp",
+    "quantity_value": 1,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "kimchi_rice",
+    "ingredient_name": "soy sauce",
+    "quantity_text": "1 tbsp",
+    "quantity_value": 1,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "kimchi_rice",
+    "ingredient_name": "frozen peas",
+    "quantity_text": "100 g",
+    "quantity_value": 100,
+    "quantity_unit": "g",
+    "category_code": "V",
+    "sort_order": 7
+  },
+  {
+    "recipe_slug": "saltpepper_tofu",
+    "ingredient_name": "firm tofu",
+    "quantity_text": "400 g",
+    "quantity_value": 400,
+    "quantity_unit": "g",
+    "category_code": "P",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "saltpepper_tofu",
+    "ingredient_name": "cornflour",
+    "quantity_text": "4 tbsp",
+    "quantity_value": 4,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "saltpepper_tofu",
+    "ingredient_name": "garlic",
+    "quantity_text": "4 cloves",
+    "quantity_value": 4,
+    "quantity_unit": "cloves",
+    "category_code": "F",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "saltpepper_tofu",
+    "ingredient_name": "red chilli",
+    "quantity_text": "2",
+    "quantity_value": 2,
+    "quantity_unit": null,
+    "category_code": "F",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "saltpepper_tofu",
+    "ingredient_name": "spring onions",
+    "quantity_text": "3",
+    "quantity_value": 3,
+    "quantity_unit": null,
+    "category_code": "F",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "saltpepper_tofu",
+    "ingredient_name": "tenderstem broccoli",
+    "quantity_text": "200 g",
+    "quantity_value": 200,
+    "quantity_unit": "g",
+    "category_code": "V",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "saltpepper_tofu",
+    "ingredient_name": "Chinese five spice",
+    "quantity_text": "1 tsp",
+    "quantity_value": 1,
+    "quantity_unit": "tsp",
+    "category_code": "S",
+    "sort_order": 7
+  },
+  {
+    "recipe_slug": "saltpepper_tofu",
+    "ingredient_name": "jasmine rice",
+    "quantity_text": "160 g",
+    "quantity_value": 160,
+    "quantity_unit": "g",
+    "category_code": "N",
+    "sort_order": 8
+  },
+  {
+    "recipe_slug": "teriyaki_fish",
+    "ingredient_name": "white fish fillets (cod/haddock)",
+    "quantity_text": "2",
+    "quantity_value": 2,
+    "quantity_unit": null,
+    "category_code": "P",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "teriyaki_fish",
+    "ingredient_name": "soy sauce",
+    "quantity_text": "3 tbsp",
+    "quantity_value": 3,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "teriyaki_fish",
+    "ingredient_name": "mirin",
+    "quantity_text": "2 tbsp",
+    "quantity_value": 2,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "teriyaki_fish",
+    "ingredient_name": "fresh ginger",
+    "quantity_text": "20 g",
+    "quantity_value": 20,
+    "quantity_unit": "g",
+    "category_code": "F",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "teriyaki_fish",
+    "ingredient_name": "spring greens",
+    "quantity_text": "200 g",
+    "quantity_value": 200,
+    "quantity_unit": "g",
+    "category_code": "V",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "teriyaki_fish",
+    "ingredient_name": "sesame seeds",
+    "quantity_text": "1 tbsp",
+    "quantity_value": 1,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "teriyaki_fish",
+    "ingredient_name": "jasmine rice",
+    "quantity_text": "160 g",
+    "quantity_value": 160,
+    "quantity_unit": "g",
+    "category_code": "N",
+    "sort_order": 7
+  },
+  {
+    "recipe_slug": "mapo",
+    "ingredient_name": "tofu (medium/firm)",
+    "quantity_text": "450 g",
+    "quantity_value": 450,
+    "quantity_unit": "g",
+    "category_code": "P",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "mapo",
+    "ingredient_name": "soy/pea mince",
+    "quantity_text": "150 g",
+    "quantity_value": 150,
+    "quantity_unit": "g",
+    "category_code": "P",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "mapo",
+    "ingredient_name": "doubanjiang (chilli bean paste)",
+    "quantity_text": "2 tbsp",
+    "quantity_value": 2,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "mapo",
+    "ingredient_name": "Sichuan pepper",
+    "quantity_text": "1 tsp",
+    "quantity_value": 1,
+    "quantity_unit": "tsp",
+    "category_code": "S",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "mapo",
+    "ingredient_name": "garlic",
+    "quantity_text": "3 cloves",
+    "quantity_value": 3,
+    "quantity_unit": "cloves",
+    "category_code": "F",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "mapo",
+    "ingredient_name": "fresh ginger",
+    "quantity_text": "20 g",
+    "quantity_value": 20,
+    "quantity_unit": "g",
+    "category_code": "F",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "mapo",
+    "ingredient_name": "spring onions",
+    "quantity_text": "3",
+    "quantity_value": 3,
+    "quantity_unit": null,
+    "category_code": "F",
+    "sort_order": 7
+  },
+  {
+    "recipe_slug": "mapo",
+    "ingredient_name": "cornflour",
+    "quantity_text": "1 tbsp",
+    "quantity_value": 1,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 8
+  },
+  {
+    "recipe_slug": "mapo",
+    "ingredient_name": "jasmine rice",
+    "quantity_text": "160 g",
+    "quantity_value": 160,
+    "quantity_unit": "g",
+    "category_code": "N",
+    "sort_order": 9
+  },
+  {
+    "recipe_slug": "singapore",
+    "ingredient_name": "rice vermicelli",
+    "quantity_text": "150 g",
+    "quantity_value": 150,
+    "quantity_unit": "g",
+    "category_code": "N",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "singapore",
+    "ingredient_name": "eggs",
+    "quantity_text": "3",
+    "quantity_value": 3,
+    "quantity_unit": null,
+    "category_code": "D",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "singapore",
+    "ingredient_name": "curry powder",
+    "quantity_text": "1 tbsp",
+    "quantity_value": 1,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "singapore",
+    "ingredient_name": "red pepper",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "singapore",
+    "ingredient_name": "beansprouts",
+    "quantity_text": "200 g",
+    "quantity_value": 200,
+    "quantity_unit": "g",
+    "category_code": "V",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "singapore",
+    "ingredient_name": "spring onions",
+    "quantity_text": "3",
+    "quantity_value": 3,
+    "quantity_unit": null,
+    "category_code": "F",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "singapore",
+    "ingredient_name": "soy sauce",
+    "quantity_text": "2 tbsp",
+    "quantity_value": 2,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 7
+  },
+  {
+    "recipe_slug": "singapore",
+    "ingredient_name": "frozen peas",
+    "quantity_text": "100 g",
+    "quantity_value": 100,
+    "quantity_unit": "g",
+    "category_code": "V",
+    "sort_order": 8
+  },
+  {
+    "recipe_slug": "massaman",
+    "ingredient_name": "sweet potatoes",
+    "quantity_text": "3 large",
+    "quantity_value": 3,
+    "quantity_unit": "large",
+    "category_code": "V",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "massaman",
+    "ingredient_name": "firm tofu",
+    "quantity_text": "300 g",
+    "quantity_value": 300,
+    "quantity_unit": "g",
+    "category_code": "P",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "massaman",
+    "ingredient_name": "massaman or mild Thai curry paste",
+    "quantity_text": "3 tbsp",
+    "quantity_value": 3,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "massaman",
+    "ingredient_name": "coconut milk",
+    "quantity_text": "1 tin",
+    "quantity_value": 1,
+    "quantity_unit": "tin",
+    "category_code": "S",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "massaman",
+    "ingredient_name": "peanuts",
+    "quantity_text": "60 g",
+    "quantity_value": 60,
+    "quantity_unit": "g",
+    "category_code": "S",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "massaman",
+    "ingredient_name": "onion",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "massaman",
+    "ingredient_name": "jasmine rice",
+    "quantity_text": "160 g",
+    "quantity_value": 160,
+    "quantity_unit": "g",
+    "category_code": "N",
+    "sort_order": 7
+  },
+  {
+    "recipe_slug": "massaman",
+    "ingredient_name": "lime",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 8
+  },
+  {
+    "recipe_slug": "bibimbap",
+    "ingredient_name": "firm tofu",
+    "quantity_text": "300 g",
+    "quantity_value": 300,
+    "quantity_unit": "g",
+    "category_code": "P",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "bibimbap",
+    "ingredient_name": "eggs",
+    "quantity_text": "2",
+    "quantity_value": 2,
+    "quantity_unit": null,
+    "category_code": "D",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "bibimbap",
+    "ingredient_name": "spinach",
+    "quantity_text": "200 g",
+    "quantity_value": 200,
+    "quantity_unit": "g",
+    "category_code": "V",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "bibimbap",
+    "ingredient_name": "carrots",
+    "quantity_text": "2",
+    "quantity_value": 2,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "bibimbap",
+    "ingredient_name": "courgette",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "bibimbap",
+    "ingredient_name": "gochujang",
+    "quantity_text": "2 tbsp",
+    "quantity_value": 2,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "bibimbap",
+    "ingredient_name": "sesame oil",
+    "quantity_text": "1 tbsp",
+    "quantity_value": 1,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 7
+  },
+  {
+    "recipe_slug": "bibimbap",
+    "ingredient_name": "garlic",
+    "quantity_text": "2 cloves",
+    "quantity_value": 2,
+    "quantity_unit": "cloves",
+    "category_code": "F",
+    "sort_order": 8
+  },
+  {
+    "recipe_slug": "bibimbap",
+    "ingredient_name": "jasmine rice",
+    "quantity_text": "160 g",
+    "quantity_value": 160,
+    "quantity_unit": "g",
+    "category_code": "N",
+    "sort_order": 9
+  },
+  {
+    "recipe_slug": "soba",
+    "ingredient_name": "soba noodles",
+    "quantity_text": "180 g",
+    "quantity_value": 180,
+    "quantity_unit": "g",
+    "category_code": "N",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "soba",
+    "ingredient_name": "frozen edamame",
+    "quantity_text": "200 g",
+    "quantity_value": 200,
+    "quantity_unit": "g",
+    "category_code": "P",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "soba",
+    "ingredient_name": "white miso",
+    "quantity_text": "1.5 tbsp",
+    "quantity_value": 1.5,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "soba",
+    "ingredient_name": "tahini",
+    "quantity_text": "1 tbsp",
+    "quantity_value": 1,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "soba",
+    "ingredient_name": "rice vinegar",
+    "quantity_text": "1 tbsp",
+    "quantity_value": 1,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "soba",
+    "ingredient_name": "spring greens or kale",
+    "quantity_text": "150 g",
+    "quantity_value": 150,
+    "quantity_unit": "g",
+    "category_code": "V",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "soba",
+    "ingredient_name": "nori or sesame seeds",
+    "quantity_text": "1 tbsp",
+    "quantity_value": 1,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 7
+  },
+  {
+    "recipe_slug": "sichuan_aub",
+    "ingredient_name": "aubergines",
+    "quantity_text": "2",
+    "quantity_value": 2,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "sichuan_aub",
+    "ingredient_name": "doubanjiang or chilli oil",
+    "quantity_text": "2 tbsp",
+    "quantity_value": 2,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "sichuan_aub",
+    "ingredient_name": "black rice vinegar (or rice vinegar)",
+    "quantity_text": "1.5 tbsp",
+    "quantity_value": 1.5,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "sichuan_aub",
+    "ingredient_name": "soy sauce",
+    "quantity_text": "2 tbsp",
+    "quantity_value": 2,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "sichuan_aub",
+    "ingredient_name": "garlic",
+    "quantity_text": "4 cloves",
+    "quantity_value": 4,
+    "quantity_unit": "cloves",
+    "category_code": "F",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "sichuan_aub",
+    "ingredient_name": "fresh ginger",
+    "quantity_text": "20 g",
+    "quantity_value": 20,
+    "quantity_unit": "g",
+    "category_code": "F",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "sichuan_aub",
+    "ingredient_name": "spring onions",
+    "quantity_text": "2",
+    "quantity_value": 2,
+    "quantity_unit": null,
+    "category_code": "F",
+    "sort_order": 7
+  },
+  {
+    "recipe_slug": "sichuan_aub",
+    "ingredient_name": "jasmine rice",
+    "quantity_text": "160 g",
+    "quantity_value": 160,
+    "quantity_unit": "g",
+    "category_code": "N",
+    "sort_order": 8
+  },
+  {
+    "recipe_slug": "sichuan_aub",
+    "ingredient_name": "sesame seeds",
+    "quantity_text": "1 tbsp",
+    "quantity_value": 1,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 9
+  },
+  {
+    "recipe_slug": "seabass",
+    "ingredient_name": "sea bass fillets",
+    "quantity_text": "2",
+    "quantity_value": 2,
+    "quantity_unit": null,
+    "category_code": "P",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "seabass",
+    "ingredient_name": "fresh ginger",
+    "quantity_text": "40 g",
+    "quantity_value": 40,
+    "quantity_unit": "g",
+    "category_code": "F",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "seabass",
+    "ingredient_name": "spring onions",
+    "quantity_text": "4",
+    "quantity_value": 4,
+    "quantity_unit": null,
+    "category_code": "F",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "seabass",
+    "ingredient_name": "soy sauce",
+    "quantity_text": "2 tbsp",
+    "quantity_value": 2,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "seabass",
+    "ingredient_name": "pak choi",
+    "quantity_text": "2 heads",
+    "quantity_value": 2,
+    "quantity_unit": "heads",
+    "category_code": "V",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "seabass",
+    "ingredient_name": "jasmine rice",
+    "quantity_text": "160 g",
+    "quantity_value": 160,
+    "quantity_unit": "g",
+    "category_code": "N",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "seabass",
+    "ingredient_name": "neutral oil",
+    "quantity_text": "2 tbsp",
+    "quantity_value": 2,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 7
+  },
+  {
+    "recipe_slug": "paneer_tikka",
+    "ingredient_name": "paneer",
+    "quantity_text": "450 g",
+    "quantity_value": 450,
+    "quantity_unit": "g",
+    "category_code": "D",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "paneer_tikka",
+    "ingredient_name": "natural yogurt",
+    "quantity_text": "200 g",
+    "quantity_value": 200,
+    "quantity_unit": "g",
+    "category_code": "D",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "paneer_tikka",
+    "ingredient_name": "tikka spice paste or garam masala mix",
+    "quantity_text": "2 tbsp",
+    "quantity_value": 2,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "paneer_tikka",
+    "ingredient_name": "peppers",
+    "quantity_text": "2",
+    "quantity_value": 2,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "paneer_tikka",
+    "ingredient_name": "red onion",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "paneer_tikka",
+    "ingredient_name": "tomatoes",
+    "quantity_text": "3",
+    "quantity_value": 3,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "paneer_tikka",
+    "ingredient_name": "fresh mint",
+    "quantity_text": "1 bunch",
+    "quantity_value": 1,
+    "quantity_unit": "bunch",
+    "category_code": "F",
+    "sort_order": 7
+  },
+  {
+    "recipe_slug": "paneer_tikka",
+    "ingredient_name": "flatbreads or chapatis",
+    "quantity_text": "4",
+    "quantity_value": 4,
+    "quantity_unit": null,
+    "category_code": "N",
+    "sort_order": 8
+  },
+  {
+    "recipe_slug": "paneer_tikka",
+    "ingredient_name": "lemon",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 9
+  },
+  {
+    "recipe_slug": "chana",
+    "ingredient_name": "chickpeas",
+    "quantity_text": "2 tins",
+    "quantity_value": 2,
+    "quantity_unit": "tins",
+    "category_code": "P",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "chana",
+    "ingredient_name": "chopped tomatoes",
+    "quantity_text": "1 tin",
+    "quantity_value": 1,
+    "quantity_unit": "tin",
+    "category_code": "S",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "chana",
+    "ingredient_name": "onion",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "chana",
+    "ingredient_name": "garlic",
+    "quantity_text": "4 cloves",
+    "quantity_value": 4,
+    "quantity_unit": "cloves",
+    "category_code": "F",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "chana",
+    "ingredient_name": "fresh ginger",
+    "quantity_text": "30 g",
+    "quantity_value": 30,
+    "quantity_unit": "g",
+    "category_code": "F",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "chana",
+    "ingredient_name": "garam masala + cumin + turmeric",
+    "quantity_text": "2 tbsp total",
+    "quantity_value": 2,
+    "quantity_unit": "tbsp total",
+    "category_code": "S",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "chana",
+    "ingredient_name": "fresh coriander",
+    "quantity_text": "1 bunch",
+    "quantity_value": 1,
+    "quantity_unit": "bunch",
+    "category_code": "F",
+    "sort_order": 7
+  },
+  {
+    "recipe_slug": "chana",
+    "ingredient_name": "basmati rice",
+    "quantity_text": "160 g",
+    "quantity_value": 160,
+    "quantity_unit": "g",
+    "category_code": "N",
+    "sort_order": 8
+  },
+  {
+    "recipe_slug": "padthai",
+    "ingredient_name": "flat rice noodles",
+    "quantity_text": "180 g",
+    "quantity_value": 180,
+    "quantity_unit": "g",
+    "category_code": "N",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "padthai",
+    "ingredient_name": "firm tofu",
+    "quantity_text": "300 g",
+    "quantity_value": 300,
+    "quantity_unit": "g",
+    "category_code": "P",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "padthai",
+    "ingredient_name": "eggs",
+    "quantity_text": "2",
+    "quantity_value": 2,
+    "quantity_unit": null,
+    "category_code": "D",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "padthai",
+    "ingredient_name": "tamarind paste",
+    "quantity_text": "1.5 tbsp",
+    "quantity_value": 1.5,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "padthai",
+    "ingredient_name": "soy sauce",
+    "quantity_text": "2 tbsp",
+    "quantity_value": 2,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "padthai",
+    "ingredient_name": "lime",
+    "quantity_text": "2",
+    "quantity_value": 2,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "padthai",
+    "ingredient_name": "beansprouts",
+    "quantity_text": "200 g",
+    "quantity_value": 200,
+    "quantity_unit": "g",
+    "category_code": "V",
+    "sort_order": 7
+  },
+  {
+    "recipe_slug": "padthai",
+    "ingredient_name": "peanuts",
+    "quantity_text": "40 g",
+    "quantity_value": 40,
+    "quantity_unit": "g",
+    "category_code": "S",
+    "sort_order": 8
+  },
+  {
+    "recipe_slug": "padthai",
+    "ingredient_name": "spring onions",
+    "quantity_text": "3",
+    "quantity_value": 3,
+    "quantity_unit": null,
+    "category_code": "F",
+    "sort_order": 9
+  },
+  {
+    "recipe_slug": "laksa",
+    "ingredient_name": "firm tofu",
+    "quantity_text": "350 g",
+    "quantity_value": 350,
+    "quantity_unit": "g",
+    "category_code": "P",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "laksa",
+    "ingredient_name": "vegetarian laksa or red curry paste",
+    "quantity_text": "3 tbsp",
+    "quantity_value": 3,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "laksa",
+    "ingredient_name": "coconut milk",
+    "quantity_text": "1 tin",
+    "quantity_value": 1,
+    "quantity_unit": "tin",
+    "category_code": "S",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "laksa",
+    "ingredient_name": "rice noodles",
+    "quantity_text": "160 g",
+    "quantity_value": 160,
+    "quantity_unit": "g",
+    "category_code": "N",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "laksa",
+    "ingredient_name": "green beans",
+    "quantity_text": "150 g",
+    "quantity_value": 150,
+    "quantity_unit": "g",
+    "category_code": "V",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "laksa",
+    "ingredient_name": "beansprouts",
+    "quantity_text": "150 g",
+    "quantity_value": 150,
+    "quantity_unit": "g",
+    "category_code": "V",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "laksa",
+    "ingredient_name": "lime",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 7
+  },
+  {
+    "recipe_slug": "laksa",
+    "ingredient_name": "fresh coriander",
+    "quantity_text": "1 bunch",
+    "quantity_value": 1,
+    "quantity_unit": "bunch",
+    "category_code": "F",
+    "sort_order": 8
+  },
+  {
+    "recipe_slug": "chipotle_chilli",
+    "ingredient_name": "black beans",
+    "quantity_text": "2 tins",
+    "quantity_value": 2,
+    "quantity_unit": "tins",
+    "category_code": "P",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "chipotle_chilli",
+    "ingredient_name": "kidney beans",
+    "quantity_text": "1 tin",
+    "quantity_value": 1,
+    "quantity_unit": "tin",
+    "category_code": "P",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "chipotle_chilli",
+    "ingredient_name": "chopped tomatoes",
+    "quantity_text": "1 tin",
+    "quantity_value": 1,
+    "quantity_unit": "tin",
+    "category_code": "S",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "chipotle_chilli",
+    "ingredient_name": "chipotle paste",
+    "quantity_text": "2 tbsp",
+    "quantity_value": 2,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "chipotle_chilli",
+    "ingredient_name": "sweet potato",
+    "quantity_text": "1 large",
+    "quantity_value": 1,
+    "quantity_unit": "large",
+    "category_code": "V",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "chipotle_chilli",
+    "ingredient_name": "red pepper",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "chipotle_chilli",
+    "ingredient_name": "onion",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 7
+  },
+  {
+    "recipe_slug": "chipotle_chilli",
+    "ingredient_name": "garlic",
+    "quantity_text": "3 cloves",
+    "quantity_value": 3,
+    "quantity_unit": "cloves",
+    "category_code": "F",
+    "sort_order": 8
+  },
+  {
+    "recipe_slug": "chipotle_chilli",
+    "ingredient_name": "ground cumin & smoked paprika",
+    "quantity_text": "2 tbsp total",
+    "quantity_value": 2,
+    "quantity_unit": "tbsp total",
+    "category_code": "S",
+    "sort_order": 9
+  },
+  {
+    "recipe_slug": "chipotle_chilli",
+    "ingredient_name": "dark chocolate",
+    "quantity_text": "15 g",
+    "quantity_value": 15,
+    "quantity_unit": "g",
+    "category_code": "S",
+    "sort_order": 10
+  },
+  {
+    "recipe_slug": "chipotle_chilli",
+    "ingredient_name": "natural yogurt",
+    "quantity_text": "150 g",
+    "quantity_value": 150,
+    "quantity_unit": "g",
+    "category_code": "D",
+    "sort_order": 11
+  },
+  {
+    "recipe_slug": "chipotle_chilli",
+    "ingredient_name": "fresh coriander",
+    "quantity_text": "1 bunch",
+    "quantity_value": 1,
+    "quantity_unit": "bunch",
+    "category_code": "F",
+    "sort_order": 12
+  },
+  {
+    "recipe_slug": "chipotle_chilli",
+    "ingredient_name": "lime",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 13
+  },
+  {
+    "recipe_slug": "chipotle_chilli",
+    "ingredient_name": "basmati rice",
+    "quantity_text": "160 g",
+    "quantity_value": 160,
+    "quantity_unit": "g",
+    "category_code": "N",
+    "sort_order": 14
+  },
+  {
+    "recipe_slug": "bean_tacos",
+    "ingredient_name": "black beans",
+    "quantity_text": "2 tins",
+    "quantity_value": 2,
+    "quantity_unit": "tins",
+    "category_code": "P",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "bean_tacos",
+    "ingredient_name": "sweet potatoes",
+    "quantity_text": "2",
+    "quantity_value": 2,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "bean_tacos",
+    "ingredient_name": "white cabbage",
+    "quantity_text": "1/2",
+    "quantity_value": 0.5,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "bean_tacos",
+    "ingredient_name": "chipotle paste",
+    "quantity_text": "1 tbsp",
+    "quantity_value": 1,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "bean_tacos",
+    "ingredient_name": "feta",
+    "quantity_text": "80 g",
+    "quantity_value": 80,
+    "quantity_unit": "g",
+    "category_code": "D",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "bean_tacos",
+    "ingredient_name": "corn tortillas",
+    "quantity_text": "8",
+    "quantity_value": 8,
+    "quantity_unit": null,
+    "category_code": "N",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "bean_tacos",
+    "ingredient_name": "ground cumin",
+    "quantity_text": "1 tbsp",
+    "quantity_value": 1,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 7
+  },
+  {
+    "recipe_slug": "bean_tacos",
+    "ingredient_name": "lime",
+    "quantity_text": "2",
+    "quantity_value": 2,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 8
+  },
+  {
+    "recipe_slug": "bean_tacos",
+    "ingredient_name": "fresh coriander",
+    "quantity_text": "1 bunch",
+    "quantity_value": 1,
+    "quantity_unit": "bunch",
+    "category_code": "F",
+    "sort_order": 9
+  },
+  {
+    "recipe_slug": "bean_tacos",
+    "ingredient_name": "red onion",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 10
+  },
+  {
+    "recipe_slug": "baja_fish",
+    "ingredient_name": "white fish fillets (cod/pollock)",
+    "quantity_text": "2 large",
+    "quantity_value": 2,
+    "quantity_unit": "large",
+    "category_code": "P",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "baja_fish",
+    "ingredient_name": "corn tortillas",
+    "quantity_text": "8",
+    "quantity_value": 8,
+    "quantity_unit": null,
+    "category_code": "N",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "baja_fish",
+    "ingredient_name": "white cabbage",
+    "quantity_text": "1/2",
+    "quantity_value": 0.5,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "baja_fish",
+    "ingredient_name": "red onion",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "baja_fish",
+    "ingredient_name": "natural yogurt",
+    "quantity_text": "150 g",
+    "quantity_value": 150,
+    "quantity_unit": "g",
+    "category_code": "D",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "baja_fish",
+    "ingredient_name": "lime",
+    "quantity_text": "2",
+    "quantity_value": 2,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "baja_fish",
+    "ingredient_name": "smoked paprika & cumin",
+    "quantity_text": "1 tbsp total",
+    "quantity_value": 1,
+    "quantity_unit": "tbsp total",
+    "category_code": "S",
+    "sort_order": 7
+  },
+  {
+    "recipe_slug": "baja_fish",
+    "ingredient_name": "fresh coriander",
+    "quantity_text": "1 bunch",
+    "quantity_value": 1,
+    "quantity_unit": "bunch",
+    "category_code": "F",
+    "sort_order": 8
+  },
+  {
+    "recipe_slug": "baja_fish",
+    "ingredient_name": "hot sauce",
+    "quantity_text": "to taste",
+    "quantity_value": null,
+    "quantity_unit": null,
+    "category_code": "S",
+    "sort_order": 9
+  },
+  {
+    "recipe_slug": "huevos",
+    "ingredient_name": "eggs",
+    "quantity_text": "4",
+    "quantity_value": 4,
+    "quantity_unit": null,
+    "category_code": "D",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "huevos",
+    "ingredient_name": "black beans",
+    "quantity_text": "1 tin",
+    "quantity_value": 1,
+    "quantity_unit": "tin",
+    "category_code": "P",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "huevos",
+    "ingredient_name": "chopped tomatoes",
+    "quantity_text": "1 tin",
+    "quantity_value": 1,
+    "quantity_unit": "tin",
+    "category_code": "S",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "huevos",
+    "ingredient_name": "chipotle or jalapeño",
+    "quantity_text": "1–2",
+    "quantity_value": 1,
+    "quantity_unit": "–2",
+    "category_code": "F",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "huevos",
+    "ingredient_name": "corn tortillas",
+    "quantity_text": "4",
+    "quantity_value": 4,
+    "quantity_unit": null,
+    "category_code": "N",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "huevos",
+    "ingredient_name": "feta",
+    "quantity_text": "60 g",
+    "quantity_value": 60,
+    "quantity_unit": "g",
+    "category_code": "D",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "huevos",
+    "ingredient_name": "avocado",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 7
+  },
+  {
+    "recipe_slug": "huevos",
+    "ingredient_name": "onion",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 8
+  },
+  {
+    "recipe_slug": "huevos",
+    "ingredient_name": "garlic",
+    "quantity_text": "2 cloves",
+    "quantity_value": 2,
+    "quantity_unit": "cloves",
+    "category_code": "F",
+    "sort_order": 9
+  },
+  {
+    "recipe_slug": "huevos",
+    "ingredient_name": "fresh coriander",
+    "quantity_text": "1 bunch",
+    "quantity_value": 1,
+    "quantity_unit": "bunch",
+    "category_code": "F",
+    "sort_order": 10
+  },
+  {
+    "recipe_slug": "burrito_bowl",
+    "ingredient_name": "black beans",
+    "quantity_text": "2 tins",
+    "quantity_value": 2,
+    "quantity_unit": "tins",
+    "category_code": "P",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "burrito_bowl",
+    "ingredient_name": "frozen sweetcorn",
+    "quantity_text": "200 g",
+    "quantity_value": 200,
+    "quantity_unit": "g",
+    "category_code": "V",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "burrito_bowl",
+    "ingredient_name": "basmati rice",
+    "quantity_text": "160 g",
+    "quantity_value": 160,
+    "quantity_unit": "g",
+    "category_code": "N",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "burrito_bowl",
+    "ingredient_name": "tomatoes",
+    "quantity_text": "3",
+    "quantity_value": 3,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "burrito_bowl",
+    "ingredient_name": "red onion",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "burrito_bowl",
+    "ingredient_name": "avocado",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "burrito_bowl",
+    "ingredient_name": "lime",
+    "quantity_text": "2",
+    "quantity_value": 2,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 7
+  },
+  {
+    "recipe_slug": "burrito_bowl",
+    "ingredient_name": "fresh coriander",
+    "quantity_text": "1 bunch",
+    "quantity_value": 1,
+    "quantity_unit": "bunch",
+    "category_code": "F",
+    "sort_order": 8
+  },
+  {
+    "recipe_slug": "burrito_bowl",
+    "ingredient_name": "natural yogurt",
+    "quantity_text": "100 g",
+    "quantity_value": 100,
+    "quantity_unit": "g",
+    "category_code": "D",
+    "sort_order": 9
+  },
+  {
+    "recipe_slug": "burrito_bowl",
+    "ingredient_name": "smoked paprika",
+    "quantity_text": "2 tsp",
+    "quantity_value": 2,
+    "quantity_unit": "tsp",
+    "category_code": "S",
+    "sort_order": 10
+  },
+  {
+    "recipe_slug": "tinga",
+    "ingredient_name": "chicken thighs",
+    "quantity_text": "400 g",
+    "quantity_value": 400,
+    "quantity_unit": "g",
+    "category_code": "P",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "tinga",
+    "ingredient_name": "chipotle paste",
+    "quantity_text": "2 tbsp",
+    "quantity_value": 2,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "tinga",
+    "ingredient_name": "chopped tomatoes",
+    "quantity_text": "1 tin",
+    "quantity_value": 1,
+    "quantity_unit": "tin",
+    "category_code": "S",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "tinga",
+    "ingredient_name": "onion",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "tinga",
+    "ingredient_name": "garlic",
+    "quantity_text": "3 cloves",
+    "quantity_value": 3,
+    "quantity_unit": "cloves",
+    "category_code": "F",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "tinga",
+    "ingredient_name": "corn tortillas",
+    "quantity_text": "6",
+    "quantity_value": 6,
+    "quantity_unit": null,
+    "category_code": "N",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "tinga",
+    "ingredient_name": "white cabbage",
+    "quantity_text": "1/4",
+    "quantity_value": 0.25,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 7
+  },
+  {
+    "recipe_slug": "tinga",
+    "ingredient_name": "feta",
+    "quantity_text": "60 g",
+    "quantity_value": 60,
+    "quantity_unit": "g",
+    "category_code": "D",
+    "sort_order": 8
+  },
+  {
+    "recipe_slug": "tinga",
+    "ingredient_name": "lime",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 9
+  },
+  {
+    "recipe_slug": "tinga",
+    "ingredient_name": "oregano (dried)",
+    "quantity_text": "1 tsp",
+    "quantity_value": 1,
+    "quantity_unit": "tsp",
+    "category_code": "S",
+    "sort_order": 10
+  },
+  {
+    "recipe_slug": "enchiladas",
+    "ingredient_name": "black beans",
+    "quantity_text": "2 tins",
+    "quantity_value": 2,
+    "quantity_unit": "tins",
+    "category_code": "P",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "enchiladas",
+    "ingredient_name": "green salsa (salsa verde)",
+    "quantity_text": "1 jar",
+    "quantity_value": 1,
+    "quantity_unit": "jar",
+    "category_code": "S",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "enchiladas",
+    "ingredient_name": "peppers",
+    "quantity_text": "2",
+    "quantity_value": 2,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "enchiladas",
+    "ingredient_name": "onion",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "enchiladas",
+    "ingredient_name": "corn or flour tortillas",
+    "quantity_text": "8",
+    "quantity_value": 8,
+    "quantity_unit": null,
+    "category_code": "N",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "enchiladas",
+    "ingredient_name": "cheddar or mozzarella",
+    "quantity_text": "80 g",
+    "quantity_value": 80,
+    "quantity_unit": "g",
+    "category_code": "D",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "enchiladas",
+    "ingredient_name": "jalapeños",
+    "quantity_text": "2",
+    "quantity_value": 2,
+    "quantity_unit": null,
+    "category_code": "F",
+    "sort_order": 7
+  },
+  {
+    "recipe_slug": "enchiladas",
+    "ingredient_name": "fresh coriander",
+    "quantity_text": "1 bunch",
+    "quantity_value": 1,
+    "quantity_unit": "bunch",
+    "category_code": "F",
+    "sort_order": 8
+  },
+  {
+    "recipe_slug": "enchiladas",
+    "ingredient_name": "natural yogurt",
+    "quantity_text": "100 g",
+    "quantity_value": 100,
+    "quantity_unit": "g",
+    "category_code": "D",
+    "sort_order": 9
+  },
+  {
+    "recipe_slug": "aji_verde",
+    "ingredient_name": "chicken thighs",
+    "quantity_text": "500 g",
+    "quantity_value": 500,
+    "quantity_unit": "g",
+    "category_code": "P",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "aji_verde",
+    "ingredient_name": "new potatoes",
+    "quantity_text": "600 g",
+    "quantity_value": 600,
+    "quantity_unit": "g",
+    "category_code": "V",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "aji_verde",
+    "ingredient_name": "green chillies",
+    "quantity_text": "2",
+    "quantity_value": 2,
+    "quantity_unit": null,
+    "category_code": "F",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "aji_verde",
+    "ingredient_name": "fresh coriander",
+    "quantity_text": "2 bunches",
+    "quantity_value": 2,
+    "quantity_unit": "bunches",
+    "category_code": "F",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "aji_verde",
+    "ingredient_name": "natural yogurt",
+    "quantity_text": "150 g",
+    "quantity_value": 150,
+    "quantity_unit": "g",
+    "category_code": "D",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "aji_verde",
+    "ingredient_name": "lime",
+    "quantity_text": "2",
+    "quantity_value": 2,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "aji_verde",
+    "ingredient_name": "garlic",
+    "quantity_text": "3 cloves",
+    "quantity_value": 3,
+    "quantity_unit": "cloves",
+    "category_code": "F",
+    "sort_order": 7
+  },
+  {
+    "recipe_slug": "aji_verde",
+    "ingredient_name": "ground cumin",
+    "quantity_text": "1 tbsp",
+    "quantity_value": 1,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 8
+  },
+  {
+    "recipe_slug": "shakshuka",
+    "ingredient_name": "eggs",
+    "quantity_text": "4",
+    "quantity_value": 4,
+    "quantity_unit": null,
+    "category_code": "D",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "shakshuka",
+    "ingredient_name": "chopped tomatoes",
+    "quantity_text": "1 tin",
+    "quantity_value": 1,
+    "quantity_unit": "tin",
+    "category_code": "S",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "shakshuka",
+    "ingredient_name": "red peppers",
+    "quantity_text": "2",
+    "quantity_value": 2,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "shakshuka",
+    "ingredient_name": "harissa",
+    "quantity_text": "1 tbsp",
+    "quantity_value": 1,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "shakshuka",
+    "ingredient_name": "onion",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "shakshuka",
+    "ingredient_name": "garlic",
+    "quantity_text": "3 cloves",
+    "quantity_value": 3,
+    "quantity_unit": "cloves",
+    "category_code": "F",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "shakshuka",
+    "ingredient_name": "ground cumin & paprika",
+    "quantity_text": "1 tbsp total",
+    "quantity_value": 1,
+    "quantity_unit": "tbsp total",
+    "category_code": "S",
+    "sort_order": 7
+  },
+  {
+    "recipe_slug": "shakshuka",
+    "ingredient_name": "feta",
+    "quantity_text": "80 g",
+    "quantity_value": 80,
+    "quantity_unit": "g",
+    "category_code": "D",
+    "sort_order": 8
+  },
+  {
+    "recipe_slug": "shakshuka",
+    "ingredient_name": "fresh parsley",
+    "quantity_text": "1 bunch",
+    "quantity_value": 1,
+    "quantity_unit": "bunch",
+    "category_code": "F",
+    "sort_order": 9
+  },
+  {
+    "recipe_slug": "shakshuka",
+    "ingredient_name": "flatbreads",
+    "quantity_text": "4",
+    "quantity_value": 4,
+    "quantity_unit": null,
+    "category_code": "N",
+    "sort_order": 10
+  },
+  {
+    "recipe_slug": "harissa_cauli",
+    "ingredient_name": "cauliflower",
+    "quantity_text": "1 head",
+    "quantity_value": 1,
+    "quantity_unit": "head",
+    "category_code": "V",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "harissa_cauli",
+    "ingredient_name": "chickpeas",
+    "quantity_text": "2 tins",
+    "quantity_value": 2,
+    "quantity_unit": "tins",
+    "category_code": "P",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "harissa_cauli",
+    "ingredient_name": "harissa",
+    "quantity_text": "2 tbsp",
+    "quantity_value": 2,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "harissa_cauli",
+    "ingredient_name": "tahini",
+    "quantity_text": "2 tbsp",
+    "quantity_value": 2,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "harissa_cauli",
+    "ingredient_name": "natural yogurt",
+    "quantity_text": "150 g",
+    "quantity_value": 150,
+    "quantity_unit": "g",
+    "category_code": "D",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "harissa_cauli",
+    "ingredient_name": "lemon",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "harissa_cauli",
+    "ingredient_name": "pomegranate seeds",
+    "quantity_text": "1 pack",
+    "quantity_value": 1,
+    "quantity_unit": "pack",
+    "category_code": "V",
+    "sort_order": 7
+  },
+  {
+    "recipe_slug": "harissa_cauli",
+    "ingredient_name": "fresh parsley & mint",
+    "quantity_text": "1 bunch each",
+    "quantity_value": 1,
+    "quantity_unit": "bunch each",
+    "category_code": "F",
+    "sort_order": 8
+  },
+  {
+    "recipe_slug": "harissa_cauli",
+    "ingredient_name": "ground cumin",
+    "quantity_text": "1 tbsp",
+    "quantity_value": 1,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 9
+  },
+  {
+    "recipe_slug": "harissa_cauli",
+    "ingredient_name": "flatbreads",
+    "quantity_text": "4",
+    "quantity_value": 4,
+    "quantity_unit": null,
+    "category_code": "N",
+    "sort_order": 10
+  },
+  {
+    "recipe_slug": "tagine",
+    "ingredient_name": "chickpeas",
+    "quantity_text": "2 tins",
+    "quantity_value": 2,
+    "quantity_unit": "tins",
+    "category_code": "P",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "tagine",
+    "ingredient_name": "butternut squash",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "tagine",
+    "ingredient_name": "dried apricots",
+    "quantity_text": "100 g",
+    "quantity_value": 100,
+    "quantity_unit": "g",
+    "category_code": "S",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "tagine",
+    "ingredient_name": "ras el hanout",
+    "quantity_text": "2 tbsp",
+    "quantity_value": 2,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "tagine",
+    "ingredient_name": "chopped tomatoes",
+    "quantity_text": "1 tin",
+    "quantity_value": 1,
+    "quantity_unit": "tin",
+    "category_code": "S",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "tagine",
+    "ingredient_name": "onion",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "tagine",
+    "ingredient_name": "fresh ginger",
+    "quantity_text": "20 g",
+    "quantity_value": 20,
+    "quantity_unit": "g",
+    "category_code": "F",
+    "sort_order": 7
+  },
+  {
+    "recipe_slug": "tagine",
+    "ingredient_name": "garlic",
+    "quantity_text": "3 cloves",
+    "quantity_value": 3,
+    "quantity_unit": "cloves",
+    "category_code": "F",
+    "sort_order": 8
+  },
+  {
+    "recipe_slug": "tagine",
+    "ingredient_name": "couscous",
+    "quantity_text": "200 g",
+    "quantity_value": 200,
+    "quantity_unit": "g",
+    "category_code": "N",
+    "sort_order": 9
+  },
+  {
+    "recipe_slug": "tagine",
+    "ingredient_name": "flaked almonds",
+    "quantity_text": "30 g",
+    "quantity_value": 30,
+    "quantity_unit": "g",
+    "category_code": "S",
+    "sort_order": 10
+  },
+  {
+    "recipe_slug": "tagine",
+    "ingredient_name": "fresh coriander",
+    "quantity_text": "1 bunch",
+    "quantity_value": 1,
+    "quantity_unit": "bunch",
+    "category_code": "F",
+    "sort_order": 11
+  },
+  {
+    "recipe_slug": "mujadara",
+    "ingredient_name": "green or brown lentils",
+    "quantity_text": "300 g",
+    "quantity_value": 300,
+    "quantity_unit": "g",
+    "category_code": "P",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "mujadara",
+    "ingredient_name": "basmati rice",
+    "quantity_text": "200 g",
+    "quantity_value": 200,
+    "quantity_unit": "g",
+    "category_code": "N",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "mujadara",
+    "ingredient_name": "onions",
+    "quantity_text": "4 large",
+    "quantity_value": 4,
+    "quantity_unit": "large",
+    "category_code": "V",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "mujadara",
+    "ingredient_name": "ground cumin & cinnamon",
+    "quantity_text": "1 tbsp total",
+    "quantity_value": 1,
+    "quantity_unit": "tbsp total",
+    "category_code": "S",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "mujadara",
+    "ingredient_name": "natural yogurt",
+    "quantity_text": "200 g",
+    "quantity_value": 200,
+    "quantity_unit": "g",
+    "category_code": "D",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "mujadara",
+    "ingredient_name": "tomatoes",
+    "quantity_text": "3",
+    "quantity_value": 3,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "mujadara",
+    "ingredient_name": "fresh parsley",
+    "quantity_text": "1 bunch",
+    "quantity_value": 1,
+    "quantity_unit": "bunch",
+    "category_code": "F",
+    "sort_order": 7
+  },
+  {
+    "recipe_slug": "mujadara",
+    "ingredient_name": "lemon",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 8
+  },
+  {
+    "recipe_slug": "berbere",
+    "ingredient_name": "red lentils",
+    "quantity_text": "300 g",
+    "quantity_value": 300,
+    "quantity_unit": "g",
+    "category_code": "P",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "berbere",
+    "ingredient_name": "berbere spice mix",
+    "quantity_text": "2 tbsp",
+    "quantity_value": 2,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "berbere",
+    "ingredient_name": "chopped tomatoes",
+    "quantity_text": "1 tin",
+    "quantity_value": 1,
+    "quantity_unit": "tin",
+    "category_code": "S",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "berbere",
+    "ingredient_name": "onions",
+    "quantity_text": "2",
+    "quantity_value": 2,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "berbere",
+    "ingredient_name": "garlic",
+    "quantity_text": "4 cloves",
+    "quantity_value": 4,
+    "quantity_unit": "cloves",
+    "category_code": "F",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "berbere",
+    "ingredient_name": "fresh ginger",
+    "quantity_text": "25 g",
+    "quantity_value": 25,
+    "quantity_unit": "g",
+    "category_code": "F",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "berbere",
+    "ingredient_name": "spring greens or kale",
+    "quantity_text": "200 g",
+    "quantity_value": 200,
+    "quantity_unit": "g",
+    "category_code": "V",
+    "sort_order": 7
+  },
+  {
+    "recipe_slug": "berbere",
+    "ingredient_name": "flatbreads",
+    "quantity_text": "4",
+    "quantity_value": 4,
+    "quantity_unit": null,
+    "category_code": "N",
+    "sort_order": 8
+  },
+  {
+    "recipe_slug": "falafel_patties",
+    "ingredient_name": "chickpeas",
+    "quantity_text": "2 tins",
+    "quantity_value": 2,
+    "quantity_unit": "tins",
+    "category_code": "P",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "falafel_patties",
+    "ingredient_name": "fresh parsley",
+    "quantity_text": "1 large bunch",
+    "quantity_value": 1,
+    "quantity_unit": "large bunch",
+    "category_code": "F",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "falafel_patties",
+    "ingredient_name": "fresh coriander",
+    "quantity_text": "1 bunch",
+    "quantity_value": 1,
+    "quantity_unit": "bunch",
+    "category_code": "F",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "falafel_patties",
+    "ingredient_name": "tahini",
+    "quantity_text": "3 tbsp",
+    "quantity_value": 3,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "falafel_patties",
+    "ingredient_name": "ground cumin & coriander",
+    "quantity_text": "1 tbsp total",
+    "quantity_value": 1,
+    "quantity_unit": "tbsp total",
+    "category_code": "S",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "falafel_patties",
+    "ingredient_name": "garlic",
+    "quantity_text": "3 cloves",
+    "quantity_value": 3,
+    "quantity_unit": "cloves",
+    "category_code": "F",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "falafel_patties",
+    "ingredient_name": "lemon",
+    "quantity_text": "2",
+    "quantity_value": 2,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 7
+  },
+  {
+    "recipe_slug": "falafel_patties",
+    "ingredient_name": "tomatoes",
+    "quantity_text": "3",
+    "quantity_value": 3,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 8
+  },
+  {
+    "recipe_slug": "falafel_patties",
+    "ingredient_name": "red onion",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 9
+  },
+  {
+    "recipe_slug": "falafel_patties",
+    "ingredient_name": "flatbreads",
+    "quantity_text": "4",
+    "quantity_value": 4,
+    "quantity_unit": null,
+    "category_code": "N",
+    "sort_order": 10
+  },
+  {
+    "recipe_slug": "falafel_patties",
+    "ingredient_name": "chilli flakes",
+    "quantity_text": "1 tsp",
+    "quantity_value": 1,
+    "quantity_unit": "tsp",
+    "category_code": "S",
+    "sort_order": 11
+  },
+  {
+    "recipe_slug": "zaatar_salmon",
+    "ingredient_name": "salmon fillets",
+    "quantity_text": "2",
+    "quantity_value": 2,
+    "quantity_unit": null,
+    "category_code": "P",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "zaatar_salmon",
+    "ingredient_name": "za’atar",
+    "quantity_text": "2 tbsp",
+    "quantity_value": 2,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "zaatar_salmon",
+    "ingredient_name": "bulgur wheat",
+    "quantity_text": "160 g",
+    "quantity_value": 160,
+    "quantity_unit": "g",
+    "category_code": "N",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "zaatar_salmon",
+    "ingredient_name": "fresh parsley & mint",
+    "quantity_text": "1 bunch each",
+    "quantity_value": 1,
+    "quantity_unit": "bunch each",
+    "category_code": "F",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "zaatar_salmon",
+    "ingredient_name": "spring onions",
+    "quantity_text": "3",
+    "quantity_value": 3,
+    "quantity_unit": null,
+    "category_code": "F",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "zaatar_salmon",
+    "ingredient_name": "pomegranate seeds",
+    "quantity_text": "1 pack",
+    "quantity_value": 1,
+    "quantity_unit": "pack",
+    "category_code": "V",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "zaatar_salmon",
+    "ingredient_name": "lemon",
+    "quantity_text": "2",
+    "quantity_value": 2,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 7
+  },
+  {
+    "recipe_slug": "zaatar_salmon",
+    "ingredient_name": "natural yogurt",
+    "quantity_text": "100 g",
+    "quantity_value": 100,
+    "quantity_unit": "g",
+    "category_code": "D",
+    "sort_order": 8
+  },
+  {
+    "recipe_slug": "lentil_soup",
+    "ingredient_name": "red lentils",
+    "quantity_text": "250 g",
+    "quantity_value": 250,
+    "quantity_unit": "g",
+    "category_code": "P",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "lentil_soup",
+    "ingredient_name": "carrots",
+    "quantity_text": "3",
+    "quantity_value": 3,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "lentil_soup",
+    "ingredient_name": "onion",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "lentil_soup",
+    "ingredient_name": "ground cumin & paprika",
+    "quantity_text": "1 tbsp total",
+    "quantity_value": 1,
+    "quantity_unit": "tbsp total",
+    "category_code": "S",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "lentil_soup",
+    "ingredient_name": "chilli flakes",
+    "quantity_text": "1 tsp",
+    "quantity_value": 1,
+    "quantity_unit": "tsp",
+    "category_code": "S",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "lentil_soup",
+    "ingredient_name": "lemon",
+    "quantity_text": "2",
+    "quantity_value": 2,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "lentil_soup",
+    "ingredient_name": "flatbreads",
+    "quantity_text": "4",
+    "quantity_value": 4,
+    "quantity_unit": null,
+    "category_code": "N",
+    "sort_order": 7
+  },
+  {
+    "recipe_slug": "lentil_soup",
+    "ingredient_name": "fresh mint",
+    "quantity_text": "1 bunch",
+    "quantity_value": 1,
+    "quantity_unit": "bunch",
+    "category_code": "F",
+    "sort_order": 8
+  },
+  {
+    "recipe_slug": "halloumi_bake",
+    "ingredient_name": "halloumi",
+    "quantity_text": "225 g",
+    "quantity_value": 225,
+    "quantity_unit": "g",
+    "category_code": "D",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "halloumi_bake",
+    "ingredient_name": "chickpeas",
+    "quantity_text": "2 tins",
+    "quantity_value": 2,
+    "quantity_unit": "tins",
+    "category_code": "P",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "halloumi_bake",
+    "ingredient_name": "peppers",
+    "quantity_text": "2",
+    "quantity_value": 2,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "halloumi_bake",
+    "ingredient_name": "red onion",
+    "quantity_text": "2",
+    "quantity_value": 2,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "halloumi_bake",
+    "ingredient_name": "harissa",
+    "quantity_text": "2 tbsp",
+    "quantity_value": 2,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "halloumi_bake",
+    "ingredient_name": "honey",
+    "quantity_text": "1 tbsp",
+    "quantity_value": 1,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "halloumi_bake",
+    "ingredient_name": "couscous",
+    "quantity_text": "200 g",
+    "quantity_value": 200,
+    "quantity_unit": "g",
+    "category_code": "N",
+    "sort_order": 7
+  },
+  {
+    "recipe_slug": "halloumi_bake",
+    "ingredient_name": "natural yogurt",
+    "quantity_text": "150 g",
+    "quantity_value": 150,
+    "quantity_unit": "g",
+    "category_code": "D",
+    "sort_order": 8
+  },
+  {
+    "recipe_slug": "halloumi_bake",
+    "ingredient_name": "lemon",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 9
+  },
+  {
+    "recipe_slug": "halloumi_bake",
+    "ingredient_name": "fresh mint",
+    "quantity_text": "1 bunch",
+    "quantity_value": 1,
+    "quantity_unit": "bunch",
+    "category_code": "F",
+    "sort_order": 10
+  },
+  {
+    "recipe_slug": "kofte_lentil",
+    "ingredient_name": "red lentils",
+    "quantity_text": "200 g",
+    "quantity_value": 200,
+    "quantity_unit": "g",
+    "category_code": "P",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "kofte_lentil",
+    "ingredient_name": "fine bulgur",
+    "quantity_text": "100 g",
+    "quantity_value": 100,
+    "quantity_unit": "g",
+    "category_code": "N",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "kofte_lentil",
+    "ingredient_name": "onions",
+    "quantity_text": "2",
+    "quantity_value": 2,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "kofte_lentil",
+    "ingredient_name": "tomato purée",
+    "quantity_text": "2 tbsp",
+    "quantity_value": 2,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "kofte_lentil",
+    "ingredient_name": "ground cumin & paprika",
+    "quantity_text": "1 tbsp total",
+    "quantity_value": 1,
+    "quantity_unit": "tbsp total",
+    "category_code": "S",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "kofte_lentil",
+    "ingredient_name": "sumac",
+    "quantity_text": "1 tbsp",
+    "quantity_value": 1,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "kofte_lentil",
+    "ingredient_name": "natural yogurt",
+    "quantity_text": "200 g",
+    "quantity_value": 200,
+    "quantity_unit": "g",
+    "category_code": "D",
+    "sort_order": 7
+  },
+  {
+    "recipe_slug": "kofte_lentil",
+    "ingredient_name": "fresh parsley",
+    "quantity_text": "1 bunch",
+    "quantity_value": 1,
+    "quantity_unit": "bunch",
+    "category_code": "F",
+    "sort_order": 8
+  },
+  {
+    "recipe_slug": "kofte_lentil",
+    "ingredient_name": "tomatoes",
+    "quantity_text": "3",
+    "quantity_value": 3,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 9
+  },
+  {
+    "recipe_slug": "kofte_lentil",
+    "ingredient_name": "lemon",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 10
+  },
+  {
+    "recipe_slug": "l_sesame_tofu",
+    "ingredient_name": "marinated or smoked tofu",
+    "quantity_text": "120 g",
+    "quantity_value": 120,
+    "quantity_unit": "g",
+    "category_code": "P",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "l_sesame_tofu",
+    "ingredient_name": "microwave brown rice pouch",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "N",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "l_sesame_tofu",
+    "ingredient_name": "frozen edamame",
+    "quantity_text": "80 g",
+    "quantity_value": 80,
+    "quantity_unit": "g",
+    "category_code": "V",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "l_sesame_tofu",
+    "ingredient_name": "carrots",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "l_sesame_tofu",
+    "ingredient_name": "spring onions",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "F",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "l_sesame_tofu",
+    "ingredient_name": "soy sauce",
+    "quantity_text": "1 tbsp",
+    "quantity_value": 1,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "l_sesame_tofu",
+    "ingredient_name": "sesame oil",
+    "quantity_text": "1 tsp",
+    "quantity_value": 1,
+    "quantity_unit": "tsp",
+    "category_code": "S",
+    "sort_order": 7
+  },
+  {
+    "recipe_slug": "l_sesame_tofu",
+    "ingredient_name": "sesame seeds",
+    "quantity_text": "1 tsp",
+    "quantity_value": 1,
+    "quantity_unit": "tsp",
+    "category_code": "S",
+    "sort_order": 8
+  },
+  {
+    "recipe_slug": "l_kimchi_egg",
+    "ingredient_name": "cooked/day-old rice",
+    "quantity_text": "180 g",
+    "quantity_value": 180,
+    "quantity_unit": "g",
+    "category_code": "N",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "l_kimchi_egg",
+    "ingredient_name": "kimchi",
+    "quantity_text": "80 g",
+    "quantity_value": 80,
+    "quantity_unit": "g",
+    "category_code": "S",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "l_kimchi_egg",
+    "ingredient_name": "eggs",
+    "quantity_text": "2",
+    "quantity_value": 2,
+    "quantity_unit": null,
+    "category_code": "D",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "l_kimchi_egg",
+    "ingredient_name": "nori sheets",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "S",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "l_kimchi_egg",
+    "ingredient_name": "spring onions",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "F",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "l_kimchi_egg",
+    "ingredient_name": "mayonnaise",
+    "quantity_text": "1 tbsp",
+    "quantity_value": 1,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "l_kimchi_egg",
+    "ingredient_name": "gochujang",
+    "quantity_text": "1 tsp",
+    "quantity_value": 1,
+    "quantity_unit": "tsp",
+    "category_code": "S",
+    "sort_order": 7
+  },
+  {
+    "recipe_slug": "l_kimchi_egg",
+    "ingredient_name": "sesame seeds",
+    "quantity_text": "1 tsp",
+    "quantity_value": 1,
+    "quantity_unit": "tsp",
+    "category_code": "S",
+    "sort_order": 8
+  },
+  {
+    "recipe_slug": "l_vermicelli",
+    "ingredient_name": "rice vermicelli",
+    "quantity_text": "60 g",
+    "quantity_value": 60,
+    "quantity_unit": "g",
+    "category_code": "N",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "l_vermicelli",
+    "ingredient_name": "marinated or smoked tofu",
+    "quantity_text": "100 g",
+    "quantity_value": 100,
+    "quantity_unit": "g",
+    "category_code": "P",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "l_vermicelli",
+    "ingredient_name": "carrots",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "l_vermicelli",
+    "ingredient_name": "little gem lettuce",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "l_vermicelli",
+    "ingredient_name": "fresh mint & coriander",
+    "quantity_text": "1/2 bunch each",
+    "quantity_value": 0.5,
+    "quantity_unit": "bunch each",
+    "category_code": "F",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "l_vermicelli",
+    "ingredient_name": "lime",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "l_vermicelli",
+    "ingredient_name": "fish sauce",
+    "quantity_text": "1 tsp",
+    "quantity_value": 1,
+    "quantity_unit": "tsp",
+    "category_code": "S",
+    "sort_order": 7
+  },
+  {
+    "recipe_slug": "l_vermicelli",
+    "ingredient_name": "brown sugar",
+    "quantity_text": "1 tsp",
+    "quantity_value": 1,
+    "quantity_unit": "tsp",
+    "category_code": "S",
+    "sort_order": 8
+  },
+  {
+    "recipe_slug": "l_vermicelli",
+    "ingredient_name": "peanuts",
+    "quantity_text": "20 g",
+    "quantity_value": 20,
+    "quantity_unit": "g",
+    "category_code": "S",
+    "sort_order": 9
+  },
+  {
+    "recipe_slug": "l_onigirazu",
+    "ingredient_name": "tinned tuna",
+    "quantity_text": "1 tin",
+    "quantity_value": 1,
+    "quantity_unit": "tin",
+    "category_code": "P",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "l_onigirazu",
+    "ingredient_name": "nori sheets",
+    "quantity_text": "2",
+    "quantity_value": 2,
+    "quantity_unit": null,
+    "category_code": "S",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "l_onigirazu",
+    "ingredient_name": "cooked/day-old rice",
+    "quantity_text": "150 g",
+    "quantity_value": 150,
+    "quantity_unit": "g",
+    "category_code": "N",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "l_onigirazu",
+    "ingredient_name": "avocado",
+    "quantity_text": "1/2",
+    "quantity_value": 0.5,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "l_onigirazu",
+    "ingredient_name": "mayonnaise",
+    "quantity_text": "1 tbsp",
+    "quantity_value": 1,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "l_onigirazu",
+    "ingredient_name": "soy sauce",
+    "quantity_text": "1 tsp",
+    "quantity_value": 1,
+    "quantity_unit": "tsp",
+    "category_code": "S",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "l_onigirazu",
+    "ingredient_name": "carrots",
+    "quantity_text": "1/2",
+    "quantity_value": 0.5,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 7
+  },
+  {
+    "recipe_slug": "l_crunch_slaw",
+    "ingredient_name": "marinated or smoked tofu",
+    "quantity_text": "120 g",
+    "quantity_value": 120,
+    "quantity_unit": "g",
+    "category_code": "P",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "l_crunch_slaw",
+    "ingredient_name": "white cabbage",
+    "quantity_text": "200 g",
+    "quantity_value": 200,
+    "quantity_unit": "g",
+    "category_code": "V",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "l_crunch_slaw",
+    "ingredient_name": "carrots",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "l_crunch_slaw",
+    "ingredient_name": "red pepper",
+    "quantity_text": "1/2",
+    "quantity_value": 0.5,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "l_crunch_slaw",
+    "ingredient_name": "peanut butter",
+    "quantity_text": "1.5 tbsp",
+    "quantity_value": 1.5,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "l_crunch_slaw",
+    "ingredient_name": "lime",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "l_crunch_slaw",
+    "ingredient_name": "soy sauce",
+    "quantity_text": "1 tbsp",
+    "quantity_value": 1,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 7
+  },
+  {
+    "recipe_slug": "l_crunch_slaw",
+    "ingredient_name": "fresh ginger",
+    "quantity_text": "10 g",
+    "quantity_value": 10,
+    "quantity_unit": "g",
+    "category_code": "F",
+    "sort_order": 8
+  },
+  {
+    "recipe_slug": "l_crunch_slaw",
+    "ingredient_name": "peanuts",
+    "quantity_text": "20 g",
+    "quantity_value": 20,
+    "quantity_unit": "g",
+    "category_code": "S",
+    "sort_order": 9
+  },
+  {
+    "recipe_slug": "l_crunch_slaw",
+    "ingredient_name": "fresh coriander",
+    "quantity_text": "1/2 bunch",
+    "quantity_value": 0.5,
+    "quantity_unit": "bunch",
+    "category_code": "F",
+    "sort_order": 10
+  },
+  {
+    "recipe_slug": "l_bean_wrap",
+    "ingredient_name": "black beans",
+    "quantity_text": "1/2 tin",
+    "quantity_value": 0.5,
+    "quantity_unit": "tin",
+    "category_code": "P",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "l_bean_wrap",
+    "ingredient_name": "corn or flour tortillas",
+    "quantity_text": "2",
+    "quantity_value": 2,
+    "quantity_unit": null,
+    "category_code": "N",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "l_bean_wrap",
+    "ingredient_name": "avocado",
+    "quantity_text": "1/2",
+    "quantity_value": 0.5,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "l_bean_wrap",
+    "ingredient_name": "feta",
+    "quantity_text": "40 g",
+    "quantity_value": 40,
+    "quantity_unit": "g",
+    "category_code": "D",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "l_bean_wrap",
+    "ingredient_name": "cherry tomatoes",
+    "quantity_text": "80 g",
+    "quantity_value": 80,
+    "quantity_unit": "g",
+    "category_code": "V",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "l_bean_wrap",
+    "ingredient_name": "red onion",
+    "quantity_text": "1/4",
+    "quantity_value": 0.25,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "l_bean_wrap",
+    "ingredient_name": "lime",
+    "quantity_text": "1/2",
+    "quantity_value": 0.5,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 7
+  },
+  {
+    "recipe_slug": "l_bean_wrap",
+    "ingredient_name": "chipotle paste",
+    "quantity_text": "1 tsp",
+    "quantity_value": 1,
+    "quantity_unit": "tsp",
+    "category_code": "S",
+    "sort_order": 8
+  },
+  {
+    "recipe_slug": "l_bean_wrap",
+    "ingredient_name": "fresh coriander",
+    "quantity_text": "1/2 bunch",
+    "quantity_value": 0.5,
+    "quantity_unit": "bunch",
+    "category_code": "F",
+    "sort_order": 9
+  },
+  {
+    "recipe_slug": "l_chipotle_chick",
+    "ingredient_name": "chickpeas",
+    "quantity_text": "1/2 tin",
+    "quantity_value": 0.5,
+    "quantity_unit": "tin",
+    "category_code": "P",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "l_chipotle_chick",
+    "ingredient_name": "tinned sweetcorn",
+    "quantity_text": "1/2 tin",
+    "quantity_value": 0.5,
+    "quantity_unit": "tin",
+    "category_code": "V",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "l_chipotle_chick",
+    "ingredient_name": "red pepper",
+    "quantity_text": "1/2",
+    "quantity_value": 0.5,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "l_chipotle_chick",
+    "ingredient_name": "red onion",
+    "quantity_text": "1/4",
+    "quantity_value": 0.25,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "l_chipotle_chick",
+    "ingredient_name": "natural yogurt",
+    "quantity_text": "2 tbsp",
+    "quantity_value": 2,
+    "quantity_unit": "tbsp",
+    "category_code": "D",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "l_chipotle_chick",
+    "ingredient_name": "chipotle paste",
+    "quantity_text": "1 tsp",
+    "quantity_value": 1,
+    "quantity_unit": "tsp",
+    "category_code": "S",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "l_chipotle_chick",
+    "ingredient_name": "lime",
+    "quantity_text": "1/2",
+    "quantity_value": 0.5,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 7
+  },
+  {
+    "recipe_slug": "l_chipotle_chick",
+    "ingredient_name": "smoked paprika",
+    "quantity_text": "1/2 tsp",
+    "quantity_value": 0.5,
+    "quantity_unit": "tsp",
+    "category_code": "S",
+    "sort_order": 8
+  },
+  {
+    "recipe_slug": "l_chipotle_chick",
+    "ingredient_name": "fresh coriander",
+    "quantity_text": "1/2 bunch",
+    "quantity_value": 0.5,
+    "quantity_unit": "bunch",
+    "category_code": "F",
+    "sort_order": 9
+  },
+  {
+    "recipe_slug": "l_chipotle_chick",
+    "ingredient_name": "microwave brown rice pouch",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "N",
+    "sort_order": 10
+  },
+  {
+    "recipe_slug": "l_salmon_taco",
+    "ingredient_name": "hot-smoked salmon",
+    "quantity_text": "100 g",
+    "quantity_value": 100,
+    "quantity_unit": "g",
+    "category_code": "P",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "l_salmon_taco",
+    "ingredient_name": "corn or flour tortillas",
+    "quantity_text": "3",
+    "quantity_value": 3,
+    "quantity_unit": null,
+    "category_code": "N",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "l_salmon_taco",
+    "ingredient_name": "white cabbage",
+    "quantity_text": "120 g",
+    "quantity_value": 120,
+    "quantity_unit": "g",
+    "category_code": "V",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "l_salmon_taco",
+    "ingredient_name": "natural yogurt",
+    "quantity_text": "2 tbsp",
+    "quantity_value": 2,
+    "quantity_unit": "tbsp",
+    "category_code": "D",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "l_salmon_taco",
+    "ingredient_name": "lime",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "l_salmon_taco",
+    "ingredient_name": "red onion",
+    "quantity_text": "1/4",
+    "quantity_value": 0.25,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "l_salmon_taco",
+    "ingredient_name": "chipotle paste",
+    "quantity_text": "1 tsp",
+    "quantity_value": 1,
+    "quantity_unit": "tsp",
+    "category_code": "S",
+    "sort_order": 7
+  },
+  {
+    "recipe_slug": "l_salmon_taco",
+    "ingredient_name": "fresh coriander",
+    "quantity_text": "1/2 bunch",
+    "quantity_value": 0.5,
+    "quantity_unit": "bunch",
+    "category_code": "F",
+    "sort_order": 8
+  },
+  {
+    "recipe_slug": "l_mezze",
+    "ingredient_name": "hummus",
+    "quantity_text": "120 g",
+    "quantity_value": 120,
+    "quantity_unit": "g",
+    "category_code": "S",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "l_mezze",
+    "ingredient_name": "chickpeas",
+    "quantity_text": "1/2 tin",
+    "quantity_value": 0.5,
+    "quantity_unit": "tin",
+    "category_code": "P",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "l_mezze",
+    "ingredient_name": "flatbreads",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "N",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "l_mezze",
+    "ingredient_name": "cherry tomatoes",
+    "quantity_text": "100 g",
+    "quantity_value": 100,
+    "quantity_unit": "g",
+    "category_code": "V",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "l_mezze",
+    "ingredient_name": "red onion",
+    "quantity_text": "1/4",
+    "quantity_value": 0.25,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "l_mezze",
+    "ingredient_name": "za’atar",
+    "quantity_text": "1 tsp",
+    "quantity_value": 1,
+    "quantity_unit": "tsp",
+    "category_code": "S",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "l_mezze",
+    "ingredient_name": "lemon",
+    "quantity_text": "1/2",
+    "quantity_value": 0.5,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 7
+  },
+  {
+    "recipe_slug": "l_mezze",
+    "ingredient_name": "fresh parsley",
+    "quantity_text": "1/2 bunch",
+    "quantity_value": 0.5,
+    "quantity_unit": "bunch",
+    "category_code": "F",
+    "sort_order": 8
+  },
+  {
+    "recipe_slug": "l_bulgur_jar",
+    "ingredient_name": "fine bulgur",
+    "quantity_text": "60 g",
+    "quantity_value": 60,
+    "quantity_unit": "g",
+    "category_code": "N",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "l_bulgur_jar",
+    "ingredient_name": "feta",
+    "quantity_text": "40 g",
+    "quantity_value": 40,
+    "quantity_unit": "g",
+    "category_code": "D",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "l_bulgur_jar",
+    "ingredient_name": "cherry tomatoes",
+    "quantity_text": "100 g",
+    "quantity_value": 100,
+    "quantity_unit": "g",
+    "category_code": "V",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "l_bulgur_jar",
+    "ingredient_name": "spring onions",
+    "quantity_text": "2",
+    "quantity_value": 2,
+    "quantity_unit": null,
+    "category_code": "F",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "l_bulgur_jar",
+    "ingredient_name": "fresh parsley",
+    "quantity_text": "1/2 bunch",
+    "quantity_value": 0.5,
+    "quantity_unit": "bunch",
+    "category_code": "F",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "l_bulgur_jar",
+    "ingredient_name": "fresh mint",
+    "quantity_text": "1/2 bunch",
+    "quantity_value": 0.5,
+    "quantity_unit": "bunch",
+    "category_code": "F",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "l_bulgur_jar",
+    "ingredient_name": "lemon",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 7
+  },
+  {
+    "recipe_slug": "l_bulgur_jar",
+    "ingredient_name": "pomegranate seeds",
+    "quantity_text": "40 g",
+    "quantity_value": 40,
+    "quantity_unit": "g",
+    "category_code": "V",
+    "sort_order": 8
+  },
+  {
+    "recipe_slug": "l_bulgur_jar",
+    "ingredient_name": "sumac",
+    "quantity_text": "1/2 tsp",
+    "quantity_value": 0.5,
+    "quantity_unit": "tsp",
+    "category_code": "S",
+    "sort_order": 9
+  },
+  {
+    "recipe_slug": "l_lentil_beet",
+    "ingredient_name": "ready-cooked puy lentils",
+    "quantity_text": "1 pouch",
+    "quantity_value": 1,
+    "quantity_unit": "pouch",
+    "category_code": "P",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "l_lentil_beet",
+    "ingredient_name": "cooked beetroot (vac-packed)",
+    "quantity_text": "150 g",
+    "quantity_value": 150,
+    "quantity_unit": "g",
+    "category_code": "V",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "l_lentil_beet",
+    "ingredient_name": "feta",
+    "quantity_text": "40 g",
+    "quantity_value": 40,
+    "quantity_unit": "g",
+    "category_code": "D",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "l_lentil_beet",
+    "ingredient_name": "spinach",
+    "quantity_text": "60 g",
+    "quantity_value": 60,
+    "quantity_unit": "g",
+    "category_code": "V",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "l_lentil_beet",
+    "ingredient_name": "walnuts",
+    "quantity_text": "20 g",
+    "quantity_value": 20,
+    "quantity_unit": "g",
+    "category_code": "S",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "l_lentil_beet",
+    "ingredient_name": "tahini",
+    "quantity_text": "1 tbsp",
+    "quantity_value": 1,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "l_lentil_beet",
+    "ingredient_name": "lemon",
+    "quantity_text": "1/2",
+    "quantity_value": 0.5,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 7
+  },
+  {
+    "recipe_slug": "l_lentil_beet",
+    "ingredient_name": "fresh parsley",
+    "quantity_text": "1/2 bunch",
+    "quantity_value": 0.5,
+    "quantity_unit": "bunch",
+    "category_code": "F",
+    "sort_order": 8
+  },
+  {
+    "recipe_slug": "l_falafel_wrap",
+    "ingredient_name": "ready-made falafel",
+    "quantity_text": "4",
+    "quantity_value": 4,
+    "quantity_unit": null,
+    "category_code": "P",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "l_falafel_wrap",
+    "ingredient_name": "flatbreads",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "N",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "l_falafel_wrap",
+    "ingredient_name": "red cabbage",
+    "quantity_text": "80 g",
+    "quantity_value": 80,
+    "quantity_unit": "g",
+    "category_code": "V",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "l_falafel_wrap",
+    "ingredient_name": "tomatoes",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "l_falafel_wrap",
+    "ingredient_name": "tahini",
+    "quantity_text": "1 tbsp",
+    "quantity_value": 1,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "l_falafel_wrap",
+    "ingredient_name": "lemon",
+    "quantity_text": "1/2",
+    "quantity_value": 0.5,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "l_falafel_wrap",
+    "ingredient_name": "red wine vinegar",
+    "quantity_text": "1 tbsp",
+    "quantity_value": 1,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 7
+  },
+  {
+    "recipe_slug": "l_falafel_wrap",
+    "ingredient_name": "harissa",
+    "quantity_text": "1 tsp",
+    "quantity_value": 1,
+    "quantity_unit": "tsp",
+    "category_code": "S",
+    "sort_order": 8
+  },
+  {
+    "recipe_slug": "l_falafel_wrap",
+    "ingredient_name": "fresh parsley",
+    "quantity_text": "1/2 bunch",
+    "quantity_value": 0.5,
+    "quantity_unit": "bunch",
+    "category_code": "F",
+    "sort_order": 9
+  },
+  {
+    "recipe_slug": "l_shawarma_wrap",
+    "ingredient_name": "cooked chicken (leftover or shop-bought)",
+    "quantity_text": "120 g",
+    "quantity_value": 120,
+    "quantity_unit": "g",
+    "category_code": "P",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "l_shawarma_wrap",
+    "ingredient_name": "flatbreads",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "N",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "l_shawarma_wrap",
+    "ingredient_name": "natural yogurt",
+    "quantity_text": "2 tbsp",
+    "quantity_value": 2,
+    "quantity_unit": "tbsp",
+    "category_code": "D",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "l_shawarma_wrap",
+    "ingredient_name": "garlic",
+    "quantity_text": "1 clove",
+    "quantity_value": 1,
+    "quantity_unit": "clove",
+    "category_code": "F",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "l_shawarma_wrap",
+    "ingredient_name": "tomatoes",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "l_shawarma_wrap",
+    "ingredient_name": "red onion",
+    "quantity_text": "1/4",
+    "quantity_value": 0.25,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "l_shawarma_wrap",
+    "ingredient_name": "baharat or shawarma spice",
+    "quantity_text": "1 tsp",
+    "quantity_value": 1,
+    "quantity_unit": "tsp",
+    "category_code": "S",
+    "sort_order": 7
+  },
+  {
+    "recipe_slug": "l_shawarma_wrap",
+    "ingredient_name": "lemon",
+    "quantity_text": "1/2",
+    "quantity_value": 0.5,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 8
+  },
+  {
+    "recipe_slug": "l_shawarma_wrap",
+    "ingredient_name": "fresh parsley",
+    "quantity_text": "1/2 bunch",
+    "quantity_value": 0.5,
+    "quantity_unit": "bunch",
+    "category_code": "F",
+    "sort_order": 9
+  },
+  {
+    "recipe_slug": "sw_egg_cress",
+    "ingredient_name": "eggs",
+    "quantity_text": "3",
+    "quantity_value": 3,
+    "quantity_unit": null,
+    "category_code": "D",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "sw_egg_cress",
+    "ingredient_name": "mayonnaise",
+    "quantity_text": "1.5 tbsp",
+    "quantity_value": 1.5,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "sw_egg_cress",
+    "ingredient_name": "Dijon mustard",
+    "quantity_text": "1 tsp",
+    "quantity_value": 1,
+    "quantity_unit": "tsp",
+    "category_code": "S",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "sw_egg_cress",
+    "ingredient_name": "cress or watercress",
+    "quantity_text": "1 punnet",
+    "quantity_value": 1,
+    "quantity_unit": "punnet",
+    "category_code": "V",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "sw_egg_cress",
+    "ingredient_name": "seeded or sourdough bread",
+    "quantity_text": "2 slices",
+    "quantity_value": 2,
+    "quantity_unit": "slices",
+    "category_code": "N",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "sw_hummus_pepper",
+    "ingredient_name": "hummus",
+    "quantity_text": "60 g",
+    "quantity_value": 60,
+    "quantity_unit": "g",
+    "category_code": "S",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "sw_hummus_pepper",
+    "ingredient_name": "jarred roasted peppers",
+    "quantity_text": "60 g",
+    "quantity_value": 60,
+    "quantity_unit": "g",
+    "category_code": "V",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "sw_hummus_pepper",
+    "ingredient_name": "feta",
+    "quantity_text": "30 g",
+    "quantity_value": 30,
+    "quantity_unit": "g",
+    "category_code": "D",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "sw_hummus_pepper",
+    "ingredient_name": "spinach",
+    "quantity_text": "1 handful",
+    "quantity_value": 1,
+    "quantity_unit": "handful",
+    "category_code": "V",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "sw_hummus_pepper",
+    "ingredient_name": "seeded or sourdough bread",
+    "quantity_text": "2 slices",
+    "quantity_value": 2,
+    "quantity_unit": "slices",
+    "category_code": "N",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "sw_hummus_pepper",
+    "ingredient_name": "lemon",
+    "quantity_text": "1/4",
+    "quantity_value": 0.25,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "sw_cheese_pickle",
+    "ingredient_name": "mature cheddar",
+    "quantity_text": "60 g",
+    "quantity_value": 60,
+    "quantity_unit": "g",
+    "category_code": "D",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "sw_cheese_pickle",
+    "ingredient_name": "sweet pickle or chutney",
+    "quantity_text": "1 tbsp",
+    "quantity_value": 1,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "sw_cheese_pickle",
+    "ingredient_name": "apples",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "sw_cheese_pickle",
+    "ingredient_name": "spinach",
+    "quantity_text": "1 handful",
+    "quantity_value": 1,
+    "quantity_unit": "handful",
+    "category_code": "V",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "sw_cheese_pickle",
+    "ingredient_name": "seeded or sourdough bread",
+    "quantity_text": "2 slices",
+    "quantity_value": 2,
+    "quantity_unit": "slices",
+    "category_code": "N",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "sw_tuna_crunch",
+    "ingredient_name": "tinned tuna",
+    "quantity_text": "1 tin",
+    "quantity_value": 1,
+    "quantity_unit": "tin",
+    "category_code": "P",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "sw_tuna_crunch",
+    "ingredient_name": "tinned sweetcorn",
+    "quantity_text": "1/2 tin",
+    "quantity_value": 0.5,
+    "quantity_unit": "tin",
+    "category_code": "V",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "sw_tuna_crunch",
+    "ingredient_name": "natural yogurt",
+    "quantity_text": "1 tbsp",
+    "quantity_value": 1,
+    "quantity_unit": "tbsp",
+    "category_code": "D",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "sw_tuna_crunch",
+    "ingredient_name": "mayonnaise",
+    "quantity_text": "1 tbsp",
+    "quantity_value": 1,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "sw_tuna_crunch",
+    "ingredient_name": "spring onions",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "F",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "sw_tuna_crunch",
+    "ingredient_name": "little gem lettuce",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "sw_tuna_crunch",
+    "ingredient_name": "corn or flour tortillas",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "N",
+    "sort_order": 7
+  },
+  {
+    "recipe_slug": "sw_chickpea_smash",
+    "ingredient_name": "chickpeas",
+    "quantity_text": "1/2 tin",
+    "quantity_value": 0.5,
+    "quantity_unit": "tin",
+    "category_code": "P",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "sw_chickpea_smash",
+    "ingredient_name": "natural yogurt",
+    "quantity_text": "2 tbsp",
+    "quantity_value": 2,
+    "quantity_unit": "tbsp",
+    "category_code": "D",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "sw_chickpea_smash",
+    "ingredient_name": "Dijon mustard",
+    "quantity_text": "1 tsp",
+    "quantity_value": 1,
+    "quantity_unit": "tsp",
+    "category_code": "S",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "sw_chickpea_smash",
+    "ingredient_name": "lemon",
+    "quantity_text": "1/2",
+    "quantity_value": 0.5,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "sw_chickpea_smash",
+    "ingredient_name": "red onion",
+    "quantity_text": "1/4",
+    "quantity_value": 0.25,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "sw_chickpea_smash",
+    "ingredient_name": "fresh parsley",
+    "quantity_text": "1/2 bunch",
+    "quantity_value": 0.5,
+    "quantity_unit": "bunch",
+    "category_code": "F",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "sw_chickpea_smash",
+    "ingredient_name": "seeded or sourdough bread",
+    "quantity_text": "2 slices",
+    "quantity_value": 2,
+    "quantity_unit": "slices",
+    "category_code": "N",
+    "sort_order": 7
+  },
+  {
+    "recipe_slug": "sa_chopped_feta",
+    "ingredient_name": "chickpeas",
+    "quantity_text": "1/2 tin",
+    "quantity_value": 0.5,
+    "quantity_unit": "tin",
+    "category_code": "P",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "sa_chopped_feta",
+    "ingredient_name": "feta",
+    "quantity_text": "40 g",
+    "quantity_value": 40,
+    "quantity_unit": "g",
+    "category_code": "D",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "sa_chopped_feta",
+    "ingredient_name": "tinned sweetcorn",
+    "quantity_text": "1/2 tin",
+    "quantity_value": 0.5,
+    "quantity_unit": "tin",
+    "category_code": "V",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "sa_chopped_feta",
+    "ingredient_name": "red pepper",
+    "quantity_text": "1/2",
+    "quantity_value": 0.5,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "sa_chopped_feta",
+    "ingredient_name": "cherry tomatoes",
+    "quantity_text": "80 g",
+    "quantity_value": 80,
+    "quantity_unit": "g",
+    "category_code": "V",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "sa_chopped_feta",
+    "ingredient_name": "red onion",
+    "quantity_text": "1/4",
+    "quantity_value": 0.25,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "sa_chopped_feta",
+    "ingredient_name": "lemon",
+    "quantity_text": "1/2",
+    "quantity_value": 0.5,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 7
+  },
+  {
+    "recipe_slug": "sa_chopped_feta",
+    "ingredient_name": "Dijon mustard",
+    "quantity_text": "1 tsp",
+    "quantity_value": 1,
+    "quantity_unit": "tsp",
+    "category_code": "S",
+    "sort_order": 8
+  },
+  {
+    "recipe_slug": "sa_chopped_feta",
+    "ingredient_name": "fresh parsley",
+    "quantity_text": "1/2 bunch",
+    "quantity_value": 0.5,
+    "quantity_unit": "bunch",
+    "category_code": "F",
+    "sort_order": 9
+  },
+  {
+    "recipe_slug": "sa_potato_egg",
+    "ingredient_name": "cooked new potatoes",
+    "quantity_text": "250 g",
+    "quantity_value": 250,
+    "quantity_unit": "g",
+    "category_code": "V",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "sa_potato_egg",
+    "ingredient_name": "eggs",
+    "quantity_text": "2",
+    "quantity_value": 2,
+    "quantity_unit": null,
+    "category_code": "D",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "sa_potato_egg",
+    "ingredient_name": "green beans",
+    "quantity_text": "100 g",
+    "quantity_value": 100,
+    "quantity_unit": "g",
+    "category_code": "V",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "sa_potato_egg",
+    "ingredient_name": "natural yogurt",
+    "quantity_text": "2 tbsp",
+    "quantity_value": 2,
+    "quantity_unit": "tbsp",
+    "category_code": "D",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "sa_potato_egg",
+    "ingredient_name": "Dijon mustard",
+    "quantity_text": "1 tsp",
+    "quantity_value": 1,
+    "quantity_unit": "tsp",
+    "category_code": "S",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "sa_potato_egg",
+    "ingredient_name": "spring onions",
+    "quantity_text": "2",
+    "quantity_value": 2,
+    "quantity_unit": null,
+    "category_code": "F",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "sa_potato_egg",
+    "ingredient_name": "lemon",
+    "quantity_text": "1/2",
+    "quantity_value": 0.5,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 7
+  },
+  {
+    "recipe_slug": "sa_potato_egg",
+    "ingredient_name": "fresh parsley",
+    "quantity_text": "1/2 bunch",
+    "quantity_value": 0.5,
+    "quantity_unit": "bunch",
+    "category_code": "F",
+    "sort_order": 8
+  },
+  {
+    "recipe_slug": "sa_apple_cheddar",
+    "ingredient_name": "spinach",
+    "quantity_text": "80 g",
+    "quantity_value": 80,
+    "quantity_unit": "g",
+    "category_code": "V",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "sa_apple_cheddar",
+    "ingredient_name": "apples",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "sa_apple_cheddar",
+    "ingredient_name": "mature cheddar",
+    "quantity_text": "50 g",
+    "quantity_value": 50,
+    "quantity_unit": "g",
+    "category_code": "D",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "sa_apple_cheddar",
+    "ingredient_name": "walnuts",
+    "quantity_text": "25 g",
+    "quantity_value": 25,
+    "quantity_unit": "g",
+    "category_code": "S",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "sa_apple_cheddar",
+    "ingredient_name": "lemon",
+    "quantity_text": "1/2",
+    "quantity_value": 0.5,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "sa_apple_cheddar",
+    "ingredient_name": "Dijon mustard",
+    "quantity_text": "1 tsp",
+    "quantity_value": 1,
+    "quantity_unit": "tsp",
+    "category_code": "S",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "sa_butterbean",
+    "ingredient_name": "butter beans",
+    "quantity_text": "1/2 tin",
+    "quantity_value": 0.5,
+    "quantity_unit": "tin",
+    "category_code": "P",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "sa_butterbean",
+    "ingredient_name": "jarred roasted peppers",
+    "quantity_text": "80 g",
+    "quantity_value": 80,
+    "quantity_unit": "g",
+    "category_code": "V",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "sa_butterbean",
+    "ingredient_name": "feta",
+    "quantity_text": "40 g",
+    "quantity_value": 40,
+    "quantity_unit": "g",
+    "category_code": "D",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "sa_butterbean",
+    "ingredient_name": "red onion",
+    "quantity_text": "1/4",
+    "quantity_value": 0.25,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "sa_butterbean",
+    "ingredient_name": "lemon",
+    "quantity_text": "1/2",
+    "quantity_value": 0.5,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "sa_butterbean",
+    "ingredient_name": "fresh parsley",
+    "quantity_text": "1/2 bunch",
+    "quantity_value": 0.5,
+    "quantity_unit": "bunch",
+    "category_code": "F",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "sa_butterbean",
+    "ingredient_name": "spinach",
+    "quantity_text": "1 handful",
+    "quantity_value": 1,
+    "quantity_unit": "handful",
+    "category_code": "V",
+    "sort_order": 7
+  },
+  {
+    "recipe_slug": "to_avo_egg",
+    "ingredient_name": "avocado",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "to_avo_egg",
+    "ingredient_name": "eggs",
+    "quantity_text": "2",
+    "quantity_value": 2,
+    "quantity_unit": null,
+    "category_code": "D",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "to_avo_egg",
+    "ingredient_name": "seeded or sourdough bread",
+    "quantity_text": "2 slices",
+    "quantity_value": 2,
+    "quantity_unit": "slices",
+    "category_code": "N",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "to_avo_egg",
+    "ingredient_name": "lemon",
+    "quantity_text": "1/2",
+    "quantity_value": 0.5,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "to_avo_egg",
+    "ingredient_name": "chilli flakes",
+    "quantity_text": "1/2 tsp",
+    "quantity_value": 0.5,
+    "quantity_unit": "tsp",
+    "category_code": "S",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "to_beans_herb",
+    "ingredient_name": "cannellini beans",
+    "quantity_text": "1/2 tin",
+    "quantity_value": 0.5,
+    "quantity_unit": "tin",
+    "category_code": "P",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "to_beans_herb",
+    "ingredient_name": "garlic",
+    "quantity_text": "1 clove",
+    "quantity_value": 1,
+    "quantity_unit": "clove",
+    "category_code": "F",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "to_beans_herb",
+    "ingredient_name": "lemon",
+    "quantity_text": "1/2",
+    "quantity_value": 0.5,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "to_beans_herb",
+    "ingredient_name": "fresh parsley",
+    "quantity_text": "1/2 bunch",
+    "quantity_value": 0.5,
+    "quantity_unit": "bunch",
+    "category_code": "F",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "to_beans_herb",
+    "ingredient_name": "seeded or sourdough bread",
+    "quantity_text": "2 slices",
+    "quantity_value": 2,
+    "quantity_unit": "slices",
+    "category_code": "N",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "to_beans_herb",
+    "ingredient_name": "chilli flakes",
+    "quantity_text": "1/2 tsp",
+    "quantity_value": 0.5,
+    "quantity_unit": "tsp",
+    "category_code": "S",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "to_pb_banana",
+    "ingredient_name": "peanut butter",
+    "quantity_text": "2 tbsp",
+    "quantity_value": 2,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "to_pb_banana",
+    "ingredient_name": "bananas",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "to_pb_banana",
+    "ingredient_name": "seeded or sourdough bread",
+    "quantity_text": "2 slices",
+    "quantity_value": 2,
+    "quantity_unit": "slices",
+    "category_code": "N",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "to_pb_banana",
+    "ingredient_name": "chia or mixed seeds",
+    "quantity_text": "1 tbsp",
+    "quantity_value": 1,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "to_pb_banana",
+    "ingredient_name": "ground cinnamon",
+    "quantity_text": "1/2 tsp",
+    "quantity_value": 0.5,
+    "quantity_unit": "tsp",
+    "category_code": "S",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "bf_cherry_oats",
+    "ingredient_name": "porridge oats",
+    "quantity_text": "70 g",
+    "quantity_value": 70,
+    "quantity_unit": "g",
+    "category_code": "N",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "bf_cherry_oats",
+    "ingredient_name": "skyr or Greek yogurt",
+    "quantity_text": "150 g",
+    "quantity_value": 150,
+    "quantity_unit": "g",
+    "category_code": "D",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "bf_cherry_oats",
+    "ingredient_name": "semi-skimmed or skimmed milk",
+    "quantity_text": "100 ml",
+    "quantity_value": 100,
+    "quantity_unit": "ml",
+    "category_code": "D",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "bf_cherry_oats",
+    "ingredient_name": "frozen cherries",
+    "quantity_text": "80 g",
+    "quantity_value": 80,
+    "quantity_unit": "g",
+    "category_code": "V",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "bf_cherry_oats",
+    "ingredient_name": "chia or mixed seeds",
+    "quantity_text": "1 tbsp",
+    "quantity_value": 1,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "bf_cherry_oats",
+    "ingredient_name": "ground cinnamon",
+    "quantity_text": "1/2 tsp",
+    "quantity_value": 0.5,
+    "quantity_unit": "tsp",
+    "category_code": "S",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "bf_skyr_bowl",
+    "ingredient_name": "skyr or Greek yogurt",
+    "quantity_text": "200 g",
+    "quantity_value": 200,
+    "quantity_unit": "g",
+    "category_code": "D",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "bf_skyr_bowl",
+    "ingredient_name": "frozen mixed berries",
+    "quantity_text": "100 g",
+    "quantity_value": 100,
+    "quantity_unit": "g",
+    "category_code": "V",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "bf_skyr_bowl",
+    "ingredient_name": "granola",
+    "quantity_text": "40 g",
+    "quantity_value": 40,
+    "quantity_unit": "g",
+    "category_code": "N",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "bf_skyr_bowl",
+    "ingredient_name": "chia or mixed seeds",
+    "quantity_text": "1 tbsp",
+    "quantity_value": 1,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "bf_skyr_bowl",
+    "ingredient_name": "bananas",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "bf_pb_porridge",
+    "ingredient_name": "porridge oats",
+    "quantity_text": "80 g",
+    "quantity_value": 80,
+    "quantity_unit": "g",
+    "category_code": "N",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "bf_pb_porridge",
+    "ingredient_name": "semi-skimmed or skimmed milk",
+    "quantity_text": "350 ml",
+    "quantity_value": 350,
+    "quantity_unit": "ml",
+    "category_code": "D",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "bf_pb_porridge",
+    "ingredient_name": "peanut butter",
+    "quantity_text": "1.5 tbsp",
+    "quantity_value": 1.5,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "bf_pb_porridge",
+    "ingredient_name": "bananas",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "bf_pb_porridge",
+    "ingredient_name": "ground cinnamon",
+    "quantity_text": "1/2 tsp",
+    "quantity_value": 0.5,
+    "quantity_unit": "tsp",
+    "category_code": "S",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "bf_pb_porridge",
+    "ingredient_name": "chia or mixed seeds",
+    "quantity_text": "1 tbsp",
+    "quantity_value": 1,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "bf_eggs_avo",
+    "ingredient_name": "eggs",
+    "quantity_text": "3",
+    "quantity_value": 3,
+    "quantity_unit": null,
+    "category_code": "D",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "bf_eggs_avo",
+    "ingredient_name": "avocado",
+    "quantity_text": "1/2",
+    "quantity_value": 0.5,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "bf_eggs_avo",
+    "ingredient_name": "seeded or sourdough bread",
+    "quantity_text": "2 slices",
+    "quantity_value": 2,
+    "quantity_unit": "slices",
+    "category_code": "N",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "bf_eggs_avo",
+    "ingredient_name": "butter",
+    "quantity_text": "1 tsp",
+    "quantity_value": 1,
+    "quantity_unit": "tsp",
+    "category_code": "D",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "bf_eggs_avo",
+    "ingredient_name": "lemon",
+    "quantity_text": "1/4",
+    "quantity_value": 0.25,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "bf_eggs_avo",
+    "ingredient_name": "chilli flakes",
+    "quantity_text": "1/2 tsp",
+    "quantity_value": 0.5,
+    "quantity_unit": "tsp",
+    "category_code": "S",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "bf_recovery_smoothie",
+    "ingredient_name": "frozen cherries",
+    "quantity_text": "120 g",
+    "quantity_value": 120,
+    "quantity_unit": "g",
+    "category_code": "V",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "bf_recovery_smoothie",
+    "ingredient_name": "bananas",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "bf_recovery_smoothie",
+    "ingredient_name": "skyr or Greek yogurt",
+    "quantity_text": "150 g",
+    "quantity_value": 150,
+    "quantity_unit": "g",
+    "category_code": "D",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "bf_recovery_smoothie",
+    "ingredient_name": "semi-skimmed or skimmed milk",
+    "quantity_text": "200 ml",
+    "quantity_value": 200,
+    "quantity_unit": "ml",
+    "category_code": "D",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "bf_recovery_smoothie",
+    "ingredient_name": "porridge oats",
+    "quantity_text": "30 g",
+    "quantity_value": 30,
+    "quantity_unit": "g",
+    "category_code": "N",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "bf_recovery_smoothie",
+    "ingredient_name": "chia or mixed seeds",
+    "quantity_text": "1 tbsp",
+    "quantity_value": 1,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "bf_miso_egg_rice",
+    "ingredient_name": "cooked/day-old rice",
+    "quantity_text": "180 g",
+    "quantity_value": 180,
+    "quantity_unit": "g",
+    "category_code": "N",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "bf_miso_egg_rice",
+    "ingredient_name": "eggs",
+    "quantity_text": "2",
+    "quantity_value": 2,
+    "quantity_unit": null,
+    "category_code": "D",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "bf_miso_egg_rice",
+    "ingredient_name": "white miso",
+    "quantity_text": "1 tsp",
+    "quantity_value": 1,
+    "quantity_unit": "tsp",
+    "category_code": "S",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "bf_miso_egg_rice",
+    "ingredient_name": "nori sheets",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "S",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "bf_miso_egg_rice",
+    "ingredient_name": "spring onions",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "F",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "bf_miso_egg_rice",
+    "ingredient_name": "sesame seeds",
+    "quantity_text": "1 tsp",
+    "quantity_value": 1,
+    "quantity_unit": "tsp",
+    "category_code": "S",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "bf_miso_egg_rice",
+    "ingredient_name": "soy sauce",
+    "quantity_text": "1 tsp",
+    "quantity_value": 1,
+    "quantity_unit": "tsp",
+    "category_code": "S",
+    "sort_order": 7
+  },
+  {
+    "recipe_slug": "bf_bagel_egg",
+    "ingredient_name": "bagels",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "N",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "bf_bagel_egg",
+    "ingredient_name": "eggs",
+    "quantity_text": "2",
+    "quantity_value": 2,
+    "quantity_unit": null,
+    "category_code": "D",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "bf_bagel_egg",
+    "ingredient_name": "cream cheese",
+    "quantity_text": "40 g",
+    "quantity_value": 40,
+    "quantity_unit": "g",
+    "category_code": "D",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "bf_bagel_egg",
+    "ingredient_name": "tomatoes",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "bf_bagel_egg",
+    "ingredient_name": "spring onions",
+    "quantity_text": "1",
+    "quantity_value": 1,
+    "quantity_unit": null,
+    "category_code": "F",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "bk_cherry_flapjack",
+    "ingredient_name": "porridge oats",
+    "quantity_text": "350 g",
+    "quantity_value": 350,
+    "quantity_unit": "g",
+    "category_code": "N",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "bk_cherry_flapjack",
+    "ingredient_name": "butter",
+    "quantity_text": "180 g",
+    "quantity_value": 180,
+    "quantity_unit": "g",
+    "category_code": "D",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "bk_cherry_flapjack",
+    "ingredient_name": "soft brown sugar",
+    "quantity_text": "100 g",
+    "quantity_value": 100,
+    "quantity_unit": "g",
+    "category_code": "S",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "bk_cherry_flapjack",
+    "ingredient_name": "golden syrup or honey",
+    "quantity_text": "3 tbsp",
+    "quantity_value": 3,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "bk_cherry_flapjack",
+    "ingredient_name": "dried cherries",
+    "quantity_text": "100 g",
+    "quantity_value": 100,
+    "quantity_unit": "g",
+    "category_code": "V",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "bk_cherry_flapjack",
+    "ingredient_name": "chia or mixed seeds",
+    "quantity_text": "60 g",
+    "quantity_value": 60,
+    "quantity_unit": "g",
+    "category_code": "S",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "bk_cherry_flapjack",
+    "ingredient_name": "ground cinnamon",
+    "quantity_text": "1 tsp",
+    "quantity_value": 1,
+    "quantity_unit": "tsp",
+    "category_code": "S",
+    "sort_order": 7
+  },
+  {
+    "recipe_slug": "bk_banana_loaf",
+    "ingredient_name": "bananas",
+    "quantity_text": "3 very ripe",
+    "quantity_value": 3,
+    "quantity_unit": "very ripe",
+    "category_code": "V",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "bk_banana_loaf",
+    "ingredient_name": "plain flour",
+    "quantity_text": "250 g",
+    "quantity_value": 250,
+    "quantity_unit": "g",
+    "category_code": "N",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "bk_banana_loaf",
+    "ingredient_name": "natural yogurt",
+    "quantity_text": "150 g",
+    "quantity_value": 150,
+    "quantity_unit": "g",
+    "category_code": "D",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "bk_banana_loaf",
+    "ingredient_name": "eggs",
+    "quantity_text": "2",
+    "quantity_value": 2,
+    "quantity_unit": null,
+    "category_code": "D",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "bk_banana_loaf",
+    "ingredient_name": "soft brown sugar",
+    "quantity_text": "120 g",
+    "quantity_value": 120,
+    "quantity_unit": "g",
+    "category_code": "S",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "bk_banana_loaf",
+    "ingredient_name": "neutral oil",
+    "quantity_text": "80 ml",
+    "quantity_value": 80,
+    "quantity_unit": "ml",
+    "category_code": "S",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "bk_banana_loaf",
+    "ingredient_name": "walnuts",
+    "quantity_text": "80 g",
+    "quantity_value": 80,
+    "quantity_unit": "g",
+    "category_code": "S",
+    "sort_order": 7
+  },
+  {
+    "recipe_slug": "bk_banana_loaf",
+    "ingredient_name": "baking powder",
+    "quantity_text": "2 tsp",
+    "quantity_value": 2,
+    "quantity_unit": "tsp",
+    "category_code": "S",
+    "sort_order": 8
+  },
+  {
+    "recipe_slug": "bk_banana_loaf",
+    "ingredient_name": "bicarbonate of soda",
+    "quantity_text": "1/2 tsp",
+    "quantity_value": 0.5,
+    "quantity_unit": "tsp",
+    "category_code": "S",
+    "sort_order": 9
+  },
+  {
+    "recipe_slug": "bk_frittata_muffins",
+    "ingredient_name": "eggs",
+    "quantity_text": "10",
+    "quantity_value": 10,
+    "quantity_unit": null,
+    "category_code": "D",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "bk_frittata_muffins",
+    "ingredient_name": "feta",
+    "quantity_text": "150 g",
+    "quantity_value": 150,
+    "quantity_unit": "g",
+    "category_code": "D",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "bk_frittata_muffins",
+    "ingredient_name": "spinach",
+    "quantity_text": "200 g",
+    "quantity_value": 200,
+    "quantity_unit": "g",
+    "category_code": "V",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "bk_frittata_muffins",
+    "ingredient_name": "spring onions",
+    "quantity_text": "4",
+    "quantity_value": 4,
+    "quantity_unit": null,
+    "category_code": "F",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "bk_frittata_muffins",
+    "ingredient_name": "jarred roasted peppers",
+    "quantity_text": "120 g",
+    "quantity_value": 120,
+    "quantity_unit": "g",
+    "category_code": "V",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "bk_frittata_muffins",
+    "ingredient_name": "natural yogurt",
+    "quantity_text": "3 tbsp",
+    "quantity_value": 3,
+    "quantity_unit": "tbsp",
+    "category_code": "D",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "bk_frittata_muffins",
+    "ingredient_name": "chilli flakes",
+    "quantity_text": "1/2 tsp",
+    "quantity_value": 0.5,
+    "quantity_unit": "tsp",
+    "category_code": "S",
+    "sort_order": 7
+  },
+  {
+    "recipe_slug": "bk_cheese_carrot_muffins",
+    "ingredient_name": "wholemeal flour",
+    "quantity_text": "300 g",
+    "quantity_value": 300,
+    "quantity_unit": "g",
+    "category_code": "N",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "bk_cheese_carrot_muffins",
+    "ingredient_name": "mature cheddar",
+    "quantity_text": "150 g",
+    "quantity_value": 150,
+    "quantity_unit": "g",
+    "category_code": "D",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "bk_cheese_carrot_muffins",
+    "ingredient_name": "carrots",
+    "quantity_text": "3",
+    "quantity_value": 3,
+    "quantity_unit": null,
+    "category_code": "V",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "bk_cheese_carrot_muffins",
+    "ingredient_name": "eggs",
+    "quantity_text": "2",
+    "quantity_value": 2,
+    "quantity_unit": null,
+    "category_code": "D",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "bk_cheese_carrot_muffins",
+    "ingredient_name": "natural yogurt",
+    "quantity_text": "200 g",
+    "quantity_value": 200,
+    "quantity_unit": "g",
+    "category_code": "D",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "bk_cheese_carrot_muffins",
+    "ingredient_name": "neutral oil",
+    "quantity_text": "80 ml",
+    "quantity_value": 80,
+    "quantity_unit": "ml",
+    "category_code": "S",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "bk_cheese_carrot_muffins",
+    "ingredient_name": "chia or mixed seeds",
+    "quantity_text": "50 g",
+    "quantity_value": 50,
+    "quantity_unit": "g",
+    "category_code": "S",
+    "sort_order": 7
+  },
+  {
+    "recipe_slug": "bk_cheese_carrot_muffins",
+    "ingredient_name": "baking powder",
+    "quantity_text": "3 tsp",
+    "quantity_value": 3,
+    "quantity_unit": "tsp",
+    "category_code": "S",
+    "sort_order": 8
+  },
+  {
+    "recipe_slug": "bk_energy_balls",
+    "ingredient_name": "medjool dates",
+    "quantity_text": "300 g",
+    "quantity_value": 300,
+    "quantity_unit": "g",
+    "category_code": "V",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "bk_energy_balls",
+    "ingredient_name": "porridge oats",
+    "quantity_text": "120 g",
+    "quantity_value": 120,
+    "quantity_unit": "g",
+    "category_code": "N",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "bk_energy_balls",
+    "ingredient_name": "peanut butter",
+    "quantity_text": "100 g",
+    "quantity_value": 100,
+    "quantity_unit": "g",
+    "category_code": "S",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "bk_energy_balls",
+    "ingredient_name": "cocoa powder",
+    "quantity_text": "3 tbsp",
+    "quantity_value": 3,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "bk_energy_balls",
+    "ingredient_name": "chia or mixed seeds",
+    "quantity_text": "40 g",
+    "quantity_value": 40,
+    "quantity_unit": "g",
+    "category_code": "S",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "bk_energy_balls",
+    "ingredient_name": "desiccated coconut",
+    "quantity_text": "30 g",
+    "quantity_value": 30,
+    "quantity_unit": "g",
+    "category_code": "S",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "bk_race_bars",
+    "ingredient_name": "cooked/day-old rice",
+    "quantity_text": "500 g",
+    "quantity_value": 500,
+    "quantity_unit": "g",
+    "category_code": "N",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "bk_race_bars",
+    "ingredient_name": "maple syrup",
+    "quantity_text": "3 tbsp",
+    "quantity_value": 3,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "bk_race_bars",
+    "ingredient_name": "peanut butter",
+    "quantity_text": "3 tbsp",
+    "quantity_value": 3,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "bk_race_bars",
+    "ingredient_name": "sesame seeds",
+    "quantity_text": "3 tbsp",
+    "quantity_value": 3,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "bk_race_bars",
+    "ingredient_name": "sea salt",
+    "quantity_text": "1 tsp",
+    "quantity_value": 1,
+    "quantity_unit": "tsp",
+    "category_code": "S",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "bk_soda_bread",
+    "ingredient_name": "wholemeal flour",
+    "quantity_text": "250 g",
+    "quantity_value": 250,
+    "quantity_unit": "g",
+    "category_code": "N",
+    "sort_order": 1
+  },
+  {
+    "recipe_slug": "bk_soda_bread",
+    "ingredient_name": "plain flour",
+    "quantity_text": "250 g",
+    "quantity_value": 250,
+    "quantity_unit": "g",
+    "category_code": "N",
+    "sort_order": 2
+  },
+  {
+    "recipe_slug": "bk_soda_bread",
+    "ingredient_name": "natural yogurt",
+    "quantity_text": "400 g",
+    "quantity_value": 400,
+    "quantity_unit": "g",
+    "category_code": "D",
+    "sort_order": 3
+  },
+  {
+    "recipe_slug": "bk_soda_bread",
+    "ingredient_name": "chia or mixed seeds",
+    "quantity_text": "60 g",
+    "quantity_value": 60,
+    "quantity_unit": "g",
+    "category_code": "S",
+    "sort_order": 4
+  },
+  {
+    "recipe_slug": "bk_soda_bread",
+    "ingredient_name": "bicarbonate of soda",
+    "quantity_text": "1 tsp",
+    "quantity_value": 1,
+    "quantity_unit": "tsp",
+    "category_code": "S",
+    "sort_order": 5
+  },
+  {
+    "recipe_slug": "bk_soda_bread",
+    "ingredient_name": "sea salt",
+    "quantity_text": "1 tsp",
+    "quantity_value": 1,
+    "quantity_unit": "tsp",
+    "category_code": "S",
+    "sort_order": 6
+  },
+  {
+    "recipe_slug": "bk_soda_bread",
+    "ingredient_name": "honey",
+    "quantity_text": "1 tbsp",
+    "quantity_value": 1,
+    "quantity_unit": "tbsp",
+    "category_code": "S",
+    "sort_order": 7
+  }
+]
