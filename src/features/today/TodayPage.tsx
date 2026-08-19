@@ -16,7 +16,7 @@ import { phase, type PhaseOverride, type PhaseSlug } from '@/domain/phase';
 import { sessionsFor, type SessionTemplate } from '@/domain/schedule';
 import { saunaFor } from '@/domain/sauna';
 import { WorkoutLogger } from './WorkoutLogger';
-import { LogSaunaButton } from './SaunaLog';
+import { LogSaunaButton, AdHocSaunaLog } from './SaunaLog';
 
 export function TodayPage() {
   const today = formatDate(new Date());
@@ -221,6 +221,16 @@ export function TodayPage() {
                     </Card>
                   );
                 })}
+
+              {/* Ad-hoc sauna logging — always available, scheduled or not */}
+              <div>
+                {slots.length === 0 && (
+                  <Eyebrow bullet className="mb-1">
+                    Sauna
+                  </Eyebrow>
+                )}
+                <AdHocSaunaLog types={typeList} />
+              </div>
             </div>
           );
         }}

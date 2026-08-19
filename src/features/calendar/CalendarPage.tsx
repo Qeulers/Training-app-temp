@@ -18,7 +18,14 @@ import {
   useSaunaTypes,
   useExercises,
 } from '@/data/reference';
-import { useRaces, useUserSettings } from '@/data/user';
+import {
+  useRaces,
+  useUserSettings,
+  useWorkoutLogs,
+  useSaunaLogs,
+  type WorkoutLog,
+  type SaunaLog,
+} from '@/data/user';
 import { formatDate, addDays, parseLocalDate, dayOfWeek, daysBetween } from '@/domain/dates';
 import { sessionsFor, type SessionTemplate } from '@/domain/schedule';
 import { saunaFor } from '@/domain/sauna';
@@ -35,25 +42,78 @@ type View = 'week' | 'month' | 'year';
 const monCol = (dateStr: string) => (dayOfWeek(dateStr) + 6) % 7;
 const DOW_LABELS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
 
+/** Bucket log rows by their `logged_on` date for O(1) per-day lookup. */
+function groupByDate<T extends { logged_on: string }>(rows: T[]): Map<string, T[]> {
+  const m = new Map<string, T[]>();
+  for (const r of rows) {
+    const list = m.get(r.logged_on);
+    if (list) list.push(r);
+    else m.set(r.logged_on, [r]);
+  }
+  return m;
+}
+
+type SessionStatus = 'done' | 'missed' | 'today' | 'upcoming';
+
 interface Ctx {
   templates: SessionTemplate[];
   schedule: import('@/domain/sauna').SaunaScheduleRow[];
   raceDate: string | null;
   override: PhaseOverride | null;
+  /** Actual logs keyed by their logged_on date. */
+  workoutLogsByDate: Map<string, WorkoutLog[]>;
+  saunaLogsByDate: Map<string, SaunaLog[]>;
+  today: string;
 }
 
+type PlannedSession = SessionTemplate & { status: SessionStatus };
+type PlannedSlot = ReturnType<typeof saunaFor>[number] & { done: boolean };
+
 function activityFor(dateStr: string, ctx: Ctx) {
+  const planned = sessionsFor(dateStr, {
+    raceDate: ctx.raceDate,
+    templates: ctx.templates,
+    override: ctx.override,
+  });
+  const plannedSlots = saunaFor(dateStr, {
+    raceDate: ctx.raceDate,
+    schedule: ctx.schedule,
+    override: ctx.override,
+  });
+  const wlogs = ctx.workoutLogsByDate.get(dateStr) ?? [];
+  const slogs = ctx.saunaLogsByDate.get(dateStr) ?? [];
+
+  // Planned strength sessions, tagged with completion / timing status.
+  const plannedKeys = new Set(planned.map((s) => s.session_key));
+  const sessions: PlannedSession[] = planned.map((s) => {
+    const done = wlogs.some((l) => l.session_key === s.session_key);
+    const status: SessionStatus = done
+      ? 'done'
+      : dateStr < ctx.today
+        ? 'missed'
+        : dateStr === ctx.today
+          ? 'today'
+          : 'upcoming';
+    return { ...s, status };
+  });
+  // Workouts logged on this day that aren't one of today's planned sessions
+  // (a session done on a different day, or an unplanned/ad-hoc session).
+  const loggedSessions = wlogs.filter((l) => !plannedKeys.has(l.session_key));
+
+  // Planned sauna slots, tagged done when a matching log exists that day.
+  const plannedTypes = new Set(plannedSlots.map((s) => s.sauna_type_slug));
+  const slots: PlannedSlot[] = plannedSlots.map((slot) => ({
+    ...slot,
+    done: slogs.some((l) => l.sauna_type_slug === slot.sauna_type_slug),
+  }));
+  // Saunas logged on this day with no matching planned slot (ad-hoc).
+  const loggedSaunas = slogs.filter((l) => !plannedTypes.has(l.sauna_type_slug));
+
   return {
-    sessions: sessionsFor(dateStr, {
-      raceDate: ctx.raceDate,
-      templates: ctx.templates,
-      override: ctx.override,
-    }),
-    slots: saunaFor(dateStr, {
-      raceDate: ctx.raceDate,
-      schedule: ctx.schedule,
-      override: ctx.override,
-    }),
+    sessions,
+    loggedSessions,
+    slots,
+    loggedSaunas,
     heat: inHeatBlock(dateStr, ctx.raceDate),
     race: dateStr === ctx.raceDate,
   };
@@ -128,6 +188,8 @@ export function CalendarPage() {
   const exercises = useExercises();
   const races = useRaces();
   const settings = useUserSettings();
+  const workoutLogs = useWorkoutLogs();
+  const saunaLogs = useSaunaLogs();
 
   const step = (dir: number) => {
     setAnchor((a) => addDays(a, dir * (view === 'week' ? 7 : view === 'month' ? 30 : 365)));
@@ -148,9 +210,31 @@ export function CalendarPage() {
   return (
     <TabScaffold title="Calendar" wide hideTitle>
       <QueryBoundary
-        queries={[phases, templates, items, schedule, saunaTypes, exercises, races, settings]}
+        queries={[
+          phases,
+          templates,
+          items,
+          schedule,
+          saunaTypes,
+          exercises,
+          races,
+          settings,
+          workoutLogs,
+          saunaLogs,
+        ]}
       >
-        {([phaseList, templateList, itemList, scheduleList, typeList, exerciseList, raceList, userSettings]) => {
+        {([
+          phaseList,
+          templateList,
+          itemList,
+          scheduleList,
+          typeList,
+          exerciseList,
+          raceList,
+          userSettings,
+          workoutLogList,
+          saunaLogList,
+        ]) => {
           const target = raceList.find((r) => r.is_target) ?? null;
           const override: PhaseOverride | null =
             userSettings?.phase_override && userSettings.phase_override_from
@@ -159,11 +243,16 @@ export function CalendarPage() {
                   from: userSettings.phase_override_from,
                 }
               : null;
+          const workoutLogsByDate = groupByDate(workoutLogList);
+          const saunaLogsByDate = groupByDate(saunaLogList);
           const ctx: Ctx = {
             templates: templateList,
             schedule: scheduleList,
             raceDate: target?.race_date ?? null,
             override,
+            workoutLogsByDate,
+            saunaLogsByDate,
+            today: formatDate(new Date()),
           };
           const typeBy = new Map(typeList.map((t: SaunaType) => [t.slug, t]));
           const exBy = new Map(exerciseList.map((e: Exercise) => [e.slug, e]));
@@ -328,10 +417,15 @@ function WeekView({
       {/* ── Left: day list ── */}
       <div className="space-y-1.5">
         {days.map((d) => {
-          const { sessions, slots, heat, race } = activityFor(d, ctx);
+          const { sessions, slots, heat, race, loggedSessions, loggedSaunas } = activityFor(d, ctx);
           const isToday = d === today;
           const isSelected = d === effectiveSelected;
-          const isRunningDay = sessions.length === 0 && slots.length === 0 && !race;
+          const isRunningDay =
+            sessions.length === 0 &&
+            slots.length === 0 &&
+            loggedSessions.length === 0 &&
+            loggedSaunas.length === 0 &&
+            !race;
 
           return (
             <button
@@ -401,6 +495,18 @@ function WeekView({
                         bgColor="bg-accent"
                         label={s.name}
                         meta={s.duration_label}
+                        done={s.status === 'done'}
+                        missed={s.status === 'missed'}
+                      />
+                    ))}
+                    {loggedSessions.map((l) => (
+                      <DayRow
+                        key={l.id}
+                        shape="square"
+                        color="text-accent"
+                        bgColor="bg-accent"
+                        label={l.session_name}
+                        done
                       />
                     ))}
                     {slots.map((slot) => {
@@ -413,7 +519,21 @@ function WeekView({
                           bgColor="bg-warning"
                           label={t?.name ?? 'Sauna'}
                           meta={slot.is_optional ? 'optional' : undefined}
-                          dim={slot.is_optional}
+                          dim={slot.is_optional && !slot.done}
+                          done={slot.done}
+                        />
+                      );
+                    })}
+                    {loggedSaunas.map((l) => {
+                      const t = typeBy.get(l.sauna_type_slug);
+                      return (
+                        <DayRow
+                          key={l.id}
+                          shape="triangle"
+                          color="text-warning"
+                          bgColor="bg-warning"
+                          label={t?.name ?? 'Sauna'}
+                          done
                         />
                       );
                     })}
@@ -465,6 +585,8 @@ function DayRow({
   meta,
   bold = false,
   dim = false,
+  done = false,
+  missed = false,
 }: {
   shape: 'circle' | 'square' | 'triangle';
   color: string;
@@ -473,17 +595,27 @@ function DayRow({
   meta?: string;
   bold?: boolean;
   dim?: boolean;
+  done?: boolean;
+  missed?: boolean;
 }) {
   return (
     <div className={`flex items-center gap-2 ${dim ? 'opacity-60' : ''}`}>
       <ActivityShape shape={shape} bgColor={bgColor} size="sm" />
       <span
-        className={`truncate text-body-sm ${bold ? 'font-bold text-text' : color}`}
+        className={`truncate text-body-sm ${
+          bold ? 'font-bold text-text' : missed && !done ? 'text-danger' : color
+        }`}
       >
         {label}
       </span>
-      {meta && (
-        <span className="ml-auto shrink-0 text-meta text-text-dim">{meta}</span>
+      {done ? (
+        <Icon name="check_circle" size={14} fill className="ml-auto shrink-0 text-accent" />
+      ) : missed ? (
+        <span className="ml-auto shrink-0 text-meta font-semibold uppercase tracking-label text-danger">
+          missed
+        </span>
+      ) : (
+        meta && <span className="ml-auto shrink-0 text-meta text-text-dim">{meta}</span>
       )}
     </div>
   );
@@ -530,7 +662,7 @@ interface DayDetailProps {
 }
 
 function DayDetail({ dateStr, activity, ctx, typeBy, exBy, itemList, onStartSession }: DayDetailProps) {
-  const { sessions, slots, heat, race } = activity;
+  const { sessions, slots, heat, race, loggedSessions, loggedSaunas } = activity;
   const today = formatDate(new Date());
   const isToday = dateStr === today;
 
@@ -538,7 +670,12 @@ function DayDetail({ dateStr, activity, ctx, typeBy, exBy, itemList, onStartSess
     .toLocaleDateString(undefined, { weekday: 'long', day: 'numeric', month: 'short' })
     .toUpperCase();
 
-  const noActivity = sessions.length === 0 && slots.length === 0 && !race;
+  const noActivity =
+    sessions.length === 0 &&
+    slots.length === 0 &&
+    loggedSessions.length === 0 &&
+    loggedSaunas.length === 0 &&
+    !race;
 
   return (
     <div className="space-y-4">
@@ -587,7 +724,10 @@ function DayDetail({ dateStr, activity, ctx, typeBy, exBy, itemList, onStartSess
             <Eyebrow bullet meta={`${s.duration_label} · ${exs.length} moves`}>
               Strength
             </Eyebrow>
-            <Heading className="mt-2">{s.name}</Heading>
+            <div className="mt-2 flex items-center gap-2">
+              <Heading>{s.name}</Heading>
+              <SessionStatusBadge status={s.status} />
+            </div>
             {s.brief && (
               <p className="mt-1 text-body-sm text-text-muted">{s.brief}</p>
             )}
@@ -614,10 +754,15 @@ function DayDetail({ dateStr, activity, ctx, typeBy, exBy, itemList, onStartSess
             )}
 
             <div className="mt-4">
-              <Button full onClick={() => onStartSession(s)}>
-                Start session <Icon name="play_arrow" size={18} fill />
+              <Button
+                full
+                variant={s.status === 'done' ? 'ghost' : 'primary'}
+                onClick={() => onStartSession(s)}
+              >
+                {s.status === 'done' ? 'Log again' : 'Start session'}{' '}
+                <Icon name="play_arrow" size={18} fill />
               </Button>
-              {!isToday && (
+              {!isToday && s.status !== 'done' && (
                 <p className="mt-1.5 text-center text-meta text-text-dim">
                   Logs as done today
                 </p>
@@ -626,6 +771,21 @@ function DayDetail({ dateStr, activity, ctx, typeBy, exBy, itemList, onStartSess
           </Card>
         );
       })}
+
+      {/* Sessions actually logged this day that weren't on the plan (moved / ad-hoc) */}
+      {loggedSessions.map((l) => (
+        <Card key={l.id}>
+          <div className="flex items-center justify-between">
+            <Eyebrow bullet>Strength</Eyebrow>
+            <Badge tone="accent">
+              <Icon name="check_circle" size={11} fill />
+              logged
+            </Badge>
+          </div>
+          <Heading className="mt-2">{l.session_name}</Heading>
+          <p className="mt-1 text-body-sm text-text-muted">Logged on this day.</p>
+        </Card>
+      ))}
 
       {/* Sauna slots */}
       {slots.map((slot) => {
@@ -640,9 +800,14 @@ function DayDetail({ dateStr, activity, ctx, typeBy, exBy, itemList, onStartSess
                 className="mt-0.5 shrink-0 text-warning"
               />
               <div className="min-w-0 flex-1">
-                <div className="flex items-center gap-2">
+                <div className="flex flex-wrap items-center gap-2">
                   <Heading>{t?.name ?? 'Sauna'}</Heading>
-                  {slot.is_optional ? (
+                  {slot.done ? (
+                    <Badge tone="accent">
+                      <Icon name="check_circle" size={11} fill />
+                      done
+                    </Badge>
+                  ) : slot.is_optional ? (
                     <Badge tone="warning">optional</Badge>
                   ) : (
                     <Badge tone="accent">planned</Badge>
@@ -663,6 +828,40 @@ function DayDetail({ dateStr, activity, ctx, typeBy, exBy, itemList, onStartSess
         );
       })}
 
+      {/* Ad-hoc saunas logged this day (no matching planned slot) */}
+      {loggedSaunas.map((l) => {
+        const t = typeBy.get(l.sauna_type_slug);
+        return (
+          <Card key={l.id}>
+            <div className="flex items-start gap-3">
+              <Icon
+                name="local_fire_department"
+                size={24}
+                fill
+                className="mt-0.5 shrink-0 text-warning"
+              />
+              <div className="min-w-0 flex-1">
+                <div className="flex flex-wrap items-center gap-2">
+                  <Heading>{t?.name ?? 'Sauna'}</Heading>
+                  <Badge tone="accent">
+                    <Icon name="check_circle" size={11} fill />
+                    logged
+                  </Badge>
+                </div>
+                <p className="mt-0.5 text-body-sm text-text-muted">
+                  {[
+                    l.duration_min != null ? `${l.duration_min} min` : t?.duration_label,
+                    l.temp_c != null ? `${l.temp_c} °C` : t?.temp_label,
+                  ]
+                    .filter(Boolean)
+                    .join(' · ')}
+                </p>
+              </div>
+            </div>
+          </Card>
+        );
+      })}
+
       {/* Running / rest day */}
       {noActivity && (
         <Card>
@@ -673,6 +872,19 @@ function DayDetail({ dateStr, activity, ctx, typeBy, exBy, itemList, onStartSess
       )}
     </div>
   );
+}
+
+function SessionStatusBadge({ status }: { status: SessionStatus }) {
+  if (status === 'done')
+    return (
+      <Badge tone="accent">
+        <Icon name="check_circle" size={11} fill />
+        done
+      </Badge>
+    );
+  if (status === 'missed') return <Badge tone="danger">missed</Badge>;
+  if (status === 'today') return <Badge tone="accent">today</Badge>;
+  return <Badge tone="neutral">upcoming</Badge>;
 }
 
 // ─── MonthView ────────────────────────────────────────────────────────────────
@@ -706,7 +918,9 @@ function MonthView({ anchor, ctx }: { anchor: string; ctx: Ctx }) {
         {cells.map((d) => {
           const inMonth = parseLocalDate(d).getMonth() === month;
           const isToday = d === today;
-          const { sessions, slots, heat, race } = activityFor(d, ctx);
+          const { sessions, slots, heat, race, loggedSessions, loggedSaunas } = activityFor(d, ctx);
+          const hasStrength = sessions.length > 0 || loggedSessions.length > 0;
+          const hasSauna = slots.length > 0 || loggedSaunas.length > 0;
 
           return (
             <div
@@ -735,13 +949,13 @@ function MonthView({ anchor, ctx }: { anchor: string; ctx: Ctx }) {
                     aria-label="race"
                   />
                 )}
-                {sessions.length > 0 && (
+                {hasStrength && (
                   <i
                     className="h-1.5 w-1.5 shrink-0 rounded-[1px] bg-accent"
                     aria-label="strength"
                   />
                 )}
-                {slots.length > 0 && (
+                {hasSauna && (
                   <i
                     className="h-1.5 w-1.5 shrink-0 bg-warning"
                     style={{ clipPath: 'polygon(50% 0%, 0% 100%, 100% 100%)' }}
@@ -828,8 +1042,13 @@ function YearView({ anchor, ctx, raceList }: { anchor: string; ctx: Ctx; raceLis
               <div className="grid grid-cols-7 gap-px">
                 {cells.map((d) => {
                   const inMonth = parseLocalDate(d).getMonth() === m;
-                  const { sessions, slots, heat, race } = activityFor(d, ctx);
-                  const active = sessions.length > 0 || slots.length > 0;
+                  const { sessions, slots, heat, race, loggedSessions, loggedSaunas } =
+                    activityFor(d, ctx);
+                  const active =
+                    sessions.length > 0 ||
+                    slots.length > 0 ||
+                    loggedSessions.length > 0 ||
+                    loggedSaunas.length > 0;
                   return (
                     <i
                       key={d}
