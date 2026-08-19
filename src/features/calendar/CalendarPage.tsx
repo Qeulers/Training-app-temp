@@ -22,6 +22,7 @@ import { useRaces, useUserSettings } from '@/data/user';
 import { formatDate, addDays, parseLocalDate, dayOfWeek, daysBetween } from '@/domain/dates';
 import { sessionsFor, type SessionTemplate } from '@/domain/schedule';
 import { saunaFor } from '@/domain/sauna';
+import { WorkoutLogger } from '../today/WorkoutLogger';
 import { inHeatBlock, heatBlock } from '@/domain/heatBlock';
 import { phase, type PhaseOverride, type PhaseSlug } from '@/domain/phase';
 import type { Phase, SessionItem, Exercise, SaunaType } from '@/data/reference';
@@ -117,6 +118,7 @@ export function CalendarPage() {
   const [view, setView] = useState<View>('week');
   const [anchor, setAnchor] = useState(formatDate(new Date()));
   const [selectedDay, setSelectedDay] = useState<string>(formatDate(new Date()));
+  const [logging, setLogging] = useState<SessionTemplate | null>(null);
 
   const phases = usePhases();
   const templates = useSessionTemplates();
@@ -165,6 +167,20 @@ export function CalendarPage() {
           };
           const typeBy = new Map(typeList.map((t: SaunaType) => [t.slug, t]));
           const exBy = new Map(exerciseList.map((e: Exercise) => [e.slug, e]));
+
+          // Doing a session from another day (e.g. a missed one) — the logger
+          // records it as done today (WorkoutLogger uses today's date on save).
+          if (logging) {
+            return (
+              <WorkoutLogger
+                session={logging}
+                items={itemList.filter((i) => i.session_template_slug === logging.slug)}
+                exercises={exerciseList}
+                phaseSlug={logging.phase_slug}
+                onClose={() => setLogging(null)}
+              />
+            );
+          }
 
           const wStart = weekStart(anchor);
 
@@ -235,6 +251,7 @@ export function CalendarPage() {
                   phaseList={phaseList}
                   selectedDay={selectedDay}
                   onSelectDay={setSelectedDay}
+                  onStartSession={setLogging}
                 />
               )}
               {view === 'month' && <MonthView anchor={anchor} ctx={ctx} />}
@@ -280,6 +297,7 @@ interface WeekViewProps {
   phaseList: Phase[];
   selectedDay: string;
   onSelectDay: (d: string) => void;
+  onStartSession: (s: SessionTemplate) => void;
 }
 
 function WeekView({
@@ -290,6 +308,7 @@ function WeekView({
   itemList,
   selectedDay,
   onSelectDay,
+  onStartSession,
 }: WeekViewProps) {
   const start = weekStart(anchor);
   const days = Array.from({ length: 7 }, (_, i) => addDays(start, i));
@@ -429,6 +448,7 @@ function WeekView({
           typeBy={typeBy}
           exBy={exBy}
           itemList={itemList}
+          onStartSession={onStartSession}
         />
       </div>
     </div>
@@ -506,9 +526,10 @@ interface DayDetailProps {
   typeBy: Map<string, SaunaType>;
   exBy: Map<string, Exercise>;
   itemList: SessionItem[];
+  onStartSession: (s: SessionTemplate) => void;
 }
 
-function DayDetail({ dateStr, activity, ctx, typeBy, exBy, itemList }: DayDetailProps) {
+function DayDetail({ dateStr, activity, ctx, typeBy, exBy, itemList, onStartSession }: DayDetailProps) {
   const { sessions, slots, heat, race } = activity;
   const today = formatDate(new Date());
   const isToday = dateStr === today;
@@ -593,9 +614,14 @@ function DayDetail({ dateStr, activity, ctx, typeBy, exBy, itemList }: DayDetail
             )}
 
             <div className="mt-4">
-              <Button full>
+              <Button full onClick={() => onStartSession(s)}>
                 Start session <Icon name="play_arrow" size={18} fill />
               </Button>
+              {!isToday && (
+                <p className="mt-1.5 text-center text-meta text-text-dim">
+                  Logs as done today
+                </p>
+              )}
             </div>
           </Card>
         );
