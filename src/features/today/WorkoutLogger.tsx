@@ -1,12 +1,14 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { Icon } from '@/components/Icon';
-import { Eyebrow } from '@/components/ui';
+import { Button, Eyebrow } from '@/components/ui';
 import { parseHold } from '@/domain/prescription';
 import { formatDate } from '@/domain/dates';
+import { embedUrl } from '@/domain/youtube';
 import { useAllSets, useSaveWorkout, type SetWithDate } from '@/data/user';
 import type { SessionItem, Exercise } from '@/data/reference';
 import type { SessionTemplate } from '@/domain/schedule';
 import { CountdownTimer } from './CountdownTimer';
+import { useWakeLock } from './useWakeLock';
 
 interface Props {
   session: SessionTemplate;
@@ -36,8 +38,13 @@ function prefill(slug: string, allSets: SetWithDate[]): Row[] {
   return [0, 1, 2].map(() => ({ weight: 0, reps: 0, done: false }));
 }
 
-const REST_DEFAULT = 90;
-type Timer = { kind: 'rest'; seconds: number } | { kind: 'hold'; seconds: number; perSide: boolean };
+const REST_FALLBACK = 90;
+// `nonce` forces a fresh <CountdownTimer> mount for every rest/hold so it always
+// autostarts from the top — without it a second rest reuses the finished timer's
+// state and appears stuck until manually restarted.
+type Timer =
+  | { kind: 'rest'; seconds: number; nonce: number }
+  | { kind: 'hold'; seconds: number; perSide: boolean; nonce: number };
 
 /** Format elapsed seconds as M:SS */
 function fmtElapsed(s: number) {
@@ -55,6 +62,17 @@ export function WorkoutLogger({ session, items, exercises, phaseSlug, onClose }:
   const [elapsed, setElapsed] = useState(0);
   const [nextExpanded, setNextExpanded] = useState(false);
   const startRef = useRef(Date.now());
+  const nonceRef = useRef(0);
+  const sectionRefs = useRef<(HTMLElement | null)[]>([]);
+  const finishRef = useRef<HTMLDivElement | null>(null);
+
+  // Keep the screen awake for the whole session, not just while a timer runs.
+  useWakeLock(true);
+
+  const startRest = (seconds: number) =>
+    setTimer({ kind: 'rest', seconds, nonce: ++nonceRef.current });
+  const startHold = (seconds: number, perSide: boolean) =>
+    setTimer({ kind: 'hold', seconds, perSide, nonce: ++nonceRef.current });
 
   // Wall-clock elapsed ticker
   useEffect(() => {
@@ -101,6 +119,29 @@ export function WorkoutLogger({ session, items, exercises, phaseSlug, onClose }:
     onClose();
   };
 
+  // Any work worth confirming-before-discard?
+  const anyLogged = items.some((it) =>
+    rowsFor(it.exercise_slug).some((r) => r.done || r.reps > 0),
+  );
+  const handleDiscard = () => {
+    if (anyLogged && !window.confirm('Discard this session? Logged sets will not be saved.')) return;
+    onClose();
+  };
+
+  // Mark every set of an exercise done and advance to the next move (or the
+  // finish block on the last one).
+  const completeExercise = (slug: string, itemIdx: number) => {
+    setSets((prev) => {
+      const rows = (prev[slug] ?? prefill(slug, allSets.data ?? [])).map((r) => ({
+        ...r,
+        done: true,
+      }));
+      return { ...prev, [slug]: rows };
+    });
+    const target = sectionRefs.current[itemIdx + 1] ?? finishRef.current;
+    target?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+
   // Determine which exercise is "current" (first one that isn't fully done)
   const currentIdx = useMemo(() => {
     for (let i = 0; i < items.length; i++) {
@@ -136,15 +177,17 @@ export function WorkoutLogger({ session, items, exercises, phaseSlug, onClose }:
       {/* ── Sticky top bar ── */}
       <div className="z-40 border-b border-border bg-bg/95 backdrop-blur">
         <div className="mx-auto flex max-w-content items-center px-3 py-2">
-          {/* Left: ✕ End */}
+          {/* Left: ✕ Discard */}
           <button
             type="button"
-            onClick={onClose}
-            aria-label="End workout"
+            onClick={handleDiscard}
+            aria-label="Discard workout"
             className="flex items-center gap-1 text-text-dim transition-opacity hover:opacity-70"
           >
             <Icon name="close" size={18} />
-            <span className="font-body text-body-sm font-bold uppercase tracking-label">End</span>
+            <span className="font-body text-body-sm font-bold uppercase tracking-label">
+              Discard
+            </span>
           </button>
 
           {/* Center: session name + elapsed */}
@@ -213,7 +256,14 @@ export function WorkoutLogger({ session, items, exercises, phaseSlug, onClose }:
                 const nextSummary = nextSummaryMatch ? nextSummaryMatch[1] : nextPrescription.slice(0, 10);
 
                 return (
-                  <section key={it.id} aria-label={exName}>
+                  <section
+                    key={it.id}
+                    aria-label={exName}
+                    ref={(el) => {
+                      sectionRefs.current[itemIdx] = el;
+                    }}
+                    className="scroll-mt-24"
+                  >
                     {/* Eyebrow + exercise name */}
                     <Eyebrow tone="muted" className="mb-1">
                       Move {itemIdx + 1} of {items.length}
@@ -252,7 +302,7 @@ export function WorkoutLogger({ session, items, exercises, phaseSlug, onClose }:
                             onRepsChange={(v) => update(it.exercise_slug, i, { reps: v })}
                             onDone={() => {
                               update(it.exercise_slug, i, { done: !r.done });
-                              if (!r.done) setTimer({ kind: 'rest', seconds: REST_DEFAULT });
+                              if (!r.done) startRest(ex?.rest_seconds ?? REST_FALLBACK);
                             }}
                           />
                         );
@@ -283,9 +333,7 @@ export function WorkoutLogger({ session, items, exercises, phaseSlug, onClose }:
                     {hold && (
                       <button
                         type="button"
-                        onClick={() =>
-                          setTimer({ kind: 'hold', seconds: hold.seconds, perSide: hold.perSide })
-                        }
+                        onClick={() => startHold(hold.seconds, hold.perSide)}
                         className="mt-2 flex w-full items-center justify-center gap-1.5 rounded-md border border-border bg-surface py-2.5 text-body-sm font-bold text-text-muted transition-colors hover:text-text"
                       >
                         <Icon name="timer" size={16} />
@@ -302,9 +350,35 @@ export function WorkoutLogger({ session, items, exercises, phaseSlug, onClose }:
                         onToggle={() => setNextExpanded((v) => !v)}
                       />
                     )}
+
+                    {/* Complete this exercise → next */}
+                    <button
+                      type="button"
+                      onClick={() => completeExercise(it.exercise_slug, itemIdx)}
+                      className="mt-3 flex w-full items-center justify-center gap-1.5 rounded-lg bg-accent py-3 font-body text-body-sm font-bold text-accent-ink transition-opacity hover:opacity-90"
+                    >
+                      <Icon name="check_circle" size={18} fill />
+                      {nextName ? 'Complete exercise' : 'Complete last exercise'}
+                      <Icon name="arrow_downward" size={16} />
+                    </button>
                   </section>
                 );
               })}
+
+              {/* Finish & save — the prominent primary action, in the flow after the last move */}
+              <div ref={finishRef} className="scroll-mt-24 border-t border-border pt-6">
+                <Button full onClick={onSave} disabled={save.isPending}>
+                  <Icon name="check_circle" size={18} fill />
+                  {save.isPending ? 'Saving…' : 'Finish & save session'}
+                </Button>
+                <button
+                  type="button"
+                  onClick={handleDiscard}
+                  className="mt-3 w-full py-2 text-center font-body text-body-sm font-bold text-text-dim transition-opacity hover:opacity-70"
+                >
+                  Discard without saving
+                </button>
+              </div>
             </div>
           )}
         </div>
@@ -314,11 +388,19 @@ export function WorkoutLogger({ session, items, exercises, phaseSlug, onClose }:
       <div className="fixed inset-x-0 bottom-0 z-40 border-t border-border bg-bg/95 backdrop-blur">
         <div className="mx-auto max-w-content">
           {timer && (
-            <div className="border-b border-border px-4 py-3">
+            <div
+              className={
+                timer.kind === 'rest'
+                  ? 'border-b-2 border-accent bg-surface-raised px-4 py-4 shadow-lg'
+                  : 'border-b border-border px-4 py-3'
+              }
+            >
               <CountdownTimer
+                key={timer.nonce}
                 seconds={timer.seconds}
                 kind={timer.kind}
                 perSide={timer.kind === 'hold' ? timer.perSide : false}
+                prominent={timer.kind === 'rest'}
                 onClose={() => setTimer(null)}
               />
             </div>
@@ -329,7 +411,7 @@ export function WorkoutLogger({ session, items, exercises, phaseSlug, onClose }:
             </p>
             <button
               type="button"
-              onClick={() => setTimer({ kind: 'hold', seconds: 30, perSide: false })}
+              onClick={() => startHold(30, false)}
               className="flex items-center gap-1.5 rounded-md border border-border bg-surface px-4 py-2 font-body text-body-sm font-bold text-text transition-colors hover:border-border-strong"
             >
               <Icon name="timer" size={16} />
@@ -344,22 +426,37 @@ export function WorkoutLogger({ session, items, exercises, phaseSlug, onClose }:
 
 /* ── Sub-components ─────────────────────────────────────────────────────── */
 
-/** "Watch demo" + Cues disclosure row */
+/** "Watch demo" (inline embed) + Cues disclosure row */
 function WatchDemoRow({ videoUrl, cues }: { videoUrl: string; cues: string[] }) {
   const [cuesOpen, setCuesOpen] = useState(false);
+  const [playing, setPlaying] = useState(false);
+  const src = embedUrl(videoUrl, { autoplay: true });
+
   return (
     <div className="mt-3 rounded-lg border border-border bg-surface">
       <div className="flex items-center gap-3 px-3 py-2.5">
-        {/* Green circular play button */}
-        <a
-          href={videoUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Watch exercise demo"
-          className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-accent text-accent-ink transition-opacity hover:opacity-80"
-        >
-          <Icon name="play_arrow" size={18} fill />
-        </a>
+        {/* Green circular play / close button — embeds inline rather than leaving the app */}
+        {src ? (
+          <button
+            type="button"
+            onClick={() => setPlaying((v) => !v)}
+            aria-label={playing ? 'Hide exercise demo' : 'Watch exercise demo'}
+            aria-expanded={playing}
+            className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-accent text-accent-ink transition-opacity hover:opacity-80"
+          >
+            <Icon name={playing ? 'close' : 'play_arrow'} size={18} fill={!playing} />
+          </button>
+        ) : (
+          <a
+            href={videoUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Watch exercise demo"
+            className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-accent text-accent-ink transition-opacity hover:opacity-80"
+          >
+            <Icon name="play_arrow" size={18} fill />
+          </a>
+        )}
         <span className="flex-1 text-body-sm font-bold text-text">Watch demo</span>
         {cues.length > 1 && (
           <button
@@ -372,6 +469,29 @@ function WatchDemoRow({ videoUrl, cues }: { videoUrl: string; cues: string[] }) 
           </button>
         )}
       </div>
+      {playing && src && (
+        <div className="border-t border-border p-3">
+          <div className="aspect-video overflow-hidden rounded-md">
+            <iframe
+              className="h-full w-full"
+              src={src}
+              title="Exercise demo"
+              loading="lazy"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
+          <a
+            href={videoUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-2 inline-flex items-center gap-1 text-meta text-text-dim transition-colors hover:text-text"
+          >
+            Open in YouTube
+            <Icon name="north_east" size={13} />
+          </a>
+        </div>
+      )}
       {cuesOpen && cues.length > 1 && (
         <ul className="space-y-1 border-t border-border px-3 py-2.5">
           {cues.slice(1).map((cue, i) => (

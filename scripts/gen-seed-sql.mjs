@@ -55,7 +55,7 @@ function insertBlock(table, rows, columns, conflict) {
 // --- Table definitions: [table, seedFile, columns, conflictKeys] -------------
 const TABLES = [
   ['phases', 'phases', ['slug', 'short_label', 'name', 'window_label', 'goal', 'notes', 'sort_order'], ['slug']],
-  ['exercises', 'exercises', ['slug', 'name', 'category', 'video_url', 'rationale', 'cues', 'kit_note', 'space_note', 'ramp_note', 'swap_note', 'sort_order'], ['slug']],
+  ['exercises', 'exercises', ['slug', 'name', 'category', 'video_url', 'rationale', 'cues', 'kit_note', 'space_note', 'ramp_note', 'swap_note', 'sort_order', 'rest_seconds'], ['slug']],
   ['sauna_types', 'sauna_types', ['slug', 'name', 'duration_label', 'temp_label', 'rationale', 'how_to', 'sort_order'], ['slug']],
   ['ingredient_categories', 'ingredient_categories', ['code', 'label', 'sort_order'], ['code']],
   ['cuisines', 'cuisines', ['code', 'label', 'sort_order'], ['code']],

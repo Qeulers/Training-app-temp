@@ -84,6 +84,7 @@ export type Database = {
           name: string
           ramp_note: string | null
           rationale: string | null
+          rest_seconds: number
           slug: string
           sort_order: number
           space_note: string | null
@@ -97,6 +98,7 @@ export type Database = {
           name: string
           ramp_note?: string | null
           rationale?: string | null
+          rest_seconds?: number
           slug: string
           sort_order: number
           space_note?: string | null
@@ -110,6 +112,7 @@ export type Database = {
           name?: string
           ramp_note?: string | null
           rationale?: string | null
+          rest_seconds?: number
           slug?: string
           sort_order?: number
           space_note?: string | null

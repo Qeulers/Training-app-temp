@@ -14,7 +14,8 @@
     "space_note": null,
     "ramp_note": null,
     "swap_note": "Goblet squat if the bar feels off, or box squat to a bench for depth control.",
-    "sort_order": 1
+    "sort_order": 1,
+    "rest_seconds": 150
   },
   {
     "slug": "gobletsquat",
@@ -31,7 +32,8 @@
     "space_note": null,
     "ramp_note": null,
     "swap_note": null,
-    "sort_order": 2
+    "sort_order": 2,
+    "rest_seconds": 90
   },
   {
     "slug": "rdl",
@@ -48,7 +50,8 @@
     "space_note": null,
     "ramp_note": null,
     "swap_note": "Dumbbell RDL when barbell setup is a faff.",
-    "sort_order": 3
+    "sort_order": 3,
+    "rest_seconds": 150
   },
   {
     "slug": "bss",
@@ -65,7 +68,8 @@
     "space_note": null,
     "ramp_note": null,
     "swap_note": "Reverse lunge if knees complain; hold the rack for balance while learning.",
-    "sort_order": 4
+    "sort_order": 4,
+    "rest_seconds": 120
   },
   {
     "slug": "stepup",
@@ -82,7 +86,8 @@
     "space_note": null,
     "ramp_note": null,
     "swap_note": "Add the weighted vest before you add box height — height changes the joint angles, load does not.",
-    "sort_order": 5
+    "sort_order": 5,
+    "rest_seconds": 120
   },
   {
     "slug": "packstepup",
@@ -100,7 +105,8 @@
     "space_note": null,
     "ramp_note": null,
     "swap_note": "Vest version if the pack is packed for a race, or stair repeats with the pack on.",
-    "sort_order": 6
+    "sort_order": 6,
+    "rest_seconds": 120
   },
   {
     "slug": "slrdl",
@@ -117,7 +123,8 @@
     "space_note": null,
     "ramp_note": null,
     "swap_note": "Hold the rack with the free hand, or B-stance RDL.",
-    "sort_order": 7
+    "sort_order": 7,
+    "rest_seconds": 90
   },
   {
     "slug": "latlunge",
@@ -134,7 +141,8 @@
     "space_note": null,
     "ramp_note": null,
     "swap_note": null,
-    "sort_order": 8
+    "sort_order": 8,
+    "rest_seconds": 90
   },
   {
     "slug": "kbswing",
@@ -151,7 +159,8 @@
     "space_note": null,
     "ramp_note": null,
     "swap_note": null,
-    "sort_order": 9
+    "sort_order": 9,
+    "rest_seconds": 90
   },
   {
     "slug": "calfraise",
@@ -168,7 +177,8 @@
     "space_note": null,
     "ramp_note": null,
     "swap_note": "Off a stair edge if the board is in use.",
-    "sort_order": 10
+    "sort_order": 10,
+    "rest_seconds": 45
   },
   {
     "slug": "soleusraise",
@@ -186,7 +196,8 @@
     "space_note": null,
     "ramp_note": null,
     "swap_note": "Seated on the bench with a dumbbell on the thigh.",
-    "sort_order": 11
+    "sort_order": 11,
+    "rest_seconds": 45
   },
   {
     "slug": "tib",
@@ -203,7 +214,8 @@
     "space_note": null,
     "ramp_note": null,
     "swap_note": null,
-    "sort_order": 12
+    "sort_order": 12,
+    "rest_seconds": 45
   },
   {
     "slug": "ankleiso",
@@ -220,7 +232,8 @@
     "space_note": null,
     "ramp_note": null,
     "swap_note": "During toe flare-ups this and isometric holds replace all impact work.",
-    "sort_order": 13
+    "sort_order": 13,
+    "rest_seconds": 45
   },
   {
     "slug": "farmer",
@@ -237,7 +250,8 @@
     "space_note": "Needs ~10 m of clear floor. Kept here for when you train outdoors or have the room.",
     "ramp_note": null,
     "swap_note": "No room? Use the suitcase march, front-rack march or shuttle carry below. Marching keeps the stepping rhythm, which matters — see the note on each.",
-    "sort_order": 14
+    "sort_order": 14,
+    "rest_seconds": 90
   },
   {
     "slug": "suitcasemarch",
@@ -256,7 +270,8 @@
     "space_note": "One square metre. Nothing moves but you.",
     "ramp_note": null,
     "swap_note": "Progress by adding weight before adding time. 45 s a side is plenty; if it gets easy, get a heavier bell.",
-    "sort_order": 15
+    "sort_order": 15,
+    "rest_seconds": 60
   },
   {
     "slug": "frontrackmarch",
@@ -274,7 +289,8 @@
     "space_note": "One square metre.",
     "ramp_note": null,
     "swap_note": "Single bell in the rack is harder than two — use it when the double gets easy.",
-    "sort_order": 16
+    "sort_order": 16,
+    "rest_seconds": 60
   },
   {
     "slug": "suitcasehold",
@@ -292,7 +308,8 @@
     "space_note": "Standing room only.",
     "ramp_note": null,
     "swap_note": "Barbell version in the rack lets you go much heavier than dumbbells allow.",
-    "sort_order": 17
+    "sort_order": 17,
+    "rest_seconds": 60
   },
   {
     "slug": "shuttlecarry",
@@ -309,7 +326,8 @@
     "space_note": "5 m each way. Garage, hallway or driveway.",
     "ramp_note": null,
     "swap_note": "Falls back to the suitcase march if five metres is not available.",
-    "sort_order": 18
+    "sort_order": 18,
+    "rest_seconds": 90
   },
   {
     "slug": "stepdown",
@@ -328,7 +346,8 @@
     "space_note": null,
     "ramp_note": "Sits on a Saturday, roughly 24 h before your long run — which is the front edge of when eccentric soreness peaks. That is survivable because the dose starts tiny and the repeated bout effect is strong: the first exposure does most of the damage, and by the third or fourth session the same load barely registers. So earn it. Weeks 1–2: one set of four, bodyweight, 16in box. Only add sets, height or vest once a Sunday has passed with no quad stiffness in the first 20 minutes. If a Sunday run ever feels quad-heavy early, drop back a step rather than pushing through.",
     "swap_note": "If you would rather not gamble with the long run at all, move it to Tuesday — five days clear, at the cost of stacking quad load on heavy squat day.",
-    "sort_order": 19
+    "sort_order": 19,
+    "rest_seconds": 90
   },
   {
     "slug": "pullup",
@@ -345,7 +364,8 @@
     "space_note": null,
     "ramp_note": null,
     "swap_note": "Band-assisted pull-up or slow 5 s negatives.",
-    "sort_order": 20
+    "sort_order": 20,
+    "rest_seconds": 120
   },
   {
     "slug": "ohp",
@@ -362,7 +382,8 @@
     "space_note": null,
     "ramp_note": null,
     "swap_note": null,
-    "sort_order": 21
+    "sort_order": 21,
+    "rest_seconds": 120
   },
   {
     "slug": "dbbench",
@@ -379,7 +400,8 @@
     "space_note": null,
     "ramp_note": null,
     "swap_note": "TRX or deficit push-ups when short on time.",
-    "sort_order": 22
+    "sort_order": 22,
+    "rest_seconds": 90
   },
   {
     "slug": "sarow",
@@ -396,7 +418,8 @@
     "space_note": null,
     "ramp_note": null,
     "swap_note": null,
-    "sort_order": 23
+    "sort_order": 23,
+    "rest_seconds": 90
   },
   {
     "slug": "trxrow",
@@ -413,7 +436,8 @@
     "space_note": null,
     "ramp_note": null,
     "swap_note": null,
-    "sort_order": 24
+    "sort_order": 24,
+    "rest_seconds": 90
   },
   {
     "slug": "pushacc",
@@ -430,7 +454,8 @@
     "space_note": null,
     "ramp_note": null,
     "swap_note": null,
-    "sort_order": 25
+    "sort_order": 25,
+    "rest_seconds": 90
   },
   {
     "slug": "armfinisher",
@@ -447,7 +472,8 @@
     "space_note": null,
     "ramp_note": null,
     "swap_note": null,
-    "sort_order": 26
+    "sort_order": 26,
+    "rest_seconds": 60
   },
   {
     "slug": "pallof",
@@ -464,7 +490,8 @@
     "space_note": null,
     "ramp_note": null,
     "swap_note": null,
-    "sort_order": 27
+    "sort_order": 27,
+    "rest_seconds": 60
   },
   {
     "slug": "deadbug",
@@ -481,7 +508,8 @@
     "space_note": null,
     "ramp_note": null,
     "swap_note": null,
-    "sort_order": 28
+    "sort_order": 28,
+    "rest_seconds": 45
   },
   {
     "slug": "birddog",
@@ -498,7 +526,8 @@
     "space_note": null,
     "ramp_note": null,
     "swap_note": null,
-    "sort_order": 29
+    "sort_order": 29,
+    "rest_seconds": 45
   },
   {
     "slug": "sideplank",
@@ -515,7 +544,8 @@
     "space_note": null,
     "ramp_note": null,
     "swap_note": null,
-    "sort_order": 30
+    "sort_order": 30,
+    "rest_seconds": 45
   },
   {
     "slug": "hangknee",
@@ -532,6 +562,7 @@
     "space_note": null,
     "ramp_note": null,
     "swap_note": null,
-    "sort_order": 31
+    "sort_order": 31,
+    "rest_seconds": 60
   }
 ]

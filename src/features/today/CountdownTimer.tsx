@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { Icon } from '@/components/Icon';
+import { useWakeLock } from './useWakeLock';
 
 /*
  * Rest / hold countdown (SPEC §6.1). Ephemeral UI — never persisted, never in
@@ -15,6 +16,8 @@ interface Props {
   seconds: number;
   kind: Kind;
   perSide?: boolean;
+  /** Larger, high-visibility layout — used for the active rest timer. */
+  prominent?: boolean;
   onClose: () => void;
 }
 
@@ -44,7 +47,7 @@ function beep() {
   }
 }
 
-export function CountdownTimer({ seconds, kind, perSide = false, onClose }: Props) {
+export function CountdownTimer({ seconds, kind, perSide = false, prominent = false, onClose }: Props) {
   const [duration, setDuration] = useState(seconds);
   const [side, setSide] = useState<1 | 2>(1);
   const [running, setRunning] = useState(kind === 'rest'); // rest autostarts
@@ -52,8 +55,10 @@ export function CountdownTimer({ seconds, kind, perSide = false, onClose }: Prop
   const [muted, setMuted] = useState(false);
 
   const targetRef = useRef<number>(0);
-  const wakeRef = useRef<WakeLockSentinel | null>(null);
   const firedRef = useRef(false);
+
+  // Keep the screen awake while the timer is running.
+  useWakeLock(running);
 
   const cue = useCallback(() => {
     if (muted) return;
@@ -86,32 +91,6 @@ export function CountdownTimer({ seconds, kind, perSide = false, onClose }: Prop
     // remainingMs intentionally excluded: we snapshot it into the target on start
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [running, kind, perSide, side, duration, cue]);
-
-  // Screen wake lock while a timer is live.
-  useEffect(() => {
-    let cancelled = false;
-    const request = async () => {
-      try {
-        if (running && 'wakeLock' in navigator) {
-          const s = await navigator.wakeLock.request('screen');
-          if (cancelled) s.release();
-          else wakeRef.current = s;
-        }
-      } catch {
-        /* wake lock denied — non-fatal */
-      }
-    };
-    const release = () => {
-      wakeRef.current?.release().catch(() => {});
-      wakeRef.current = null;
-    };
-    if (running) request();
-    else release();
-    return () => {
-      cancelled = true;
-      release();
-    };
-  }, [running]);
 
   const adjust = (delta: number) => {
     const next = Math.max(0, Math.round(remainingMs / 1000 + delta));
@@ -185,9 +164,9 @@ export function CountdownTimer({ seconds, kind, perSide = false, onClose }: Prop
         {/* Time display */}
         <div className="flex flex-1 items-center justify-center gap-3">
           <p
-            className={`font-body text-[2rem] font-bold tabular-nums leading-none ${
-              warning ? 'text-warning' : 'text-text'
-            }`}
+            className={`font-body font-bold tabular-nums leading-none ${
+              prominent ? 'text-[3.25rem]' : 'text-[2rem]'
+            } ${warning ? 'text-warning' : 'text-text'}`}
           >
             {fmt(remainingMs)}
           </p>

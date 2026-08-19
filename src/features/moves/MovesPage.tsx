@@ -3,15 +3,10 @@ import { TabScaffold } from '@/components/TabScaffold';
 import { Icon } from '@/components/Icon';
 import { Card, Heading, Badge, Pill, QueryBoundary } from '@/components/ui';
 import { useExercises, type Exercise } from '@/data/reference';
+import { youTubeId } from '@/domain/youtube';
 
 const CATEGORIES = ['All', 'Lower', 'Upper', 'Core', 'Race', 'Ankle'] as const;
 type Category = (typeof CATEGORIES)[number];
-
-/** Extract the 11-char YouTube id from a watch or shorts URL. */
-function youTubeId(url: string): string | null {
-  const m = url.match(/(?:watch\?v=|shorts\/)([\w-]{11})/);
-  return m ? m[1] : null;
-}
 
 function ExerciseCard({ ex }: { ex: Exercise }) {
   const [open, setOpen] = useState(false);
@@ -133,7 +128,7 @@ export function MovesPage() {
   return (
     <TabScaffold title="Moves">
       {/* Filter pill row */}
-      <div className="-mx-1 mb-4 flex gap-2 overflow-x-auto px-1 pb-1">
+      <div className="mb-4 flex gap-2 overflow-x-auto pb-1">
         {CATEGORIES.map((c) => (
           <Pill key={c} active={c === cat} onClick={() => setCat(c)}>
             {c}

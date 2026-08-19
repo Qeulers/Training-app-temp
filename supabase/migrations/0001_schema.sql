@@ -40,7 +40,8 @@ create table exercises (
   space_note  text,
   ramp_note   text,
   swap_note   text,
-  sort_order  int not null
+  sort_order  int not null,
+  rest_seconds int not null default 90
 );
 
 create table session_templates (
