@@ -7,6 +7,7 @@ import { heatBlock } from '@/domain/heatBlock';
 import { parseLocalDate, formatDate } from '@/domain/dates';
 import { Races } from './Races';
 import { PhaseControl } from './PhaseControl';
+import { SessionsBrowser } from './SessionsBrowser';
 
 interface SaunaRules {
   hydration: string;
@@ -152,6 +153,14 @@ export function PlanPage() {
           <section>
             <Eyebrow>Phase control</Eyebrow>
             <PhaseControl />
+          </section>
+
+          <section>
+            <Eyebrow>Sessions</Eyebrow>
+            <p className="mb-2 mt-1 text-body-sm text-text-muted">
+              Every strength session in the programme. Tap one to see its exercises.
+            </p>
+            <SessionsBrowser />
           </section>
 
           {/* Kit & setup — below phase on mobile; hidden on the right at lg */}
