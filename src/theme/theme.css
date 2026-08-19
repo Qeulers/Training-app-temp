@@ -114,10 +114,18 @@
     color: var(--color-text);
     font-family: var(--font-body);
     font-size: var(--fs-body);
+    /* Guard against stray full-width children causing a page-level horizontal
+       scroll on mobile; intentional inner scrollers (pill rows) keep their own. */
+    overflow-x: hidden;
   }
   body {
     margin: 0;
     min-height: 100vh;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  #root {
+    overflow-x: hidden;
   }
 
   /*

@@ -114,15 +114,17 @@ export function Button({
   variant = 'primary',
   full = false,
   type = 'button',
+  disabled = false,
 }: {
   children: ReactNode;
   onClick?: () => void;
   variant?: BtnVariant;
   full?: boolean;
   type?: 'button' | 'submit';
+  disabled?: boolean;
 }) {
   const base =
-    'inline-flex min-h-tap items-center justify-center gap-2 rounded-md px-4 font-body text-body font-bold transition-opacity duration-fast ease-brand';
+    'inline-flex min-h-tap items-center justify-center gap-2 rounded-md px-4 font-body text-body font-bold transition-opacity duration-fast ease-brand disabled:opacity-50';
   const variants: Record<BtnVariant, string> = {
     primary: 'bg-accent text-accent-ink hover:opacity-90',
     ghost: 'border border-border bg-surface text-text-muted hover:text-text',
@@ -131,6 +133,7 @@ export function Button({
     <button
       type={type}
       onClick={onClick}
+      disabled={disabled}
       className={`${base} ${variants[variant]} ${full ? 'w-full' : ''}`}
     >
       {children}
