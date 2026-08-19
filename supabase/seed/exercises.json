@@ -3,7 +3,7 @@
     "slug": "backsquat",
     "name": "Barbell back squat",
     "category": "Lower",
-    "video_url": "https://www.youtube.com/watch?v=S0H0JxLAOAY",
+    "video_url": "https://www.youtube.com/watch?v=R2dMsNhN3DE",
     "rationale": "The engine of the whole plan — leg strength that survives mile 80.",
     "cues": [
       "Brace before you unrack — big breath into the belt line",
@@ -21,7 +21,7 @@
     "slug": "gobletsquat",
     "name": "Goblet squat",
     "category": "Lower",
-    "video_url": "https://www.youtube.com/watch?v=JO7D6GJ98wY",
+    "video_url": "https://www.youtube.com/watch?v=TzU5zkTEkg8",
     "rationale": "Warm-up groove and deload option; keeps the torso honest.",
     "cues": [
       "Bell tight to the chest, elbows down",
@@ -39,7 +39,7 @@
     "slug": "rdl",
     "name": "Romanian deadlift",
     "category": "Lower",
-    "video_url": "https://www.youtube.com/watch?v=uhghy9pFIPY",
+    "video_url": "https://www.youtube.com/watch?v=-m45n1_x32E",
     "rationale": "Hamstrings and glutes under stretch — descent control for thousands of feet of downhill.",
     "cues": [
       "Push the hips back, soft knees, bar shaved down the thighs",
@@ -57,7 +57,7 @@
     "slug": "bss",
     "name": "Bulgarian split squat",
     "category": "Lower",
-    "video_url": "https://www.youtube.com/watch?v=VPhhE6bBzZE",
+    "video_url": "https://www.youtube.com/watch?v=uqI3GVwfToU",
     "rationale": "Single-leg strength with a big stability demand — the closest a gym gets to a rutted trail.",
     "cues": [
       "Rear foot laces-down on the bench or the 16in box",
@@ -75,7 +75,7 @@
     "slug": "stepup",
     "name": "Weighted step-up",
     "category": "Lower",
-    "video_url": "https://www.youtube.com/watch?v=vOiHvzj5XhA",
+    "video_url": "https://www.youtube.com/watch?v=9ZknEYboBOQ",
     "rationale": "Concentric single-leg power — every stile, every step cut into a fell.",
     "cues": [
       "Whole foot on the box, drive without pushing off the back leg",
@@ -93,7 +93,7 @@
     "slug": "packstepup",
     "name": "Pack step-up (race pack)",
     "category": "Race",
-    "video_url": "https://www.youtube.com/watch?v=qCW8V_rUpgM",
+    "video_url": "https://www.youtube.com/watch?v=9ZknEYboBOQ",
     "rationale": "THE mountain-race exercise. Your race pack, loaded, on a box — specificity you cannot buy.",
     "cues": [
       "Wear the actual pack you will race with, straps dialled",
@@ -112,7 +112,7 @@
     "slug": "slrdl",
     "name": "Single-leg RDL",
     "category": "Race",
-    "video_url": "https://www.youtube.com/watch?v=CohgHMsoS2s",
+    "video_url": "https://www.youtube.com/watch?v=_AKa1yvxD_E",
     "rationale": "Balance + posterior chain + ankle proprioception in one move. Bog insurance.",
     "cues": [
       "Kettlebell in the hand opposite the standing leg",
@@ -130,7 +130,7 @@
     "slug": "latlunge",
     "name": "Lateral lunge",
     "category": "Race",
-    "video_url": "https://www.youtube.com/watch?v=qCA8E-dF8cI",
+    "video_url": "https://www.youtube.com/watch?v=frdrLD_-VAw",
     "rationale": "Frontal-plane strength — the plane running never trains and camber, tussocks and sidesteps punish.",
     "cues": [
       "Big sideways step, sit into that hip",
@@ -148,7 +148,7 @@
     "slug": "kbswing",
     "name": "Kettlebell swing",
     "category": "Lower",
-    "video_url": "https://www.youtube.com/watch?v=h-A7HiTNZ5c",
+    "video_url": "https://www.youtube.com/watch?v=wMBWFIn4ddg",
     "rationale": "Explosive hip power and posterior-chain conditioning in minutes.",
     "cues": [
       "It is a hinge, not a squat",
@@ -166,7 +166,7 @@
     "slug": "calfraise",
     "name": "Calf raise (slant board)",
     "category": "Ankle",
-    "video_url": "https://www.youtube.com/watch?v=zGVzmZ9xOmE",
+    "video_url": "https://www.youtube.com/watch?v=GAZzBJIrmB8",
     "rationale": "Calf capacity is ankle armour and downhill braking. On the slant board the heel drops below the toes, so you get loaded range the floor cannot give you.",
     "cues": [
       "3 s down into the stretch, pause, drive tall",
@@ -184,7 +184,7 @@
     "slug": "soleusraise",
     "name": "Bent-knee soleus raise",
     "category": "Ankle",
-    "video_url": "https://www.youtube.com/watch?v=pYs6drHFySs",
+    "video_url": "https://www.youtube.com/watch?v=wEbwqWirQNw",
     "rationale": "Bend the knee and the gastrocnemius slackens, so the soleus takes the load. This matters more than most runners realise: the soleus carries the largest single share of force in late-stance running, it is the muscle that quietly fails on long descents, and straight-leg calf raises barely touch it.",
     "cues": [
       "Knee bent to about 90°, heel dropped off the board edge",
@@ -203,7 +203,7 @@
     "slug": "tib",
     "name": "Tibialis raise",
     "category": "Ankle",
-    "video_url": "https://www.youtube.com/watch?v=KjaKJmWb_fI",
+    "video_url": "https://www.youtube.com/watch?v=OPEuhclsTUQ",
     "rationale": "The shin muscle that lifts your toes over 108 miles of tussock — and guards the ankle.",
     "cues": [
       "Lean back on a wall, heels ~30 cm out",
@@ -221,7 +221,7 @@
     "slug": "ankleiso",
     "name": "Banded ankle circuit",
     "category": "Ankle",
-    "video_url": "https://www.youtube.com/watch?v=xfrncpP5ONQ",
+    "video_url": "https://www.youtube.com/watch?v=v_zjz5mOvuY",
     "rationale": "Eversion/inversion strength for your ankle history — small muscles, big insurance.",
     "cues": [
       "Band around the forefoot: out, in, up — 15 each way",
@@ -239,7 +239,7 @@
     "slug": "farmer",
     "name": "Farmer / suitcase carry",
     "category": "Race",
-    "video_url": "https://www.youtube.com/shorts/PV6Em-k0xYs",
+    "video_url": "https://www.youtube.com/watch?v=3RKKnZhhelE",
     "rationale": "Grip, trunk, posture under load — carrying a heavy pack is literally the sport.",
     "cues": [
       "Deadlift the bells up properly",
@@ -257,7 +257,7 @@
     "slug": "suitcasemarch",
     "name": "Suitcase march (in place)",
     "category": "Race",
-    "video_url": "https://www.youtube.com/watch?v=psMQmwlhiSs",
+    "video_url": "https://www.youtube.com/watch?v=MF73qPp1hlM",
     "rationale": "The no-space replacement for the suitcase carry. One heavy bell at your side while you march on the spot — the load still tries to fold you sideways, and you still alternate legs, so the anti-lateral-flexion demand arrives in the same rhythm as walking under a pack.",
     "cues": [
       "Deadlift the bell up; do not curl it into position",
@@ -277,7 +277,7 @@
     "slug": "frontrackmarch",
     "name": "Front-rack march",
     "category": "Race",
-    "video_url": "https://www.youtube.com/watch?v=24Uj21nOPNw",
+    "video_url": "https://www.youtube.com/watch?v=6lE9Q3QUPsQ",
     "rationale": "Load sits on the front of the ribcage, so the trunk has to resist being pulled into extension while each leg lifts. This is the closest thing in the gym to a heavy chest-mounted pack on a steep climb.",
     "cues": [
       "Clean the bells to the shoulders, elbows down and in",
@@ -353,7 +353,7 @@
     "slug": "pullup",
     "name": "Pull-up",
     "category": "Upper",
-    "video_url": "https://www.youtube.com/watch?v=6zyx46Vpato",
+    "video_url": "https://www.youtube.com/watch?v=JJp7A277PWw",
     "rationale": "The king of upper pulls — back width you can see, grip you can use.",
     "cues": [
       "Dead hang start, shoulders down before you pull",
@@ -389,7 +389,7 @@
     "slug": "dbbench",
     "name": "Dumbbell bench press",
     "category": "Upper",
-    "video_url": "https://www.youtube.com/watch?v=pKZMNVbfUzQ",
+    "video_url": "https://www.youtube.com/watch?v=dGqI0Z5ul4k",
     "rationale": "Chest and triceps with honest, even loading.",
     "cues": [
       "Shoulder blades pinned to the bench",
@@ -407,7 +407,7 @@
     "slug": "sarow",
     "name": "Single-arm dumbbell row",
     "category": "Upper",
-    "video_url": "https://www.youtube.com/watch?v=pYcpY20QaE8",
+    "video_url": "https://www.youtube.com/watch?v=DMo3HJoawrU",
     "rationale": "Thick mid-back, one side at a time — posture insurance for hours hunched into wind.",
     "cues": [
       "Knee and hand on bench, flat back",
@@ -425,7 +425,7 @@
     "slug": "trxrow",
     "name": "TRX row",
     "category": "Upper",
-    "video_url": "https://www.youtube.com/watch?v=fW_jdwZT804",
+    "video_url": "https://www.youtube.com/watch?v=IEky4NL3LLQ",
     "rationale": "Scales to any level by foot position; plank and pull at once.",
     "cues": [
       "Body rigid as a board",
@@ -443,7 +443,7 @@
     "slug": "pushacc",
     "name": "TRX push-up / dips off bench",
     "category": "Upper",
-    "video_url": "https://www.youtube.com/watch?v=OlUqeytSoxE",
+    "video_url": "https://www.youtube.com/watch?v=jk4MGqOmjn4",
     "rationale": "Pressing volume without more dumbbell juggling.",
     "cues": [
       "TRX push-up: handles low, body plank-rigid",
@@ -479,7 +479,7 @@
     "slug": "pallof",
     "name": "Pallof press",
     "category": "Core",
-    "video_url": "https://www.youtube.com/watch?v=iBDXkpKDRy8",
+    "video_url": "https://www.youtube.com/watch?v=f_D0GByfZh0",
     "rationale": "Anti-rotation — the core skill of running with a pack in a crosswind.",
     "cues": [
       "Band anchored at the rack, stand side-on",

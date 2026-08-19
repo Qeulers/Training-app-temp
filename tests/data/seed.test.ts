@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 // @ts-expect-error — plain ESM validation module, no types needed.
-import { validateSeed } from '../../scripts/validate-seed.mjs';
+import { validateSeed, SHARED_VIDEO_SLUGS } from '../../scripts/validate-seed.mjs';
 import exercisesJson from '../../data/exercises.json';
 import itemsJson from '../../data/session_template_items.json';
 
@@ -20,7 +20,10 @@ describe('seed data — regression cases (SPEC §10)', () => {
   const items = itemsJson as Array<{ exercise_slug: string }>;
 
   it('no two exercises share a video URL (side-plank/dead-bug defect)', () => {
-    const urls = exercises.map((e) => e.video_url);
+    // Exercises in SHARED_VIDEO_SLUGS reuse another's demo intentionally.
+    const urls = exercises
+      .filter((e) => !(SHARED_VIDEO_SLUGS as Set<string>).has(e.slug))
+      .map((e) => e.video_url);
     expect(new Set(urls).size).toBe(urls.length);
   });
 

@@ -16,6 +16,11 @@ const load = (dir, name) => JSON.parse(readFileSync(join(dir, `${name}.json`), '
 // Accepts the two forms the seed uses: standard watch URLs and Shorts.
 const YT_RE = /^https:\/\/www\.youtube\.com\/(watch\?v=|shorts\/)[\w-]{11}$/;
 
+// Exercises allowed to reuse another exercise's demo video. `packstepup` (the
+// loaded, race-pack step-up) is the same movement as `stepup` and shares its
+// clip intentionally, so it's exempt from the unique-video-URL invariant.
+export const SHARED_VIDEO_SLUGS = new Set(['packstepup']);
+
 export function validateSeed(seedDir = DEFAULT_SEED_DIR) {
   const errors = [];
   const err = (msg) => errors.push(msg);
@@ -87,6 +92,7 @@ export function validateSeed(seedDir = DEFAULT_SEED_DIR) {
   const urls = new Set();
   for (const e of exercises) {
     if (!YT_RE.test(e.video_url)) err(`Exercise ${e.slug} has malformed video_url: ${e.video_url}`);
+    if (SHARED_VIDEO_SLUGS.has(e.slug)) continue; // intentional shared demo — see SHARED_VIDEO_SLUGS
     if (urls.has(e.video_url)) err(`Duplicate video_url across exercises: ${e.video_url}`);
     urls.add(e.video_url);
   }
