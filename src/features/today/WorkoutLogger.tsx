@@ -9,6 +9,7 @@ import type { SessionItem, Exercise } from '@/data/reference';
 import type { SessionTemplate } from '@/domain/schedule';
 import { CountdownTimer } from './CountdownTimer';
 import { useWakeLock } from './useWakeLock';
+import { useKeyboardOpen } from './useKeyboardOpen';
 
 interface Props {
   session: SessionTemplate;
@@ -68,6 +69,9 @@ export function WorkoutLogger({ session, items, exercises, phaseSlug, onClose }:
 
   // Keep the screen awake for the whole session, not just while a timer runs.
   useWakeLock(true);
+  // Hide the sticky rest timer while the soft keyboard is up — on mobile it
+  // otherwise sits on top of the weight/reps inputs.
+  const keyboardOpen = useKeyboardOpen();
 
   const startRest = (seconds: number) =>
     setTimer({ kind: 'rest', seconds, nonce: ++nonceRef.current });
@@ -385,7 +389,14 @@ export function WorkoutLogger({ session, items, exercises, phaseSlug, onClose }:
       </div>
 
       {/* ── Sticky bottom bar ── */}
-      <div className="fixed inset-x-0 bottom-0 z-40 border-t border-border bg-bg/95 backdrop-blur">
+      {/* Hidden (not unmounted) while the soft keyboard is up so it doesn't cover
+          the inputs — display:none keeps the running timer's state alive. */}
+      <div
+        className={[
+          'fixed inset-x-0 bottom-0 z-40 border-t border-border bg-bg/95 backdrop-blur',
+          keyboardOpen ? 'hidden' : '',
+        ].join(' ')}
+      >
         <div className="mx-auto max-w-content">
           {timer && (
             <div
