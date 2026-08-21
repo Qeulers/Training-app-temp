@@ -4,7 +4,14 @@ import { Button, Eyebrow } from '@/components/ui';
 import { parseHold, prescribedSets } from '@/domain/prescription';
 import { formatDate } from '@/domain/dates';
 import { embedUrl } from '@/domain/youtube';
-import { useAllSets, useSaveWorkout, type SetWithDate } from '@/data/user';
+import {
+  useAllSets,
+  useSaveWorkout,
+  useUserSettings,
+  useSetRestOverride,
+  type SetWithDate,
+  type RestOverrides,
+} from '@/data/user';
 import type { SessionItem, Exercise } from '@/data/reference';
 import type { SessionTemplate } from '@/domain/schedule';
 import { CountdownTimer } from './CountdownTimer';
@@ -48,7 +55,7 @@ const REST_FALLBACK = 90;
 // autostarts from the top — without it a second rest reuses the finished timer's
 // state and appears stuck until manually restarted.
 type Timer =
-  | { kind: 'rest'; seconds: number; nonce: number }
+  | { kind: 'rest'; seconds: number; nonce: number; exerciseSlug?: string }
   | { kind: 'hold'; seconds: number; perSide: boolean; nonce: number };
 
 /** Format elapsed seconds as M:SS */
@@ -68,6 +75,14 @@ export function WorkoutLogger({ session, items, exercises, phaseSlug, onClose }:
   );
   const blankRowsFor = (slug: string) => prescribedBy.get(slug) ?? 3;
 
+  // Effective rest for an exercise: the user's saved override wins over the
+  // shared reference default, then a hard fallback.
+  const settings = useUserSettings();
+  const setRestOverride = useSetRestOverride();
+  const restOverrides = (settings.data?.rest_overrides ?? {}) as RestOverrides;
+  const restFor = (slug: string) =>
+    restOverrides[slug] ?? exBy.get(slug)?.rest_seconds ?? REST_FALLBACK;
+
   const [sets, setSets] = useState<Record<string, Row[]>>({});
   const [timer, setTimer] = useState<Timer | null>(null);
   const [elapsed, setElapsed] = useState(0);
@@ -83,8 +98,8 @@ export function WorkoutLogger({ session, items, exercises, phaseSlug, onClose }:
   // otherwise sits on top of the weight/reps inputs.
   const keyboardOpen = useKeyboardOpen();
 
-  const startRest = (seconds: number) =>
-    setTimer({ kind: 'rest', seconds, nonce: ++nonceRef.current });
+  const startRest = (seconds: number, exerciseSlug?: string) =>
+    setTimer({ kind: 'rest', seconds, exerciseSlug, nonce: ++nonceRef.current });
   const startHold = (seconds: number, perSide: boolean) =>
     setTimer({ kind: 'hold', seconds, perSide, nonce: ++nonceRef.current });
 
@@ -317,7 +332,7 @@ export function WorkoutLogger({ session, items, exercises, phaseSlug, onClose }:
                             onRepsChange={(v) => update(it.exercise_slug, i, { reps: v })}
                             onDone={() => {
                               update(it.exercise_slug, i, { done: !r.done });
-                              if (!r.done) startRest(ex?.rest_seconds ?? REST_FALLBACK);
+                              if (!r.done) startRest(restFor(it.exercise_slug), it.exercise_slug);
                             }}
                           />
                         );
@@ -424,6 +439,11 @@ export function WorkoutLogger({ session, items, exercises, phaseSlug, onClose }:
                 perSide={timer.kind === 'hold' ? timer.perSide : false}
                 prominent={timer.kind === 'rest'}
                 onClose={() => setTimer(null)}
+                onDefaultChange={
+                  timer.kind === 'rest' && timer.exerciseSlug
+                    ? (seconds) => setRestOverride.mutate({ slug: timer.exerciseSlug!, seconds })
+                    : undefined
+                }
               />
             </div>
           )}

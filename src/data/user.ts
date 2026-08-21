@@ -156,6 +156,35 @@ export function useUpdateSettings() {
   });
 }
 
+/** Per-exercise rest-duration overrides, keyed by exercise slug. */
+export type RestOverrides = Record<string, number>;
+
+/**
+ * Persist a single per-exercise rest default. Reads the current override map
+ * first and merges, so setting one exercise never clobbers the others.
+ */
+export function useSetRestOverride() {
+  const userId = useUserId();
+  const qc = useQueryClient();
+  return useMutation({
+    mutationFn: async ({ slug, seconds }: { slug: string; seconds: number }) => {
+      const { data, error: readErr } = await supabase
+        .from('user_settings')
+        .select('rest_overrides')
+        .eq('user_id', userId)
+        .maybeSingle();
+      if (readErr) throw readErr;
+      const current = (data?.rest_overrides ?? {}) as RestOverrides;
+      const next: RestOverrides = { ...current, [slug]: seconds };
+      const { error } = await supabase
+        .from('user_settings')
+        .upsert({ user_id: userId, rest_overrides: next }, { onConflict: 'user_id' });
+      if (error) throw error;
+    },
+    onSuccess: () => qc.invalidateQueries({ queryKey: ['user_settings', userId] }),
+  });
+}
+
 // ---- Workout logs + sets ---------------------------------------------------
 
 export function useWorkoutLogs() {
