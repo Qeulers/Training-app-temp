@@ -47,8 +47,14 @@ function beep() {
   }
 }
 
+const MIN_REST = 15;
+
 export function CountdownTimer({ seconds, kind, perSide = false, prominent = false, onClose }: Props) {
   const [duration, setDuration] = useState(seconds);
+  // Editable draft for the "Default" field — kept as a raw string so multi-digit
+  // values (e.g. 120) can be typed. Clamped to MIN_REST only on blur, otherwise
+  // the first keystroke would snap "1" up to 15 and block typing "120".
+  const [durationDraft, setDurationDraft] = useState(String(seconds));
   const [side, setSide] = useState<1 | 2>(1);
   const [running, setRunning] = useState(kind === 'rest'); // rest autostarts
   const [remainingMs, setRemainingMs] = useState(seconds * 1000);
@@ -224,10 +230,20 @@ export function CountdownTimer({ seconds, kind, perSide = false, prominent = fal
           Default
           <input
             type="number"
-            min={15}
+            inputMode="numeric"
+            min={MIN_REST}
             step={15}
-            value={duration}
-            onChange={(e) => setDuration(Math.max(15, Number(e.target.value) || 0))}
+            value={durationDraft}
+            onChange={(e) => {
+              setDurationDraft(e.target.value);
+              const n = Number(e.target.value);
+              if (Number.isFinite(n) && n > 0) setDuration(n); // update live, clamp on blur
+            }}
+            onBlur={() => {
+              const n = Math.max(MIN_REST, Number(durationDraft) || duration);
+              setDuration(n);
+              setDurationDraft(String(n));
+            }}
             className="w-14 rounded-md border border-border bg-surface px-1.5 py-1 text-center text-body-sm text-text"
           />
           s
