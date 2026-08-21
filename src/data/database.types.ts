@@ -642,6 +642,7 @@ export type Database = {
           phase_override: string | null
           phase_override_from: string | null
           plan_start: string
+          rest_overrides: Json
           theme: string
           updated_at: string
           user_id: string
@@ -650,6 +651,7 @@ export type Database = {
           phase_override?: string | null
           phase_override_from?: string | null
           plan_start?: string
+          rest_overrides?: Json
           theme?: string
           updated_at?: string
           user_id: string
@@ -658,6 +660,7 @@ export type Database = {
           phase_override?: string | null
           phase_override_from?: string | null
           plan_start?: string
+          rest_overrides?: Json
           theme?: string
           updated_at?: string
           user_id?: string

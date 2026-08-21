@@ -19,6 +19,8 @@ interface Props {
   /** Larger, high-visibility layout — used for the active rest timer. */
   prominent?: boolean;
   onClose: () => void;
+  /** Persist a new default rest for this exercise (rest timer only, on commit). */
+  onDefaultChange?: (seconds: number) => void;
 }
 
 const fmt = (ms: number) => {
@@ -49,7 +51,7 @@ function beep() {
 
 const MIN_REST = 15;
 
-export function CountdownTimer({ seconds, kind, perSide = false, prominent = false, onClose }: Props) {
+export function CountdownTimer({ seconds, kind, perSide = false, prominent = false, onClose, onDefaultChange }: Props) {
   const [duration, setDuration] = useState(seconds);
   // Editable draft for the "Default" field — kept as a raw string so multi-digit
   // values (e.g. 120) can be typed. Clamped to MIN_REST only on blur, otherwise
@@ -243,6 +245,7 @@ export function CountdownTimer({ seconds, kind, perSide = false, prominent = fal
               const n = Math.max(MIN_REST, Number(durationDraft) || duration);
               setDuration(n);
               setDurationDraft(String(n));
+              if (n !== seconds) onDefaultChange?.(n); // persist only a real change
             }}
             className="w-14 rounded-md border border-border bg-surface px-1.5 py-1 text-center text-body-sm text-text"
           />
