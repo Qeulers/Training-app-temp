@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { Icon } from '@/components/Icon';
 import { Button, Eyebrow } from '@/components/ui';
-import { parseHold } from '@/domain/prescription';
+import { parseHold, prescribedSets } from '@/domain/prescription';
 import { formatDate } from '@/domain/dates';
 import { embedUrl } from '@/domain/youtube';
 import { useAllSets, useSaveWorkout, type SetWithDate } from '@/data/user';
@@ -25,8 +25,12 @@ interface Row {
   done: boolean;
 }
 
-/** Most recent logged sets for an exercise, or 3 blank rows (SPEC §6.1). */
-function prefill(slug: string, allSets: SetWithDate[]): Row[] {
+/**
+ * Most recent logged sets for an exercise, or `blankRows` empty rows when there's
+ * no history — seeded from the prescribed set count so a fresh exercise opens
+ * with the right number of sets (SPEC §6.1). The user can still add more.
+ */
+function prefill(slug: string, allSets: SetWithDate[], blankRows: number): Row[] {
   const forEx = allSets.filter((s) => s.exercise_slug === slug);
   if (forEx.length) {
     const latest = forEx.reduce((a, b) => (b.logged_on > a.logged_on ? b : a)).logged_on;
@@ -36,7 +40,7 @@ function prefill(slug: string, allSets: SetWithDate[]): Row[] {
       .map((s) => ({ weight: Number(s.weight_kg), reps: s.reps, done: false }));
     if (rows.length) return rows;
   }
-  return [0, 1, 2].map(() => ({ weight: 0, reps: 0, done: false }));
+  return Array.from({ length: Math.max(1, blankRows) }, () => ({ weight: 0, reps: 0, done: false }));
 }
 
 const REST_FALLBACK = 90;
@@ -57,6 +61,12 @@ export function WorkoutLogger({ session, items, exercises, phaseSlug, onClose }:
   const save = useSaveWorkout();
   const nameBy = useMemo(() => new Map(exercises.map((e) => [e.slug, e.name])), [exercises]);
   const exBy = useMemo(() => new Map(exercises.map((e) => [e.slug, e])), [exercises]);
+  // Prescribed set count per exercise — seeds blank rows for a fresh exercise.
+  const prescribedBy = useMemo(
+    () => new Map(items.map((it) => [it.exercise_slug, prescribedSets(it.prescription)])),
+    [items],
+  );
+  const blankRowsFor = (slug: string) => prescribedBy.get(slug) ?? 3;
 
   const [sets, setSets] = useState<Record<string, Row[]>>({});
   const [timer, setTimer] = useState<Timer | null>(null);
@@ -87,16 +97,17 @@ export function WorkoutLogger({ session, items, exercises, phaseSlug, onClose }:
   }, []);
 
   // Initialise once history has loaded.
-  const rowsFor = (slug: string): Row[] => sets[slug] ?? prefill(slug, allSets.data ?? []);
+  const rowsFor = (slug: string): Row[] =>
+    sets[slug] ?? prefill(slug, allSets.data ?? [], blankRowsFor(slug));
   const update = (slug: string, i: number, patch: Partial<Row>) =>
     setSets((prev) => {
-      const rows = [...(prev[slug] ?? prefill(slug, allSets.data ?? []))];
+      const rows = [...(prev[slug] ?? prefill(slug, allSets.data ?? [], blankRowsFor(slug)))];
       rows[i] = { ...rows[i], ...patch };
       return { ...prev, [slug]: rows };
     });
   const addSet = (slug: string) =>
     setSets((prev) => {
-      const rows = prev[slug] ?? prefill(slug, allSets.data ?? []);
+      const rows = prev[slug] ?? prefill(slug, allSets.data ?? [], blankRowsFor(slug));
       const last = rows[rows.length - 1] ?? { weight: 0, reps: 0 };
       return { ...prev, [slug]: [...rows, { weight: last.weight, reps: 0, done: false }] };
     });
@@ -136,7 +147,7 @@ export function WorkoutLogger({ session, items, exercises, phaseSlug, onClose }:
   // finish block on the last one).
   const completeExercise = (slug: string, itemIdx: number) => {
     setSets((prev) => {
-      const rows = (prev[slug] ?? prefill(slug, allSets.data ?? [])).map((r) => ({
+      const rows = (prev[slug] ?? prefill(slug, allSets.data ?? [], blankRowsFor(slug))).map((r) => ({
         ...r,
         done: true,
       }));
