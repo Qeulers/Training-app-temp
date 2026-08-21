@@ -73,7 +73,7 @@
   },
   {
     "session_template_slug": "p1__upper",
-    "exercise_slug": "trxrow",
+    "exercise_slug": "csrow",
     "prescription": "2×12",
     "sort_order": 5
   },
@@ -307,7 +307,7 @@
   },
   {
     "session_template_slug": "recovery__easyupper",
-    "exercise_slug": "trxrow",
+    "exercise_slug": "csrow",
     "prescription": "2×12 easy",
     "sort_order": 1
   },
@@ -415,7 +415,7 @@
   },
   {
     "session_template_slug": "p4__p4pull",
-    "exercise_slug": "trxrow",
+    "exercise_slug": "csrow",
     "prescription": "3×12–15",
     "sort_order": 2
   },

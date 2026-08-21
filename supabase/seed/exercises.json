@@ -435,7 +435,7 @@
     "kit_note": null,
     "space_note": null,
     "ramp_note": null,
-    "swap_note": null,
+    "swap_note": "Rack-mounted straps tip unless you go fully flat — using the chest-supported dumbbell row until strong enough to do this flat.",
     "sort_order": 24,
     "rest_seconds": 90
   },
@@ -564,5 +564,23 @@
     "swap_note": null,
     "sort_order": 31,
     "rest_seconds": 60
+  },
+  {
+    "slug": "csrow",
+    "name": "Chest-supported dumbbell row",
+    "category": "Upper",
+    "video_url": "https://www.youtube.com/watch?v=0-DXJiceG-0",
+    "rationale": "Stand-in for the TRX row while the rack-mounted straps aren't safe to load — same horizontal pull, chest braced so nothing can tip.",
+    "cues": [
+      "Chest flat on the incline bench",
+      "Pull dumbbells to your lower ribs",
+      "Lower under control, no swing"
+    ],
+    "kit_note": null,
+    "space_note": null,
+    "ramp_note": null,
+    "swap_note": "Back to the TRX row once you can load it fully flat without the rack tipping.",
+    "sort_order": 32,
+    "rest_seconds": 90
   }
 ]
