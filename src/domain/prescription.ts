@@ -44,3 +44,26 @@ export function parseHold(prescription: string): Hold | null {
     return null;
   }
 }
+
+// Leading set count of a "sets×reps" prescription: the number before the first
+// × (or x), allowing a space either side — "3×8", "4 × max−2", "W1–2: 3×8 …".
+const SET_COUNT_RE = /(\d+)\s*[×x]/i;
+
+/**
+ * How many sets a prescription asks for, used to seed the logger's blank rows.
+ * Returns `fallback` (default 3) when there's no `N×` to read — e.g. "1 circuit",
+ * "AMRAP" — so a parse miss never throws and never seeds an absurd count.
+ * Capped at 10.
+ */
+export function prescribedSets(prescription: string, fallback = 3): number {
+  try {
+    if (!prescription) return fallback;
+    const m = String(prescription).match(SET_COUNT_RE);
+    if (!m) return fallback;
+    const n = parseInt(m[1], 10);
+    if (!Number.isFinite(n) || n < 1) return fallback;
+    return Math.min(n, 10);
+  } catch {
+    return fallback;
+  }
+}
