@@ -582,5 +582,95 @@
     "swap_note": "Back to the TRX row once you can load it fully flat without the rack tipping.",
     "sort_order": 32,
     "rest_seconds": 90
+  },
+  {
+    "slug": "catcow",
+    "name": "Cat–cow",
+    "category": "Mobility",
+    "video_url": "https://www.youtube.com/watch?v=WHUevrqeKIg",
+    "rationale": "Gentle segmental spine motion to open the session — wakes the lumbar and thoracic spine through their full range with zero load.",
+    "cues": [
+      "On all fours, wrists under shoulders, knees under hips",
+      "Exhale and round the spine to the ceiling; inhale and let it sag",
+      "Move slowly, led by the breath — never force the end range"
+    ],
+    "kit_note": null,
+    "space_note": null,
+    "ramp_note": null,
+    "swap_note": null,
+    "sort_order": 33,
+    "rest_seconds": 30
+  },
+  {
+    "slug": "hipflexorstretch",
+    "name": "Kneeling hip-flexor stretch",
+    "category": "Mobility",
+    "video_url": "https://www.youtube.com/watch?v=ktgtEWGhFd8",
+    "rationale": "Runners live in hip flexion, and a tight front hip drags the pelvis into tilt and dumps the load on the low back. Open it up.",
+    "cues": [
+      "Half-kneeling, back knee on a pad, front foot flat",
+      "Tuck the tailbone under first, then glide the hips forward",
+      "Squeeze the glute on the kneeling side — feel it in the front hip, not the low back"
+    ],
+    "kit_note": null,
+    "space_note": null,
+    "ramp_note": null,
+    "swap_note": null,
+    "sort_order": 34,
+    "rest_seconds": 30
+  },
+  {
+    "slug": "openbook",
+    "name": "Open-book rotation",
+    "category": "Mobility",
+    "video_url": "https://www.youtube.com/watch?v=85YPQ4tdJds",
+    "rationale": "Rotation the mid-back should own so the lumbar spine does not have to. Frees the trunk for pack carriage and an honest running posture.",
+    "cues": [
+      "Side-lying, knees stacked and bent, arms stretched out in front",
+      "Open the top arm across to the floor behind you, eyes following the hand",
+      "Keep the knees pinned together — the twist comes from the ribcage"
+    ],
+    "kit_note": null,
+    "space_note": null,
+    "ramp_note": null,
+    "swap_note": null,
+    "sort_order": 35,
+    "rest_seconds": 30
+  },
+  {
+    "slug": "glutebridge",
+    "name": "Glute bridge",
+    "category": "Core",
+    "video_url": "https://www.youtube.com/watch?v=R1OXPHRqehw",
+    "rationale": "Teaches the glutes to extend the hip so the low back can stop doing their job — the cornerstone of a back that lasts.",
+    "cues": [
+      "On your back, feet flat, heels drawn in close to your hips",
+      "Drive through the heels and squeeze the glutes to lift",
+      "Ribs down, no arching — the motion is all hips, not low back"
+    ],
+    "kit_note": null,
+    "space_note": null,
+    "ramp_note": null,
+    "swap_note": "Single-leg glute bridge once the two-leg version feels easy.",
+    "sort_order": 36,
+    "rest_seconds": 45
+  },
+  {
+    "slug": "hamstringstretch",
+    "name": "Supine hamstring stretch",
+    "category": "Mobility",
+    "video_url": "https://www.youtube.com/watch?v=Cym2ki1eN2w",
+    "rationale": "Tight hamstrings tug the pelvis under and rob the hip hinge; lengthen them lying down so the low back stays neutral throughout.",
+    "cues": [
+      "On your back, loop a strap or towel around one foot",
+      "Raise the leg until you feel a gentle stretch, knee softly straight",
+      "Keep the opposite leg down and the low back quiet"
+    ],
+    "kit_note": null,
+    "space_note": null,
+    "ramp_note": null,
+    "swap_note": null,
+    "sort_order": 37,
+    "rest_seconds": 30
   }
 ]

@@ -5,7 +5,7 @@ import { Card, Heading, Badge, Pill, QueryBoundary } from '@/components/ui';
 import { useExercises, type Exercise } from '@/data/reference';
 import { youTubeId } from '@/domain/youtube';
 
-const CATEGORIES = ['All', 'Lower', 'Upper', 'Core', 'Race', 'Ankle'] as const;
+const CATEGORIES = ['All', 'Lower', 'Upper', 'Core', 'Race', 'Ankle', 'Mobility'] as const;
 type Category = (typeof CATEGORIES)[number];
 
 function ExerciseCard({ ex }: { ex: Exercise }) {

@@ -442,5 +442,689 @@
     "exercise_slug": "sideplank",
     "prescription": "2×45 s / side",
     "sort_order": 6
+  },
+  {
+    "session_template_slug": "p1__mobMon",
+    "exercise_slug": "catcow",
+    "prescription": "1×60 sec flow",
+    "sort_order": 1
+  },
+  {
+    "session_template_slug": "p1__mobMon",
+    "exercise_slug": "hipflexorstretch",
+    "prescription": "2×30 sec / side",
+    "sort_order": 2
+  },
+  {
+    "session_template_slug": "p1__mobMon",
+    "exercise_slug": "openbook",
+    "prescription": "1×10 / side",
+    "sort_order": 3
+  },
+  {
+    "session_template_slug": "p1__mobMon",
+    "exercise_slug": "deadbug",
+    "prescription": "2×8 / side",
+    "sort_order": 4
+  },
+  {
+    "session_template_slug": "p1__mobMon",
+    "exercise_slug": "birddog",
+    "prescription": "2×8 / side",
+    "sort_order": 5
+  },
+  {
+    "session_template_slug": "p1__mobMon",
+    "exercise_slug": "sideplank",
+    "prescription": "2×30 sec / side",
+    "sort_order": 6
+  },
+  {
+    "session_template_slug": "p1__mobMon",
+    "exercise_slug": "glutebridge",
+    "prescription": "2×12",
+    "sort_order": 7
+  },
+  {
+    "session_template_slug": "p1__mobMon",
+    "exercise_slug": "hamstringstretch",
+    "prescription": "2×30 sec / side",
+    "sort_order": 8
+  },
+  {
+    "session_template_slug": "p1__mobWed",
+    "exercise_slug": "catcow",
+    "prescription": "1×60 sec flow",
+    "sort_order": 1
+  },
+  {
+    "session_template_slug": "p1__mobWed",
+    "exercise_slug": "hipflexorstretch",
+    "prescription": "2×30 sec / side",
+    "sort_order": 2
+  },
+  {
+    "session_template_slug": "p1__mobWed",
+    "exercise_slug": "openbook",
+    "prescription": "1×10 / side",
+    "sort_order": 3
+  },
+  {
+    "session_template_slug": "p1__mobWed",
+    "exercise_slug": "deadbug",
+    "prescription": "2×8 / side",
+    "sort_order": 4
+  },
+  {
+    "session_template_slug": "p1__mobWed",
+    "exercise_slug": "birddog",
+    "prescription": "2×8 / side",
+    "sort_order": 5
+  },
+  {
+    "session_template_slug": "p1__mobWed",
+    "exercise_slug": "sideplank",
+    "prescription": "2×30 sec / side",
+    "sort_order": 6
+  },
+  {
+    "session_template_slug": "p1__mobWed",
+    "exercise_slug": "glutebridge",
+    "prescription": "2×12",
+    "sort_order": 7
+  },
+  {
+    "session_template_slug": "p1__mobWed",
+    "exercise_slug": "hamstringstretch",
+    "prescription": "2×30 sec / side",
+    "sort_order": 8
+  },
+  {
+    "session_template_slug": "p1__mobFri",
+    "exercise_slug": "catcow",
+    "prescription": "1×60 sec flow",
+    "sort_order": 1
+  },
+  {
+    "session_template_slug": "p1__mobFri",
+    "exercise_slug": "hipflexorstretch",
+    "prescription": "2×30 sec / side",
+    "sort_order": 2
+  },
+  {
+    "session_template_slug": "p1__mobFri",
+    "exercise_slug": "openbook",
+    "prescription": "1×10 / side",
+    "sort_order": 3
+  },
+  {
+    "session_template_slug": "p1__mobFri",
+    "exercise_slug": "deadbug",
+    "prescription": "2×8 / side",
+    "sort_order": 4
+  },
+  {
+    "session_template_slug": "p1__mobFri",
+    "exercise_slug": "birddog",
+    "prescription": "2×8 / side",
+    "sort_order": 5
+  },
+  {
+    "session_template_slug": "p1__mobFri",
+    "exercise_slug": "sideplank",
+    "prescription": "2×30 sec / side",
+    "sort_order": 6
+  },
+  {
+    "session_template_slug": "p1__mobFri",
+    "exercise_slug": "glutebridge",
+    "prescription": "2×12",
+    "sort_order": 7
+  },
+  {
+    "session_template_slug": "p1__mobFri",
+    "exercise_slug": "hamstringstretch",
+    "prescription": "2×30 sec / side",
+    "sort_order": 8
+  },
+  {
+    "session_template_slug": "p2__mobMon",
+    "exercise_slug": "catcow",
+    "prescription": "1×60 sec flow",
+    "sort_order": 1
+  },
+  {
+    "session_template_slug": "p2__mobMon",
+    "exercise_slug": "hipflexorstretch",
+    "prescription": "2×30 sec / side",
+    "sort_order": 2
+  },
+  {
+    "session_template_slug": "p2__mobMon",
+    "exercise_slug": "openbook",
+    "prescription": "1×10 / side",
+    "sort_order": 3
+  },
+  {
+    "session_template_slug": "p2__mobMon",
+    "exercise_slug": "deadbug",
+    "prescription": "2×8 / side",
+    "sort_order": 4
+  },
+  {
+    "session_template_slug": "p2__mobMon",
+    "exercise_slug": "birddog",
+    "prescription": "2×8 / side",
+    "sort_order": 5
+  },
+  {
+    "session_template_slug": "p2__mobMon",
+    "exercise_slug": "sideplank",
+    "prescription": "2×30 sec / side",
+    "sort_order": 6
+  },
+  {
+    "session_template_slug": "p2__mobMon",
+    "exercise_slug": "glutebridge",
+    "prescription": "2×12",
+    "sort_order": 7
+  },
+  {
+    "session_template_slug": "p2__mobMon",
+    "exercise_slug": "hamstringstretch",
+    "prescription": "2×30 sec / side",
+    "sort_order": 8
+  },
+  {
+    "session_template_slug": "p2__mobWed",
+    "exercise_slug": "catcow",
+    "prescription": "1×60 sec flow",
+    "sort_order": 1
+  },
+  {
+    "session_template_slug": "p2__mobWed",
+    "exercise_slug": "hipflexorstretch",
+    "prescription": "2×30 sec / side",
+    "sort_order": 2
+  },
+  {
+    "session_template_slug": "p2__mobWed",
+    "exercise_slug": "openbook",
+    "prescription": "1×10 / side",
+    "sort_order": 3
+  },
+  {
+    "session_template_slug": "p2__mobWed",
+    "exercise_slug": "deadbug",
+    "prescription": "2×8 / side",
+    "sort_order": 4
+  },
+  {
+    "session_template_slug": "p2__mobWed",
+    "exercise_slug": "birddog",
+    "prescription": "2×8 / side",
+    "sort_order": 5
+  },
+  {
+    "session_template_slug": "p2__mobWed",
+    "exercise_slug": "sideplank",
+    "prescription": "2×30 sec / side",
+    "sort_order": 6
+  },
+  {
+    "session_template_slug": "p2__mobWed",
+    "exercise_slug": "glutebridge",
+    "prescription": "2×12",
+    "sort_order": 7
+  },
+  {
+    "session_template_slug": "p2__mobWed",
+    "exercise_slug": "hamstringstretch",
+    "prescription": "2×30 sec / side",
+    "sort_order": 8
+  },
+  {
+    "session_template_slug": "p2__mobFri",
+    "exercise_slug": "catcow",
+    "prescription": "1×60 sec flow",
+    "sort_order": 1
+  },
+  {
+    "session_template_slug": "p2__mobFri",
+    "exercise_slug": "hipflexorstretch",
+    "prescription": "2×30 sec / side",
+    "sort_order": 2
+  },
+  {
+    "session_template_slug": "p2__mobFri",
+    "exercise_slug": "openbook",
+    "prescription": "1×10 / side",
+    "sort_order": 3
+  },
+  {
+    "session_template_slug": "p2__mobFri",
+    "exercise_slug": "deadbug",
+    "prescription": "2×8 / side",
+    "sort_order": 4
+  },
+  {
+    "session_template_slug": "p2__mobFri",
+    "exercise_slug": "birddog",
+    "prescription": "2×8 / side",
+    "sort_order": 5
+  },
+  {
+    "session_template_slug": "p2__mobFri",
+    "exercise_slug": "sideplank",
+    "prescription": "2×30 sec / side",
+    "sort_order": 6
+  },
+  {
+    "session_template_slug": "p2__mobFri",
+    "exercise_slug": "glutebridge",
+    "prescription": "2×12",
+    "sort_order": 7
+  },
+  {
+    "session_template_slug": "p2__mobFri",
+    "exercise_slug": "hamstringstretch",
+    "prescription": "2×30 sec / side",
+    "sort_order": 8
+  },
+  {
+    "session_template_slug": "p4__mobMon",
+    "exercise_slug": "catcow",
+    "prescription": "1×60 sec flow",
+    "sort_order": 1
+  },
+  {
+    "session_template_slug": "p4__mobMon",
+    "exercise_slug": "hipflexorstretch",
+    "prescription": "2×30 sec / side",
+    "sort_order": 2
+  },
+  {
+    "session_template_slug": "p4__mobMon",
+    "exercise_slug": "openbook",
+    "prescription": "1×10 / side",
+    "sort_order": 3
+  },
+  {
+    "session_template_slug": "p4__mobMon",
+    "exercise_slug": "deadbug",
+    "prescription": "2×8 / side",
+    "sort_order": 4
+  },
+  {
+    "session_template_slug": "p4__mobMon",
+    "exercise_slug": "birddog",
+    "prescription": "2×8 / side",
+    "sort_order": 5
+  },
+  {
+    "session_template_slug": "p4__mobMon",
+    "exercise_slug": "sideplank",
+    "prescription": "2×30 sec / side",
+    "sort_order": 6
+  },
+  {
+    "session_template_slug": "p4__mobMon",
+    "exercise_slug": "glutebridge",
+    "prescription": "2×12",
+    "sort_order": 7
+  },
+  {
+    "session_template_slug": "p4__mobMon",
+    "exercise_slug": "hamstringstretch",
+    "prescription": "2×30 sec / side",
+    "sort_order": 8
+  },
+  {
+    "session_template_slug": "p4__mobWed",
+    "exercise_slug": "catcow",
+    "prescription": "1×60 sec flow",
+    "sort_order": 1
+  },
+  {
+    "session_template_slug": "p4__mobWed",
+    "exercise_slug": "hipflexorstretch",
+    "prescription": "2×30 sec / side",
+    "sort_order": 2
+  },
+  {
+    "session_template_slug": "p4__mobWed",
+    "exercise_slug": "openbook",
+    "prescription": "1×10 / side",
+    "sort_order": 3
+  },
+  {
+    "session_template_slug": "p4__mobWed",
+    "exercise_slug": "deadbug",
+    "prescription": "2×8 / side",
+    "sort_order": 4
+  },
+  {
+    "session_template_slug": "p4__mobWed",
+    "exercise_slug": "birddog",
+    "prescription": "2×8 / side",
+    "sort_order": 5
+  },
+  {
+    "session_template_slug": "p4__mobWed",
+    "exercise_slug": "sideplank",
+    "prescription": "2×30 sec / side",
+    "sort_order": 6
+  },
+  {
+    "session_template_slug": "p4__mobWed",
+    "exercise_slug": "glutebridge",
+    "prescription": "2×12",
+    "sort_order": 7
+  },
+  {
+    "session_template_slug": "p4__mobWed",
+    "exercise_slug": "hamstringstretch",
+    "prescription": "2×30 sec / side",
+    "sort_order": 8
+  },
+  {
+    "session_template_slug": "p4__mobFri",
+    "exercise_slug": "catcow",
+    "prescription": "1×60 sec flow",
+    "sort_order": 1
+  },
+  {
+    "session_template_slug": "p4__mobFri",
+    "exercise_slug": "hipflexorstretch",
+    "prescription": "2×30 sec / side",
+    "sort_order": 2
+  },
+  {
+    "session_template_slug": "p4__mobFri",
+    "exercise_slug": "openbook",
+    "prescription": "1×10 / side",
+    "sort_order": 3
+  },
+  {
+    "session_template_slug": "p4__mobFri",
+    "exercise_slug": "deadbug",
+    "prescription": "2×8 / side",
+    "sort_order": 4
+  },
+  {
+    "session_template_slug": "p4__mobFri",
+    "exercise_slug": "birddog",
+    "prescription": "2×8 / side",
+    "sort_order": 5
+  },
+  {
+    "session_template_slug": "p4__mobFri",
+    "exercise_slug": "sideplank",
+    "prescription": "2×30 sec / side",
+    "sort_order": 6
+  },
+  {
+    "session_template_slug": "p4__mobFri",
+    "exercise_slug": "glutebridge",
+    "prescription": "2×12",
+    "sort_order": 7
+  },
+  {
+    "session_template_slug": "p4__mobFri",
+    "exercise_slug": "hamstringstretch",
+    "prescription": "2×30 sec / side",
+    "sort_order": 8
+  },
+  {
+    "session_template_slug": "p3__mobMon",
+    "exercise_slug": "catcow",
+    "prescription": "1×60 sec flow",
+    "sort_order": 1
+  },
+  {
+    "session_template_slug": "p3__mobMon",
+    "exercise_slug": "hipflexorstretch",
+    "prescription": "2×30 sec / side",
+    "sort_order": 2
+  },
+  {
+    "session_template_slug": "p3__mobMon",
+    "exercise_slug": "openbook",
+    "prescription": "1×8 / side",
+    "sort_order": 3
+  },
+  {
+    "session_template_slug": "p3__mobMon",
+    "exercise_slug": "deadbug",
+    "prescription": "1×8 / side",
+    "sort_order": 4
+  },
+  {
+    "session_template_slug": "p3__mobMon",
+    "exercise_slug": "birddog",
+    "prescription": "1×6 / side",
+    "sort_order": 5
+  },
+  {
+    "session_template_slug": "p3__mobMon",
+    "exercise_slug": "sideplank",
+    "prescription": "2×20 sec / side",
+    "sort_order": 6
+  },
+  {
+    "session_template_slug": "p3__mobMon",
+    "exercise_slug": "hamstringstretch",
+    "prescription": "2×30 sec / side",
+    "sort_order": 7
+  },
+  {
+    "session_template_slug": "p3__mobWed",
+    "exercise_slug": "catcow",
+    "prescription": "1×60 sec flow",
+    "sort_order": 1
+  },
+  {
+    "session_template_slug": "p3__mobWed",
+    "exercise_slug": "hipflexorstretch",
+    "prescription": "2×30 sec / side",
+    "sort_order": 2
+  },
+  {
+    "session_template_slug": "p3__mobWed",
+    "exercise_slug": "openbook",
+    "prescription": "1×8 / side",
+    "sort_order": 3
+  },
+  {
+    "session_template_slug": "p3__mobWed",
+    "exercise_slug": "deadbug",
+    "prescription": "1×8 / side",
+    "sort_order": 4
+  },
+  {
+    "session_template_slug": "p3__mobWed",
+    "exercise_slug": "birddog",
+    "prescription": "1×6 / side",
+    "sort_order": 5
+  },
+  {
+    "session_template_slug": "p3__mobWed",
+    "exercise_slug": "sideplank",
+    "prescription": "2×20 sec / side",
+    "sort_order": 6
+  },
+  {
+    "session_template_slug": "p3__mobWed",
+    "exercise_slug": "hamstringstretch",
+    "prescription": "2×30 sec / side",
+    "sort_order": 7
+  },
+  {
+    "session_template_slug": "p3__mobFri",
+    "exercise_slug": "catcow",
+    "prescription": "1×60 sec flow",
+    "sort_order": 1
+  },
+  {
+    "session_template_slug": "p3__mobFri",
+    "exercise_slug": "hipflexorstretch",
+    "prescription": "2×30 sec / side",
+    "sort_order": 2
+  },
+  {
+    "session_template_slug": "p3__mobFri",
+    "exercise_slug": "openbook",
+    "prescription": "1×8 / side",
+    "sort_order": 3
+  },
+  {
+    "session_template_slug": "p3__mobFri",
+    "exercise_slug": "deadbug",
+    "prescription": "1×8 / side",
+    "sort_order": 4
+  },
+  {
+    "session_template_slug": "p3__mobFri",
+    "exercise_slug": "birddog",
+    "prescription": "1×6 / side",
+    "sort_order": 5
+  },
+  {
+    "session_template_slug": "p3__mobFri",
+    "exercise_slug": "sideplank",
+    "prescription": "2×20 sec / side",
+    "sort_order": 6
+  },
+  {
+    "session_template_slug": "p3__mobFri",
+    "exercise_slug": "hamstringstretch",
+    "prescription": "2×30 sec / side",
+    "sort_order": 7
+  },
+  {
+    "session_template_slug": "recovery__mobMon",
+    "exercise_slug": "catcow",
+    "prescription": "1×60 sec flow",
+    "sort_order": 1
+  },
+  {
+    "session_template_slug": "recovery__mobMon",
+    "exercise_slug": "hipflexorstretch",
+    "prescription": "2×30 sec / side",
+    "sort_order": 2
+  },
+  {
+    "session_template_slug": "recovery__mobMon",
+    "exercise_slug": "openbook",
+    "prescription": "1×8 / side",
+    "sort_order": 3
+  },
+  {
+    "session_template_slug": "recovery__mobMon",
+    "exercise_slug": "deadbug",
+    "prescription": "1×8 / side",
+    "sort_order": 4
+  },
+  {
+    "session_template_slug": "recovery__mobMon",
+    "exercise_slug": "birddog",
+    "prescription": "1×6 / side",
+    "sort_order": 5
+  },
+  {
+    "session_template_slug": "recovery__mobMon",
+    "exercise_slug": "sideplank",
+    "prescription": "2×20 sec / side",
+    "sort_order": 6
+  },
+  {
+    "session_template_slug": "recovery__mobMon",
+    "exercise_slug": "hamstringstretch",
+    "prescription": "2×30 sec / side",
+    "sort_order": 7
+  },
+  {
+    "session_template_slug": "recovery__mobWed",
+    "exercise_slug": "catcow",
+    "prescription": "1×60 sec flow",
+    "sort_order": 1
+  },
+  {
+    "session_template_slug": "recovery__mobWed",
+    "exercise_slug": "hipflexorstretch",
+    "prescription": "2×30 sec / side",
+    "sort_order": 2
+  },
+  {
+    "session_template_slug": "recovery__mobWed",
+    "exercise_slug": "openbook",
+    "prescription": "1×8 / side",
+    "sort_order": 3
+  },
+  {
+    "session_template_slug": "recovery__mobWed",
+    "exercise_slug": "deadbug",
+    "prescription": "1×8 / side",
+    "sort_order": 4
+  },
+  {
+    "session_template_slug": "recovery__mobWed",
+    "exercise_slug": "birddog",
+    "prescription": "1×6 / side",
+    "sort_order": 5
+  },
+  {
+    "session_template_slug": "recovery__mobWed",
+    "exercise_slug": "sideplank",
+    "prescription": "2×20 sec / side",
+    "sort_order": 6
+  },
+  {
+    "session_template_slug": "recovery__mobWed",
+    "exercise_slug": "hamstringstretch",
+    "prescription": "2×30 sec / side",
+    "sort_order": 7
+  },
+  {
+    "session_template_slug": "recovery__mobFri",
+    "exercise_slug": "catcow",
+    "prescription": "1×60 sec flow",
+    "sort_order": 1
+  },
+  {
+    "session_template_slug": "recovery__mobFri",
+    "exercise_slug": "hipflexorstretch",
+    "prescription": "2×30 sec / side",
+    "sort_order": 2
+  },
+  {
+    "session_template_slug": "recovery__mobFri",
+    "exercise_slug": "openbook",
+    "prescription": "1×8 / side",
+    "sort_order": 3
+  },
+  {
+    "session_template_slug": "recovery__mobFri",
+    "exercise_slug": "deadbug",
+    "prescription": "1×8 / side",
+    "sort_order": 4
+  },
+  {
+    "session_template_slug": "recovery__mobFri",
+    "exercise_slug": "birddog",
+    "prescription": "1×6 / side",
+    "sort_order": 5
+  },
+  {
+    "session_template_slug": "recovery__mobFri",
+    "exercise_slug": "sideplank",
+    "prescription": "2×20 sec / side",
+    "sort_order": 6
+  },
+  {
+    "session_template_slug": "recovery__mobFri",
+    "exercise_slug": "hamstringstretch",
+    "prescription": "2×30 sec / side",
+    "sort_order": 7
   }
 ]
