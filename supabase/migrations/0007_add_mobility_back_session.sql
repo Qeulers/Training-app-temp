@@ -1,0 +1,162 @@
+-- 0007_add_mobility_back_session.sql
+-- Adds the "Mobility & Lower Back" session (Mon/Wed/Fri, ~20 min) to every
+-- phase, for ongoing lower-back strengthening + mobility. Built on McGill's
+-- Big 3 (dead bug, bird dog, side plank) plus glute bridge and hip/T-spine
+-- mobility. Standard dose in p1/p2/p4; a lighter variant in taper (p3) and
+-- recovery. Introduces a new 'Mobility' exercise category.
+-- Idempotent: constraint is dropped/re-added; all inserts upsert.
+
+begin;
+
+-- Allow the new 'Mobility' category (was: Lower/Upper/Core/Race/Ankle).
+alter table exercises drop constraint if exists exercises_category_check;
+alter table exercises add constraint exercises_category_check
+  check (category in ('Lower','Upper','Core','Race','Ankle','Mobility'));
+
+-- exercises
+insert into exercises (slug, name, category, video_url, rationale, cues, kit_note, space_note, ramp_note, swap_note, sort_order, rest_seconds) values
+  ('catcow', 'Cat–cow', 'Mobility', 'https://www.youtube.com/watch?v=WHUevrqeKIg', 'Gentle segmental spine motion to open the session — wakes the lumbar and thoracic spine through their full range with zero load.', '{"On all fours, wrists under shoulders, knees under hips","Exhale and round the spine to the ceiling; inhale and let it sag","Move slowly, led by the breath — never force the end range"}'::text[], null, null, null, null, 33, 30),
+  ('hipflexorstretch', 'Kneeling hip-flexor stretch', 'Mobility', 'https://www.youtube.com/watch?v=ktgtEWGhFd8', 'Runners live in hip flexion, and a tight front hip drags the pelvis into tilt and dumps the load on the low back. Open it up.', '{"Half-kneeling, back knee on a pad, front foot flat","Tuck the tailbone under first, then glide the hips forward","Squeeze the glute on the kneeling side — feel it in the front hip, not the low back"}'::text[], null, null, null, null, 34, 30),
+  ('openbook', 'Open-book rotation', 'Mobility', 'https://www.youtube.com/watch?v=85YPQ4tdJds', 'Rotation the mid-back should own so the lumbar spine does not have to. Frees the trunk for pack carriage and an honest running posture.', '{"Side-lying, knees stacked and bent, arms stretched out in front","Open the top arm across to the floor behind you, eyes following the hand","Keep the knees pinned together — the twist comes from the ribcage"}'::text[], null, null, null, null, 35, 30),
+  ('glutebridge', 'Glute bridge', 'Core', 'https://www.youtube.com/watch?v=R1OXPHRqehw', 'Teaches the glutes to extend the hip so the low back can stop doing their job — the cornerstone of a back that lasts.', '{"On your back, feet flat, heels drawn in close to your hips","Drive through the heels and squeeze the glutes to lift","Ribs down, no arching — the motion is all hips, not low back"}'::text[], null, null, null, 'Single-leg glute bridge once the two-leg version feels easy.', 36, 45),
+  ('hamstringstretch', 'Supine hamstring stretch', 'Mobility', 'https://www.youtube.com/watch?v=Cym2ki1eN2w', 'Tight hamstrings tug the pelvis under and rob the hip hinge; lengthen them lying down so the low back stays neutral throughout.', '{"On your back, loop a strap or towel around one foot","Raise the leg until you feel a gentle stretch, knee softly straight","Keep the opposite leg down and the low back quiet"}'::text[], null, null, null, null, 37, 30)
+on conflict (slug) do update set name = excluded.name, category = excluded.category, video_url = excluded.video_url, rationale = excluded.rationale, cues = excluded.cues, kit_note = excluded.kit_note, space_note = excluded.space_note, ramp_note = excluded.ramp_note, swap_note = excluded.swap_note, sort_order = excluded.sort_order, rest_seconds = excluded.rest_seconds;
+
+-- session_templates
+insert into session_templates (slug, phase_slug, session_key, name, day_of_week, duration_label, brief, sort_order) values
+  ('p1__mobMon', 'p1', 'mobMon', 'Mobility & Lower Back', 1, '~20 min', 'Spine-sparing back work — McGill''s Big 3 plus glutes — bracketed by hip and T-spine mobility. Your Mon/Wed/Fri twenty minutes.', 4),
+  ('p1__mobWed', 'p1', 'mobWed', 'Mobility & Lower Back', 3, '~20 min', 'Spine-sparing back work — McGill''s Big 3 plus glutes — bracketed by hip and T-spine mobility. Your Mon/Wed/Fri twenty minutes.', 5),
+  ('p1__mobFri', 'p1', 'mobFri', 'Mobility & Lower Back', 5, '~20 min', 'Spine-sparing back work — McGill''s Big 3 plus glutes — bracketed by hip and T-spine mobility. Your Mon/Wed/Fri twenty minutes.', 6),
+  ('p2__mobMon', 'p2', 'mobMon', 'Mobility & Lower Back', 1, '~20 min', 'Spine-sparing back work — McGill''s Big 3 plus glutes — bracketed by hip and T-spine mobility. Your Mon/Wed/Fri twenty minutes.', 4),
+  ('p2__mobWed', 'p2', 'mobWed', 'Mobility & Lower Back', 3, '~20 min', 'Spine-sparing back work — McGill''s Big 3 plus glutes — bracketed by hip and T-spine mobility. Your Mon/Wed/Fri twenty minutes.', 5),
+  ('p2__mobFri', 'p2', 'mobFri', 'Mobility & Lower Back', 5, '~20 min', 'Spine-sparing back work — McGill''s Big 3 plus glutes — bracketed by hip and T-spine mobility. Your Mon/Wed/Fri twenty minutes.', 6),
+  ('p4__mobMon', 'p4', 'mobMon', 'Mobility & Lower Back', 1, '~20 min', 'Spine-sparing back work — McGill''s Big 3 plus glutes — bracketed by hip and T-spine mobility. Your Mon/Wed/Fri twenty minutes.', 4),
+  ('p4__mobWed', 'p4', 'mobWed', 'Mobility & Lower Back', 3, '~20 min', 'Spine-sparing back work — McGill''s Big 3 plus glutes — bracketed by hip and T-spine mobility. Your Mon/Wed/Fri twenty minutes.', 5),
+  ('p4__mobFri', 'p4', 'mobFri', 'Mobility & Lower Back', 5, '~20 min', 'Spine-sparing back work — McGill''s Big 3 plus glutes — bracketed by hip and T-spine mobility. Your Mon/Wed/Fri twenty minutes.', 6),
+  ('p3__mobMon', 'p3', 'mobMon', 'Mobility & Lower Back — Gentle', 1, '~15 min', 'Keeps the back ticking over through the taper: mobility and light McGill holds, nothing that causes soreness.', 2),
+  ('p3__mobWed', 'p3', 'mobWed', 'Mobility & Lower Back — Gentle', 3, '~15 min', 'Keeps the back ticking over through the taper: mobility and light McGill holds, nothing that causes soreness.', 3),
+  ('p3__mobFri', 'p3', 'mobFri', 'Mobility & Lower Back — Gentle', 5, '~15 min', 'Keeps the back ticking over through the taper: mobility and light McGill holds, nothing that causes soreness.', 4),
+  ('recovery__mobMon', 'recovery', 'mobMon', 'Mobility & Lower Back — Gentle', 1, '~15 min', 'Keeps the back ticking over through the taper: mobility and light McGill holds, nothing that causes soreness.', 2),
+  ('recovery__mobWed', 'recovery', 'mobWed', 'Mobility & Lower Back — Gentle', 3, '~15 min', 'Keeps the back ticking over through the taper: mobility and light McGill holds, nothing that causes soreness.', 3),
+  ('recovery__mobFri', 'recovery', 'mobFri', 'Mobility & Lower Back — Gentle', 5, '~15 min', 'Keeps the back ticking over through the taper: mobility and light McGill holds, nothing that causes soreness.', 4)
+on conflict (slug) do update set phase_slug = excluded.phase_slug, session_key = excluded.session_key, name = excluded.name, day_of_week = excluded.day_of_week, duration_label = excluded.duration_label, brief = excluded.brief, sort_order = excluded.sort_order;
+
+-- session_template_items
+insert into session_template_items (session_template_slug, exercise_slug, prescription, sort_order) values
+  ('p1__mobMon', 'catcow', '1×60 sec flow', 1),
+  ('p1__mobMon', 'hipflexorstretch', '2×30 sec / side', 2),
+  ('p1__mobMon', 'openbook', '1×10 / side', 3),
+  ('p1__mobMon', 'deadbug', '2×8 / side', 4),
+  ('p1__mobMon', 'birddog', '2×8 / side', 5),
+  ('p1__mobMon', 'sideplank', '2×30 sec / side', 6),
+  ('p1__mobMon', 'glutebridge', '2×12', 7),
+  ('p1__mobMon', 'hamstringstretch', '2×30 sec / side', 8),
+  ('p1__mobWed', 'catcow', '1×60 sec flow', 1),
+  ('p1__mobWed', 'hipflexorstretch', '2×30 sec / side', 2),
+  ('p1__mobWed', 'openbook', '1×10 / side', 3),
+  ('p1__mobWed', 'deadbug', '2×8 / side', 4),
+  ('p1__mobWed', 'birddog', '2×8 / side', 5),
+  ('p1__mobWed', 'sideplank', '2×30 sec / side', 6),
+  ('p1__mobWed', 'glutebridge', '2×12', 7),
+  ('p1__mobWed', 'hamstringstretch', '2×30 sec / side', 8),
+  ('p1__mobFri', 'catcow', '1×60 sec flow', 1),
+  ('p1__mobFri', 'hipflexorstretch', '2×30 sec / side', 2),
+  ('p1__mobFri', 'openbook', '1×10 / side', 3),
+  ('p1__mobFri', 'deadbug', '2×8 / side', 4),
+  ('p1__mobFri', 'birddog', '2×8 / side', 5),
+  ('p1__mobFri', 'sideplank', '2×30 sec / side', 6),
+  ('p1__mobFri', 'glutebridge', '2×12', 7),
+  ('p1__mobFri', 'hamstringstretch', '2×30 sec / side', 8),
+  ('p2__mobMon', 'catcow', '1×60 sec flow', 1),
+  ('p2__mobMon', 'hipflexorstretch', '2×30 sec / side', 2),
+  ('p2__mobMon', 'openbook', '1×10 / side', 3),
+  ('p2__mobMon', 'deadbug', '2×8 / side', 4),
+  ('p2__mobMon', 'birddog', '2×8 / side', 5),
+  ('p2__mobMon', 'sideplank', '2×30 sec / side', 6),
+  ('p2__mobMon', 'glutebridge', '2×12', 7),
+  ('p2__mobMon', 'hamstringstretch', '2×30 sec / side', 8),
+  ('p2__mobWed', 'catcow', '1×60 sec flow', 1),
+  ('p2__mobWed', 'hipflexorstretch', '2×30 sec / side', 2),
+  ('p2__mobWed', 'openbook', '1×10 / side', 3),
+  ('p2__mobWed', 'deadbug', '2×8 / side', 4),
+  ('p2__mobWed', 'birddog', '2×8 / side', 5),
+  ('p2__mobWed', 'sideplank', '2×30 sec / side', 6),
+  ('p2__mobWed', 'glutebridge', '2×12', 7),
+  ('p2__mobWed', 'hamstringstretch', '2×30 sec / side', 8),
+  ('p2__mobFri', 'catcow', '1×60 sec flow', 1),
+  ('p2__mobFri', 'hipflexorstretch', '2×30 sec / side', 2),
+  ('p2__mobFri', 'openbook', '1×10 / side', 3),
+  ('p2__mobFri', 'deadbug', '2×8 / side', 4),
+  ('p2__mobFri', 'birddog', '2×8 / side', 5),
+  ('p2__mobFri', 'sideplank', '2×30 sec / side', 6),
+  ('p2__mobFri', 'glutebridge', '2×12', 7),
+  ('p2__mobFri', 'hamstringstretch', '2×30 sec / side', 8),
+  ('p4__mobMon', 'catcow', '1×60 sec flow', 1),
+  ('p4__mobMon', 'hipflexorstretch', '2×30 sec / side', 2),
+  ('p4__mobMon', 'openbook', '1×10 / side', 3),
+  ('p4__mobMon', 'deadbug', '2×8 / side', 4),
+  ('p4__mobMon', 'birddog', '2×8 / side', 5),
+  ('p4__mobMon', 'sideplank', '2×30 sec / side', 6),
+  ('p4__mobMon', 'glutebridge', '2×12', 7),
+  ('p4__mobMon', 'hamstringstretch', '2×30 sec / side', 8),
+  ('p4__mobWed', 'catcow', '1×60 sec flow', 1),
+  ('p4__mobWed', 'hipflexorstretch', '2×30 sec / side', 2),
+  ('p4__mobWed', 'openbook', '1×10 / side', 3),
+  ('p4__mobWed', 'deadbug', '2×8 / side', 4),
+  ('p4__mobWed', 'birddog', '2×8 / side', 5),
+  ('p4__mobWed', 'sideplank', '2×30 sec / side', 6),
+  ('p4__mobWed', 'glutebridge', '2×12', 7),
+  ('p4__mobWed', 'hamstringstretch', '2×30 sec / side', 8),
+  ('p4__mobFri', 'catcow', '1×60 sec flow', 1),
+  ('p4__mobFri', 'hipflexorstretch', '2×30 sec / side', 2),
+  ('p4__mobFri', 'openbook', '1×10 / side', 3),
+  ('p4__mobFri', 'deadbug', '2×8 / side', 4),
+  ('p4__mobFri', 'birddog', '2×8 / side', 5),
+  ('p4__mobFri', 'sideplank', '2×30 sec / side', 6),
+  ('p4__mobFri', 'glutebridge', '2×12', 7),
+  ('p4__mobFri', 'hamstringstretch', '2×30 sec / side', 8),
+  ('p3__mobMon', 'catcow', '1×60 sec flow', 1),
+  ('p3__mobMon', 'hipflexorstretch', '2×30 sec / side', 2),
+  ('p3__mobMon', 'openbook', '1×8 / side', 3),
+  ('p3__mobMon', 'deadbug', '1×8 / side', 4),
+  ('p3__mobMon', 'birddog', '1×6 / side', 5),
+  ('p3__mobMon', 'sideplank', '2×20 sec / side', 6),
+  ('p3__mobMon', 'hamstringstretch', '2×30 sec / side', 7),
+  ('p3__mobWed', 'catcow', '1×60 sec flow', 1),
+  ('p3__mobWed', 'hipflexorstretch', '2×30 sec / side', 2),
+  ('p3__mobWed', 'openbook', '1×8 / side', 3),
+  ('p3__mobWed', 'deadbug', '1×8 / side', 4),
+  ('p3__mobWed', 'birddog', '1×6 / side', 5),
+  ('p3__mobWed', 'sideplank', '2×20 sec / side', 6),
+  ('p3__mobWed', 'hamstringstretch', '2×30 sec / side', 7),
+  ('p3__mobFri', 'catcow', '1×60 sec flow', 1),
+  ('p3__mobFri', 'hipflexorstretch', '2×30 sec / side', 2),
+  ('p3__mobFri', 'openbook', '1×8 / side', 3),
+  ('p3__mobFri', 'deadbug', '1×8 / side', 4),
+  ('p3__mobFri', 'birddog', '1×6 / side', 5),
+  ('p3__mobFri', 'sideplank', '2×20 sec / side', 6),
+  ('p3__mobFri', 'hamstringstretch', '2×30 sec / side', 7),
+  ('recovery__mobMon', 'catcow', '1×60 sec flow', 1),
+  ('recovery__mobMon', 'hipflexorstretch', '2×30 sec / side', 2),
+  ('recovery__mobMon', 'openbook', '1×8 / side', 3),
+  ('recovery__mobMon', 'deadbug', '1×8 / side', 4),
+  ('recovery__mobMon', 'birddog', '1×6 / side', 5),
+  ('recovery__mobMon', 'sideplank', '2×20 sec / side', 6),
+  ('recovery__mobMon', 'hamstringstretch', '2×30 sec / side', 7),
+  ('recovery__mobWed', 'catcow', '1×60 sec flow', 1),
+  ('recovery__mobWed', 'hipflexorstretch', '2×30 sec / side', 2),
+  ('recovery__mobWed', 'openbook', '1×8 / side', 3),
+  ('recovery__mobWed', 'deadbug', '1×8 / side', 4),
+  ('recovery__mobWed', 'birddog', '1×6 / side', 5),
+  ('recovery__mobWed', 'sideplank', '2×20 sec / side', 6),
+  ('recovery__mobWed', 'hamstringstretch', '2×30 sec / side', 7),
+  ('recovery__mobFri', 'catcow', '1×60 sec flow', 1),
+  ('recovery__mobFri', 'hipflexorstretch', '2×30 sec / side', 2),
+  ('recovery__mobFri', 'openbook', '1×8 / side', 3),
+  ('recovery__mobFri', 'deadbug', '1×8 / side', 4),
+  ('recovery__mobFri', 'birddog', '1×6 / side', 5),
+  ('recovery__mobFri', 'sideplank', '2×20 sec / side', 6),
+  ('recovery__mobFri', 'hamstringstretch', '2×30 sec / side', 7)
+on conflict (session_template_slug, sort_order) do update set exercise_slug = excluded.exercise_slug, prescription = excluded.prescription;
+
+commit;

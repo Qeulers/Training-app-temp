@@ -108,5 +108,155 @@
     "duration_label": "~55 min",
     "brief": "Back, hinge and trunk. Optional 4th short upper day mid-week if recovery is good.",
     "sort_order": 3
+  },
+  {
+    "slug": "p1__mobMon",
+    "phase_slug": "p1",
+    "session_key": "mobMon",
+    "name": "Mobility & Lower Back",
+    "day_of_week": 1,
+    "duration_label": "~20 min",
+    "brief": "Spine-sparing back work — McGill's Big 3 plus glutes — bracketed by hip and T-spine mobility. Your Mon/Wed/Fri twenty minutes.",
+    "sort_order": 4
+  },
+  {
+    "slug": "p1__mobWed",
+    "phase_slug": "p1",
+    "session_key": "mobWed",
+    "name": "Mobility & Lower Back",
+    "day_of_week": 3,
+    "duration_label": "~20 min",
+    "brief": "Spine-sparing back work — McGill's Big 3 plus glutes — bracketed by hip and T-spine mobility. Your Mon/Wed/Fri twenty minutes.",
+    "sort_order": 5
+  },
+  {
+    "slug": "p1__mobFri",
+    "phase_slug": "p1",
+    "session_key": "mobFri",
+    "name": "Mobility & Lower Back",
+    "day_of_week": 5,
+    "duration_label": "~20 min",
+    "brief": "Spine-sparing back work — McGill's Big 3 plus glutes — bracketed by hip and T-spine mobility. Your Mon/Wed/Fri twenty minutes.",
+    "sort_order": 6
+  },
+  {
+    "slug": "p2__mobMon",
+    "phase_slug": "p2",
+    "session_key": "mobMon",
+    "name": "Mobility & Lower Back",
+    "day_of_week": 1,
+    "duration_label": "~20 min",
+    "brief": "Spine-sparing back work — McGill's Big 3 plus glutes — bracketed by hip and T-spine mobility. Your Mon/Wed/Fri twenty minutes.",
+    "sort_order": 4
+  },
+  {
+    "slug": "p2__mobWed",
+    "phase_slug": "p2",
+    "session_key": "mobWed",
+    "name": "Mobility & Lower Back",
+    "day_of_week": 3,
+    "duration_label": "~20 min",
+    "brief": "Spine-sparing back work — McGill's Big 3 plus glutes — bracketed by hip and T-spine mobility. Your Mon/Wed/Fri twenty minutes.",
+    "sort_order": 5
+  },
+  {
+    "slug": "p2__mobFri",
+    "phase_slug": "p2",
+    "session_key": "mobFri",
+    "name": "Mobility & Lower Back",
+    "day_of_week": 5,
+    "duration_label": "~20 min",
+    "brief": "Spine-sparing back work — McGill's Big 3 plus glutes — bracketed by hip and T-spine mobility. Your Mon/Wed/Fri twenty minutes.",
+    "sort_order": 6
+  },
+  {
+    "slug": "p4__mobMon",
+    "phase_slug": "p4",
+    "session_key": "mobMon",
+    "name": "Mobility & Lower Back",
+    "day_of_week": 1,
+    "duration_label": "~20 min",
+    "brief": "Spine-sparing back work — McGill's Big 3 plus glutes — bracketed by hip and T-spine mobility. Your Mon/Wed/Fri twenty minutes.",
+    "sort_order": 4
+  },
+  {
+    "slug": "p4__mobWed",
+    "phase_slug": "p4",
+    "session_key": "mobWed",
+    "name": "Mobility & Lower Back",
+    "day_of_week": 3,
+    "duration_label": "~20 min",
+    "brief": "Spine-sparing back work — McGill's Big 3 plus glutes — bracketed by hip and T-spine mobility. Your Mon/Wed/Fri twenty minutes.",
+    "sort_order": 5
+  },
+  {
+    "slug": "p4__mobFri",
+    "phase_slug": "p4",
+    "session_key": "mobFri",
+    "name": "Mobility & Lower Back",
+    "day_of_week": 5,
+    "duration_label": "~20 min",
+    "brief": "Spine-sparing back work — McGill's Big 3 plus glutes — bracketed by hip and T-spine mobility. Your Mon/Wed/Fri twenty minutes.",
+    "sort_order": 6
+  },
+  {
+    "slug": "p3__mobMon",
+    "phase_slug": "p3",
+    "session_key": "mobMon",
+    "name": "Mobility & Lower Back — Gentle",
+    "day_of_week": 1,
+    "duration_label": "~15 min",
+    "brief": "Keeps the back ticking over through the taper: mobility and light McGill holds, nothing that causes soreness.",
+    "sort_order": 2
+  },
+  {
+    "slug": "p3__mobWed",
+    "phase_slug": "p3",
+    "session_key": "mobWed",
+    "name": "Mobility & Lower Back — Gentle",
+    "day_of_week": 3,
+    "duration_label": "~15 min",
+    "brief": "Keeps the back ticking over through the taper: mobility and light McGill holds, nothing that causes soreness.",
+    "sort_order": 3
+  },
+  {
+    "slug": "p3__mobFri",
+    "phase_slug": "p3",
+    "session_key": "mobFri",
+    "name": "Mobility & Lower Back — Gentle",
+    "day_of_week": 5,
+    "duration_label": "~15 min",
+    "brief": "Keeps the back ticking over through the taper: mobility and light McGill holds, nothing that causes soreness.",
+    "sort_order": 4
+  },
+  {
+    "slug": "recovery__mobMon",
+    "phase_slug": "recovery",
+    "session_key": "mobMon",
+    "name": "Mobility & Lower Back — Gentle",
+    "day_of_week": 1,
+    "duration_label": "~15 min",
+    "brief": "Keeps the back ticking over through the taper: mobility and light McGill holds, nothing that causes soreness.",
+    "sort_order": 2
+  },
+  {
+    "slug": "recovery__mobWed",
+    "phase_slug": "recovery",
+    "session_key": "mobWed",
+    "name": "Mobility & Lower Back — Gentle",
+    "day_of_week": 3,
+    "duration_label": "~15 min",
+    "brief": "Keeps the back ticking over through the taper: mobility and light McGill holds, nothing that causes soreness.",
+    "sort_order": 3
+  },
+  {
+    "slug": "recovery__mobFri",
+    "phase_slug": "recovery",
+    "session_key": "mobFri",
+    "name": "Mobility & Lower Back — Gentle",
+    "day_of_week": 5,
+    "duration_label": "~15 min",
+    "brief": "Keeps the back ticking over through the taper: mobility and light McGill holds, nothing that causes soreness.",
+    "sort_order": 4
   }
 ]
